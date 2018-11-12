@@ -1,0 +1,8 @@
+{
+  "name": "lmh-headspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/laurelherting/lmh-headspace.git",
+  "author": "Laurel Herting <laurel.herting@gmail.com>",
+  "license": "MIT"
+}
