@@ -77,3 +77,15 @@ Popular ports: SSH(22), HTTP(80), HTTPS(443), RDP(3389)
 1. Using console
 2. Using command Line Interface (CLI)
 3. Using Software Development Kits (SDKs)
+
+# Using Roles
+## Roles are more secure than using access key ids
+## Secret access keys are easier to manage
+## You can apply roles to EC2 instances anytime
+
+### Changes takes place immediately
+
+## Roles are universal
+### No need to specify region, similar to users
+
+
