@@ -246,3 +246,14 @@ Glacier
 3. Magnetic
     1. Previous generation
     2. Can be a boot volume
+
+### Elastic Load Balancers
+Three types
+1. Application
+layer 7 (make intelligent decisions)
+2. Network 
+extreme performance / static IP Addresses
+3. Classic
+test & Dev, keep costs low
+
+
