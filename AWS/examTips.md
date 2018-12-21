@@ -256,4 +256,20 @@ extreme performance / static IP Addresses
 3. Classic
 test & Dev, keep costs low
 
+### RDS
+Aurora - relational, high performance, scales well
+*two key features
+1. multi-AZ-for disaster recovery
+2. read replicas-for performance
 
+DynamoDB
+Fast & flexible NoSQL database service for all applications that need 
+consistent, single-digit millisecond latency at any scale.
+(non-realtional), auto-scaling
+
+Data Warehousing
+used for business intelligence
+pulls in very large and complex data sets
+
+Redshift
+fully-managed data warehouse in cloud
