@@ -1,9 +1,9 @@
-###FORM ELEMENT
+### FORM ELEMENT
 wraps elements that go inside
 Example #1, post - server, front end code
 <form action=“index.html” method=“post”></form>
 
-###INPUT ELEMENT
+### INPUT ELEMENT
 person can type in his/her name-input element 
 Example #1, name, email, pwd
 <h1>Sign Up</h1>
@@ -11,18 +11,18 @@ Example #1, name, email, pwd
 <input type=“email” id=“email” “user_email”>
 <input type=“password” id=“password”=“password”>
 
-###TEXT AREA ELEMENT
+### TEXT AREA ELEMENT
 area for text,
 Example #1, bio
 <textarea id=“bio” name=“user_bio”></textarea>
 
-###BUTTON ELEMENT
+### BUTTON ELEMENT
 Example #1, submit button
 <button>Submit Comment</button>
 Example #2, 
 <button type=“submit”>Submit Comment</button>
 
-###LABEL ELEMENT
+### LABEL ELEMENT
 Example #1, label for name
 <label for=“name”>Name:</label>
 Example #2, label comment
@@ -30,7 +30,7 @@ Example #2, label comment
 Example #3, label email
 <label for="email"> Email: </label>
 
-###FIELDSETS & LEGENDS
+### FIELDSETS & LEGENDS
 grouping
 Example #1, group and number, basic info
 <fieldset>
@@ -41,7 +41,7 @@ Example #2, number 2, your profile
      <legend><Span class=“number”>2</span> Your profile</legend> 
 </fieldset>
 
-###SELECT MENUS
+### SELECT MENUS
 select element, option value, 
 Example #1, 
 <option value=’frontend_developer”>Front-End developer</option>
@@ -50,14 +50,14 @@ Example #1,
 Example #2, opt group, wrap info inside <optgroup>
 <optgroup> label=“Mobile”></optgroup>
 
-###RADIO BUTTONS
+### RADIO BUTTONS
 const RadioButton = () => (
   <div align="center">
     <input type="radio" name="group1" value="Hot"/>
   </div>
 );
 
-###CHECKBOXES
+### CHECKBOXES
 When group of predefined options where user can select multiple items, use checkboxes
 Example #1, checkbox, labeled: development, design, & Business.
 <label>Interests:</label>

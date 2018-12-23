@@ -1,36 +1,36 @@
-###ANCHOR Element
+### ANCHOR Element
 <a href=""></a>
 href is hypertext reference
 
-###BODY Element
+### BODY Element
 <body></body>
 contains main visual part of a web page
 visible to user
 
-###DIV Identifier
+### DIV Identifier
 example, <div id=“wrapper">
 
-###DocType Element
+### DocType Element
 Always on first line
 No closing tag
 
-###FOOTER Element
+### FOOTER Element
 <footer></footer>
 example <a href=“http://twitter.com/nickrp”><img src=“img/twitter-wrap.png” alt=“Twitter Logo“></a>
 
-###HEAD Element
+### HEAD Element
 contains elements and data about the site
 not visible to user
 
-###HTML Element
+### HTML Element
 <html></html>
 serves as root of doc structure
 
-###IMAGE Elements
+### IMAGE Elements
 <img src=“img/numbers-01.jpg alt=“”>
 image gallery content, example <img src=“omg/numbers-01.jpg” alt=“">
 
-###Add Image Gallery Content 
+### Add Image Gallery Content 
 example 
   <li>
     <a href=“img/numbers-01.jpg”>
@@ -39,19 +39,19 @@ example
           </a>
             </li>
 
-###Inline Styles
+### Inline Styles
 <h1 style={color: blue;}>Hello</h1>
 
-###LINK types
+### LINK types
 **relative= describes location (preferred, bc it’s easily portable between domains)
 example <link rel=“stylesheet” href=“css/normalize.css”>
 absolute=direct path
 
-###LIST Elements
+### LIST Elements
 <li></li>
 single element, example <li>Home</li><li>About</li>
 
-###LIST Type Elements
+### LIST Type Elements
 <ul></ul>
 un-ordered lists example </a>
     <nav>  
@@ -62,7 +62,7 @@ un-ordered lists example </a>
       </ul>
     </nav> 
         
-###un-ordered lists, w/ links example  </a>        
+### un-ordered lists, w/ links example  </a>        
   <header>
     <nav>  
       <ul>                
@@ -76,7 +76,7 @@ un-ordered lists example </a>
 <ol></ol>
 ordered lists
 
-###NAV Element
+### NAV Element
 <nav></nav>
 used to include navigation elements like menus
 
@@ -94,12 +94,12 @@ similar to a DIV, HTML 5 element that denotes related items joined together
 ### STYLING w/ css
 example, <a href=“index.html” id=“logo”>
 
-###TITLE Element
+### TITLE Element
 <title></title>
 goes in HEAD section
 Displays title in browser tab
 
-###Typical Outline
+### Typical Outline
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -111,10 +111,10 @@ Displays title in browser tab
 </body>
 </html>
 
-###WORD WRAP
+### WORD WRAP
 keep on
 
-###CONTACT/HTML
+### CONTACT/HTML
 example #1, phone, email, & twitter
 <h3>Contact Details</h3>
 <ul> class=“contact-info”>
