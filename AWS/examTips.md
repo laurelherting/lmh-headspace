@@ -273,3 +273,12 @@ pulls in very large and complex data sets
 
 Redshift
 fully-managed data warehouse in cloud
+
+### Route53 
+Amazon DNS Service = Route53
+-global, similar to IAm & S3
+-use it to: 
+1.direct traffic world-wide
+2.to register domain name
+
+
