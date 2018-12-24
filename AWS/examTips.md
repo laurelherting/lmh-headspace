@@ -281,4 +281,21 @@ Amazon DNS Service = Route53
 1.direct traffic world-wide
 2.to register domain name
 
+### Name all Compute Services
+1.EC2
+2.Lightsail
+3.ECR
+4.ECS
+5.EKS
+6.Lambda
+7.Batch
+8.Elastic Beanstalk
+
+### Elastic Beanstalk 
+*You can quickly deploy & manage applications in AWS Cloud
+without worrying about infrastructure that runs those apps.
+Upload App, Elastic Beanstalk automatically handles the details 
+of capacity provisioning, load balancing, scaling, and application
+health monitoring.
+
 
