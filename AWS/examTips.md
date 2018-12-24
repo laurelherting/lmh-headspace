@@ -298,4 +298,23 @@ Upload App, Elastic Beanstalk automatically handles the details
 of capacity provisioning, load balancing, scaling, and application
 health monitoring.
 
+### AWS CloudFormation
+Service that helps model and set up AWS recources
+-spend less time managing these resources, more time on Apps that run
+in AWS.
+-Create template that describes all AWS recources you want 
+(ex. EC2, Amazon RDS DB instances), and AWS CloudFormation takes
+care of provisioning & configuring resources for you.
+-Don't need to individually create & configure AWS resources
+& figure out what's dependent on what;
+AWS CloudFormation handles all of that.
+
+### Elastic Beanstalk and CloudFormation
+-Both are free, but the resources they provision (ex. EC2 instances)
+are not free.
+-Difference between the two:
+1. Elastic Beanstalk is limited in what it can provision and is not 
+programmable.
+2. CloudFormation can provision almost any AWS service & is completely
+programmable
 
