@@ -318,3 +318,5 @@ programmable.
 2. CloudFormation can provision almost any AWS service & is completely
 programmable
 
+### Day before exam read:
+https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
