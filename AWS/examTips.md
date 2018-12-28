@@ -24,6 +24,7 @@ Openstack or Vmware
 networking and connectivity, housed in seperate facilities
 3. Edge locations are endpoints for AWS which are used for caching content.
 Typically consists of: CloudFront, Amazon's CDN.
+ie. #Edge locations > # AZ zones > # regions
 
 ### Understand difference between support packages;
 basic-free
