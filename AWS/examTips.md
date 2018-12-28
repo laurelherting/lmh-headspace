@@ -13,31 +13,33 @@
 3. SAAS
 
 ### 3 types of cloud computing deployments
-1. Public
-2. Hybrid
-3. Private cloud
+1.Public Cloud - AWS, Azure, GCP
+2.Hybrid - Mixture of public & private
+3.Private Cloud(Or On Premise) - You manage it, in your datacenter.
+Openstack or Vmware
 
-### Know the difference between
-1. Regions
-2. Availability zones
-3. Edge locations 
+### Understand difference between a region, an Availability zone(AZ) and an Edge Location
+1.Region-physical location in world, consists of 2 or more zones
+2.An AZ is one or more discrete data centers, each w/ redundant power,
+networking and connectivity, housed in seperate facilities
+3.Edge locations are endpoints for AWS which are used for caching content.
+Typically consists of: CloudFront, Amazon's CDN.
 
 ### IAM is global
+IAM stands for Identity Access Management Management. It is global, you don't have to specify a 
+region when dealing with an IAM. When you create a user or group, this is created globally.
 
-###AWS Access Type
-1. Programmatic
-2. management
+### Billing Alerts/ Billing Alarms will alert you automatically when a certain level of AWS spend has
+been reached. If you are learning AWS for the first time, you should turn it on so that you don't spend money without realizing it.
 
-### Policies (exam q's)
 #### How would you define a policy?
 #### Define it using JSON
 Inside of identity access management
 
 ### You can access AWS platform in 3 ways
-#### Via console
-Programmatically
-#### Using command line
-Using Software Developers Kit (SDK)
+1. Via console
+2. Programmatically - Using command line
+3. Using Software Developers Kit (SDK)
 
 ### Root Account
 #### Is email address used to set up account
@@ -320,3 +322,4 @@ programmable
 
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+
