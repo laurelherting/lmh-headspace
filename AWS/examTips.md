@@ -13,28 +13,31 @@
 3. SAAS
 
 ### 3 types of cloud computing deployments
-1.Public Cloud - AWS, Azure, GCP
-2.Hybrid - Mixture of public & private
-3.Private Cloud(Or On Premise) - You manage it, in your datacenter.
+1. Public Cloud - AWS, Azure, GCP
+2. Hybrid - Mixture of public & private
+3. Private Cloud(Or On Premise) - You manage it, in your datacenter.
 Openstack or Vmware
 
 ### Understand difference between a region, an Availability zone(AZ) and an Edge Location
-1.Region-physical location in world, consists of 2 or more zones
-2.An AZ is one or more discrete data centers, each w/ redundant power,
+1. Region-physical location in world, consists of 2 or more zones
+2. An AZ is one or more discrete data centers, each w/ redundant power,
 networking and connectivity, housed in seperate facilities
-3.Edge locations are endpoints for AWS which are used for caching content.
+3. Edge locations are endpoints for AWS which are used for caching content.
 Typically consists of: CloudFront, Amazon's CDN.
+
+### Understand difference between support packages;
+basic-free
+developer-$29/month (scales based on usage)
+business-$100/month("")
+enterprise-$15,000/month("")-TAM(technical account manager)
+
+### Billing Alerts/ Billing Alarms 
+Alert you automatically when a certain level of AWS spend has
+been reached. If you are learning AWS for the first time, you should turn it on so that you don't spend money without realizing it.
 
 ### IAM is global
 IAM stands for Identity Access Management Management. It is global, you don't have to specify a 
 region when dealing with an IAM. When you create a user or group, this is created globally.
-
-### Billing Alerts/ Billing Alarms will alert you automatically when a certain level of AWS spend has
-been reached. If you are learning AWS for the first time, you should turn it on so that you don't spend money without realizing it.
-
-#### How would you define a policy?
-#### Define it using JSON
-Inside of identity access management
 
 ### You can access AWS platform in 3 ways
 1. Via console
@@ -42,28 +45,29 @@ Inside of identity access management
 3. Using Software Developers Kit (SDK)
 
 ### Root Account
-#### Is email address used to set up account
-#### Always has full admin access
-#### Don’t give these credentials away!
-#### Instead, create a user for each individual w/in organization
-#### Always secure root account using MFA
+Is the email address used to set up AWS account
+Always has full admin access
+Don’t give these credentials away!
+Instead, create a user for each individual w/in organization
+Always secure root account using MFA
 
 ### Group 
-#### Place to store users
-    1. Users inherit all permissions group has
-    2. Examples of groups
-        1. developers
-        2. System administrators
-        3. Human resources
-        4. finance
+A place to store users
+1. Users inherit all permissions group has
+2. Examples of groups:
+developers, System administrators, Human resources, finance
 
 ### Set permissions
-1. Need to apply a policy to that group
-2. Policies consist of Java Script Object Notation (JSON)
-    1. Referred to as key value pairs
-    2. You have your key
-        1. Such as name, then value
-            1. ex. {“name”: “A Cloud Guru”}
+Need to apply a policy to that group
+Policies consist of Java Script Object Notation (JSON)
+  1. Referred to as key value pairs
+  2. You have your key
+  Such as name, then value
+  ex. {“name”: “A Cloud Guru”}
+
+### How would you define a policy?
+Define it using JSON
+Inside of identity access management
 
 ### EC2 - compute based service, not serverless, it's a server!
 
@@ -100,24 +104,29 @@ Popular ports: SSH(22), HTTP(80), HTTPS(443), RDP(3389)
 popular exam q
 1. Read after write consistency for PUTS of new objects
 2. Eventual Consistency for overwrite PUTS and Deletes 
-### Can take some time to propagate
+Can take some time to propagate
 
 ### S3 Storage Tiers/ Classes
 1. S3 Standard
-### 99.99% availability 
-Stored across multiple devices in multiple facilities
+99.99% availability,
+Stored across multiple devices in multiple facilities,
 Designed to sustain loss of 2 facilities concurrently
-S3 - IA
-    1. Infrequently Accessed
-    2. For data that’s accessed less frequently, but requires rapid access when needed
-        ### Lower fee than S3, but charged retrieval fee
-S3 One One -IA
-    1. want lower cost option for infrequently accessed data, but do not require the multiple Availability data resilience 
-Glacier
-    1. Very cheap
-    2. Used for archival only
-    3. Expedited, standard or bulk
-    4. Standard retrieval time = 3-5 hours
+2. S3 - IA
+Infrequently Accessed,
+-For data that’s accessed less frequently, but requires rapid access when needed
+-Lower fee than S3, but charged retrieval fee
+3. S3 One One -IA
+For when you want lower cost option for infrequently accessed data, but do not require the multiple Availability data resilience 
+4. S3 - Intelligent Tiering
+Optimize costs by auto moving data to most cost-effective tier
+5. S3 Glacier
+Very cheap
+Used for archival only
+Expedited, standard or bulk
+Standard retrieval time = 3-5 hours
+6. S3 Glacier Deep Dive Archive
+Lowest cost storage class
+where retrieval time of 12 hours is acceptable
 
 ### S3 Charges
 1. storage
@@ -126,75 +135,86 @@ Glacier
 4. Data transfer pricing
 5. Transfer acceleration
 
-### S3 Exam tips
-1. S3 is object-based
-    ### ex. Allows you to upload files
-2. Files can be 0 Bytes - 5TB
-3. Unlimited storage
-4. Files are stored in buckets
-5. S3 is a universal namespace
-    ### Names must be unique globally
+### S3 exam tips
+1. s3 is object-based
+    ### ex. allows you to upload files
+2. files can be 0 bytes - 5tb
+3. unlimited storage
+4. files are stored in buckets
+5. s3 is a universal namespace
+    ### names must be unique globally
+    https://s3-eu-west-1.amazonaws.com/acloudguru
 6. Read after write consistency after PUTS of new objects
 7. Eventual consistency for overwrite PUTS and DELETES
+8. NOT suitable to install an operating system on
+9. Successful uploads generate HTTP 200 Status code
 
 ### S3 Tiers
 1. S3
-    ## Durable, immediately available, frequently accessed
+Durable, immediately available, frequently accessed
 2. S3 - IA
-    ## Durable, immediately available, infrequently accessed
+Durable, immediately available, infrequently accessed
 3. S3 One Zone - IA 
-    ## Even cheaper than IA, but only in 1 availability zone
+Even cheaper than IA, but only in 1 availability zone
 4. Glacier
-    ## Achieved data, where you can wait 3-5 hours before accessing
+Achieved data, where you can wait 3-5 hours before accessing
 
-### Core fundamentals of S3
-1.Key (name)
-2.Value (data)
-3.Version ID
-4.Metadata
-5.Subresources
+### Key fundamentals of S3
+Key (name of object)
+Value (data, made up of a sequence of bytes)
+Version ID
+Metadata
+Subresources
 
 ### ACL
-#### Torrent
-6. Object-based storage only (for files)
-7. NOT suitable to install an operating system on
-8. Successful uploads generate HTTP 200 Status code
-9. Read S3 FAQs before taking exam
+Torrent,
+Object-based storage only (for files)
+NOT suitable to install an operating system on
+Successful uploads generate HTTP 200 Status code
+Read S3 FAQs before taking exam
   *It comes up a lot!!!
 
 ### Buckets
 1. Names share a common name space
 2. Can’t have the same bucket name as someone else
 3. When you view buckets, you view them globally
-    #### But you can have buckets in individual regions
+But you can have buckets in individual regions
 4. Can replicate bucket contents to another bucket automatically by using cross region replication
 5. Can change storage classes and encryption of objects on the fly
 
 ### S3
-#### Can use bucket policies to make entire S3 buckets public
-#### Can use S3 to host STATIC websites
-    1. ex. As html
-    2. Websites that require database connections such as Wordpress etc can’t be hosted on S3
-#### S3 Scales automatically to meet demand
-    1. Many enterprises will put static websites on S3 when they think there is going to be a large # of requests 
-     ex. Movie preview
+Use bucket policies to make entire S3 buckets public
+Can use S3 to host STATIC websites
+1. ex. As html
+2. Websites that require database connections such as Wordpress etc can’t be hosted on S3
+
+### S3 Scales automatically to meet demand
+Many enterprises will put static websites on S3 when they think there is going
+to be a large # of requests 
+ie. Movie preview
 
 ### CDN 
 ** Content Delivery Network 
 1. Edge location
-    1. Location where content will be cached
-        1. Seperate to an AWS Region/AZ
+Not just read-only, can write to them too
+i1. put an object ontot them
+Location where content will be cached
+Seperate to an AWS Region/AZ
 2. Origin
-    1. Origin of all files that the CDN will distribute
-        1. Can either be 
-            1. S3 Bucket
-            2.  EC2 Instance
-            3. Elastic Load Balancer
-            4. Route53
+Origin of all files that the CDN will distribute
+Can either be:
+S3 Bucket
+EC2 Instance
+Elastic Load Balancer
+Route53
 3. Distribution
-    1. Name given the CDN which consists of collection of Edge locations
+Name given the CDN which consists of collection of Edge locations
 4. Web Distribution
-    1. Typically used for websites
+Typically used for websites
+5. RTMP
+Media Streaming
+* objects are cached for life of TTL(Time To Live)
+* You can clear cached objects, but you'll be charged
 
 ### EC2
 *virtual server in the cloud
