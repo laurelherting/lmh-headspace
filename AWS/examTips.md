@@ -217,57 +217,76 @@ Media Streaming
 * You can clear cached objects, but you'll be charged
 
 ### EC2
-*virtual server in the cloud
+*Virtual server in the cloud
+Reduces time required to obtain & boot new server instances to minutes,
+allowing you to quickly scale capacity, both up and down,
+as your computing requirements change
+
+EC2 Exam Tips
+1. On Demand
+Allows you to pay a fixed rate by hour (or by sec) w/ no commitment
+2. Reserved
+Provides a capacity reservation and offer significant discount on hourly charge for an instance 
+1 or 3 year terms 
+3. Spot
+Enables you to bid whatever price you want for instance capacity
+Providing for greater savings if your apps have flex start/end times
+4. Dedicated hosts 
+Physical EC2 server dedicated for use
+Can help reduce costs by allowing you to use your existing server-bound software licenses
+
+* If spot instance is termanated by Amazon EC2, you will be charged for partial usage,
+but if you terminate it yourself, you'll be charged for any hour in which the instance ran.
+
 1. Elastic Compute Cloud (Amazon EC2)
 2. Instance Types
-    1. FIGHTDRMCPX
-        1. F - FPGA
-        2. I - IOPS
-        3. G - Graphics
-        4. H - High Disk Throughput
-        5. T - cheap general purpose (think T2 Micro)
-        6. D - Density
-        7. R - RAM
-        8. M - main choice for general purpose apps
-        9. C - Compute
-        10. P - Graphics(think Pics)
-        11. X - Extreme Memory
-    2. Fight DR MC PX!
+*FIGHTDRMCPX
+F - FPGA
+I - IOPS
+G - Graphics
+H - High Disk Throughput
+T - cheap general purpose (think T2 Micro)
+D - Density
+R - RAM
+M - main choice for general purpose apps
+C - Compute
+P - Graphics(think Pics)
+X - Extreme Memory
+Fight DR MC PX!
 
 ### EBS
 *virtual disk, attach to EC2 instance
 1. Elastic Block Store
 2. Exam q: less than 2000 IOPS, want GP2
 3. Exam q: really big NoSQL database, gonna use a lot of IOPS
-    1. Go for Provisioned IOPS SSD
-        1. Not GP2
-4. Exam tips
-    1. On Demand
-        1. Allows you to pay a fixed rate by hour (or by sec) w/ no commitment
-    2. Reserved
-        1. Provides a capacity reservation and offer significant discount on hourly charge for an instance 
-            1. 1 or 3 year terms 
-    3. Spot
-        1. Enables you to bid whatever price you want for instance copacity
-            1. Providing for greater savings if your apps have flex start/end times
-    4. Dedicated hosts 
-        1. Physical EC2 server dedicated for use
-        2. Can help reduce costs by allowing you to use your existing server-bound software licenses
+Go for Provisioned IOPS SSD
+Not GP2
 
 ### SSD
-1. General purpose SSD
-    1. Balances price and performance for a wide variety of workloads 
-2. Provisioned IOPS SSD
-    1. Highest-performance SSD volume for mission-critical low-latency or high-throughput workloads
+1. General purpose SSD(GP2)
+Balances price and performance for a wide variety of workloads 
+2. Provisioned IOPS SSD(IO1)
+Highest-performance SSD volume for mission-critical low-latency or high-throughput workloads
 
 ### Magnetic
-1. Throughput Optimized HDD
-    1. Low cost HDD volume designed for frequently accessed, throughput-intensive workloads
+1. Throughput Optimized HDD(ST1)
+Low cost HDD volume designed for frequently accessed, throughput-intensive workloads
 2. Cold HDD
-    1. Lowest cost HDD volume designed for less frequently accessed workloads
+Lowest cost HDD volume designed for less frequently accessed workloads
 3. Magnetic
-    1. Previous generation
-    2. Can be a boot volume
+Previous generation
+Can be a boot volume
+
+### Common Ports
+Linux=SSH(Port 22)
+Microsoft=Remote Desktop Protocol(Port 3389)
+HTTP=Port 80
+HTTPS=Port 443
+
+### Firewall
+Let everything in 0.0.0.0/0
+To let just one IP in X.X.X.X/32
+
 
 ### Elastic Load Balancers
 Three types
@@ -277,8 +296,23 @@ layer 7 (make intelligent decisions)
 extreme performance / static IP Addresses
 3. Classic
 test & Dev, keep costs low
-
 ### RDS
+Has 2 key features
+1. Multi-AZ-for distaster recovery
+2. Read replicas-for performance
+
+### AWS Database Types
+RDS(SQL/OLTP)
+SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
+DynamoDB(NoSQL)
+Red Shift OLAP
+-for business or data warehousing
+-fully-managed data warehouse in cloud
+Elasticache
+-used to speed up performance of existing databases(frequent identical queries)
+-memcached
+-redis
+
 Aurora - relational, high performance, scales well
 *two key features
 1. multi-AZ-for disaster recovery
@@ -293,12 +327,19 @@ Data Warehousing
 used for business intelligence
 pulls in very large and complex data sets
 
-Redshift
-fully-managed data warehouse in cloud
+### Graph databases
+scalability
+high availability
+
+### Autoscaling
+Allows you to provision multiple EC2 instances behind a load balancer automatically 
+depending on your demand.
 
 ### Route53 
+(Domain Name Service) like a phonebook,
+process computers use to resolve domain names to IP Addresses.
 Amazon DNS Service = Route53
--global, similar to IAm & S3
+-global, similar to IAM & S3
 -use it to: 
 1.direct traffic world-wide
 2.to register domain name
@@ -342,4 +383,3 @@ programmable
 
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
-
