@@ -384,3 +384,26 @@ programmable
 
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+
+### AWS Organization & Consolidated Billing
+Linked accounts:
+-20 linked accounts only
+-To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
+Billing Alerts:
+-When monitoring is enabled on paying account, billing data for all 
+linked accounts is included.
+-You can still create billing alerts per individual account.
+CloudTrail:
+-Per AWS account and is enabled per region.
+-Can consolidate logs using an S3 bucket:
+  1. Turn on CloudTrail in paying account.
+  2. Create bucket policy that allows cross-account access.
+  3. Turn on CloudTrail in other accounts and use bucket in the paying account.
+
+Consolidated Billing allows you to get volume discounts on all your accounts.
+
+Unused reserved instances for EC2 are applied across the group.
+
+CloudTrail is on a per account and per region basis, but can be aggregated into single
+bucket belonging to the paying account.
+
