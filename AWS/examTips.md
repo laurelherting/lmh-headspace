@@ -407,7 +407,15 @@ Unused reserved instances for EC2 are applied across the group.
 CloudTrail is on a per account and per region basis, but can be aggregated into single
 bucket belonging to the paying account.
 
-Organization:
+### Organization:
 -Allows you to create organizational units (ie. human resources, developers) & than attach accounts to those organizational units and then you can apply poilicies.
 -Policies can be directly applied to organizational units, accounts in there will inherit it or you can apply a policy directly to an AWS account.
+
+### AWS Quick Start
+Way of deploying evironments quickly, using CloudFormation templates built by
+AWS Solutions Architects who are experts in that particular technology.
+
+### AWS Landing Zone 
+Solution that helps customers more quickly set up secure, multi-account
+AWS environment based on AWS best practices.
 
