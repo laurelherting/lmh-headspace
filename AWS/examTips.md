@@ -422,11 +422,13 @@ AWS environment based on AWS best practices.
 ### AWS Simply Monthly Calculator
 Used to calculate running costs on AWS on a per month basis.
 Not a comparison tool.
+https://calculator.s3.amazonaws.com/index.html
 
 ### AWS TCO Calculator 
 Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
 It will generate reports that can you can give to your C-level execs to make a 
 business case to move to the cloud.
+https://aws.amazon.com/tco-calculator
 * These come up a lot! 
     Play with both calculators until you are comfortable with them.
 
