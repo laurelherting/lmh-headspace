@@ -431,4 +431,10 @@ business case to move to the cloud.
 https://aws.amazon.com/tco-calculator
 * These come up a lot! 
     Play with both calculators until you are comfortable with them.
-
+Examples:
+1. comparing physical servers - less savings compared to vm.
+  when max out #s = 35% savings, $138,064,213.
+  using lowest possible #s = 77%, $139,476.
+2. comparing vm - greater savings with large outputs
+  vm - when max out #s = 71% savings, $604,198,066.
+  using lowest possible #s = 79%, $161,158.
