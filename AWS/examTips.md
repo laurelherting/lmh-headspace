@@ -423,6 +423,11 @@ AWS environment based on AWS best practices.
 Used to calculate running costs on AWS on a per month basis.
 Not a comparison tool.
 https://calculator.s3.amazonaws.com/index.html
+Examples:
+1. More instances = higher monthly cost
+2. Type: CPU, memory, & billing options effect cost changes
+  - z1d.12xxlarge, 48CPU, 384GiB, billing:onDemand = $362,709.15/month.
+  - c5d.large, 2CPU, 4GiB, billing:3yr up front = $1,539.57.
 
 ### AWS TCO Calculator 
 Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
