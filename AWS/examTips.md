@@ -419,3 +419,14 @@ AWS Solutions Architects who are experts in that particular technology.
 Solution that helps customers more quickly set up secure, multi-account
 AWS environment based on AWS best practices.
 
+### AWS Simply Monthly Calculator
+Used to calculate running costs on AWS on a per month basis.
+Not a comparison tool.
+
+### AWS TCO Calculator 
+Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
+It will generate reports that can you can give to your C-level execs to make a 
+business case to move to the cloud.
+* These come up a lot! 
+    Play with both calculators until you are comfortable with them.
+
