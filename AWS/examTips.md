@@ -443,3 +443,31 @@ Examples:
 2. comparing vm - greater savings with large outputs
   vm - when max out #s = 71% savings, $604,198,066.
   using lowest possible #s = 79%, $161,158.
+
+### Billing & Pricing Summary
+Conclusion:
+  While the number & types of services offered by AWS has increased dramatically, philosophy on
+  pricing hasn't changed. You pay as you go, pay for what you use, pay less as you use more,
+  and pay even less when you reserve capacity. 
+
+  Projecting costs for a use case, such as web application hosting, can be challenging,
+  because a solution typically uses multiple features across multiple AWS products, which in turn
+  means there are more factors and purchase options to consider.
+
+*Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+
+Remember free services:
+  Amazon VPC
+  Elastic Beanstalk
+  CloudFormation
+  Identity Access Management (IAM)
+  Auto Scaling
+  Opsworks
+  Consolidated Billing
+    But you do have to pay for resources, like EC2 related to above services
+
+Tags:
+Key Value Pairs attached to AWS Resources
+Metadata (data about data)
+Tags can sometimes be inherited
+
