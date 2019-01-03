@@ -394,6 +394,7 @@ Billing Alerts:
 linked accounts is included.
 -You can still create billing alerts per individual account.
 CloudTrail:
+-For auditing, cloudWatch is for performance.
 -Per AWS account and is enabled per region.
 -Can consolidate logs using an S3 bucket:
   1. Turn on CloudTrail in paying account.
@@ -470,4 +471,25 @@ Tags:
 Key Value Pairs attached to AWS Resources
 Metadata (data about data)
 Tags can sometimes be inherited
+
+Resource Groups make it easy to group your resources using the tags that are assigned to them. You can group resources that share one or more tags.
+  Region
+  Name
+  Health Checks
+
+Using Resource Groups you can apply automation to resources tagged with specific tags. For example,
+we stopped all EC2 instances in the Stockholm region.
+
+Resource Groups in combination with AWS Systems manager allow you to control and execute automation against entire fleets of EC2 instances, all at the push of a button.
+
+Tag editor is a global service that allows us to discover resources and to add additional tags to them, too.
+Newer regions may take some time to be compatible with tag editor.
+
+### Best Practices with AWS Organizations
+Always enable multi-factor authentication on root account.
+Always use strong, complex password on root account.
+Paying account should be used for billing purposes only. Don't deploy resources into
+paying account.
+
+
 
