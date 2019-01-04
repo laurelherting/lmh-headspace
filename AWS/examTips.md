@@ -408,9 +408,11 @@ Unused reserved instances for EC2 are applied across the group.
 CloudTrail is on a per account and per region basis, but can be aggregated into single
 bucket belonging to the paying account.
 
-### Organization:
--Allows you to create organizational units (ie. human resources, developers) & than attach accounts to those organizational units and then you can apply poilicies.
--Policies can be directly applied to organizational units, accounts in there will inherit it or you can apply a policy directly to an AWS account.
+### AWS Organizations:
+-Allows you to create organizational units (ie. human resources, developers)
+& than attach accounts to those organizational units and then you can apply poilicies.
+-Policies can be directly applied to organizational units, accounts in there will 
+inherit it or you can apply a policy directly to an AWS account.
 
 ### AWS Quick Start
 Way of deploying evironments quickly, using CloudFormation templates built by
@@ -448,7 +450,8 @@ Examples:
 ### Billing & Pricing Summary
 Conclusion:
   While the number & types of services offered by AWS has increased dramatically, philosophy on
-  pricing hasn't changed. You pay as you go, pay for what you use, pay less as you use more,
+  pricing hasn't changed.
+  -You pay as you go, pay for what you use, pay less as you use more,
   and pay even less when you reserve capacity. 
 
   Projecting costs for a use case, such as web application hosting, can be challenging,
@@ -472,7 +475,8 @@ Key Value Pairs attached to AWS Resources
 Metadata (data about data)
 Tags can sometimes be inherited
 
-Resource Groups make it easy to group your resources using the tags that are assigned to them. You can group resources that share one or more tags.
+Resource Groups make it easy to group your resources using the tags that are assigned to them.
+You can group resources that share one or more tags.
   Region
   Name
   Health Checks
@@ -480,9 +484,11 @@ Resource Groups make it easy to group your resources using the tags that are ass
 Using Resource Groups you can apply automation to resources tagged with specific tags. For example,
 we stopped all EC2 instances in the Stockholm region.
 
-Resource Groups in combination with AWS Systems manager allow you to control and execute automation against entire fleets of EC2 instances, all at the push of a button.
+Resource Groups in combination with AWS Systems manager allow you to control and execute
+automation against entire fleets of EC2 instances, all at the push of a button.
 
-Tag editor is a global service that allows us to discover resources and to add additional tags to them, too.
+Tag editor is a global service that allows us to discover resources and to add additional tags
+to them, too.
 Newer regions may take some time to be compatible with tag editor.
 
 ### Best Practices with AWS Organizations
@@ -490,6 +496,3 @@ Always enable multi-factor authentication on root account.
 Always use strong, complex password on root account.
 Paying account should be used for billing purposes only. Don't deploy resources into
 paying account.
-
-
-
