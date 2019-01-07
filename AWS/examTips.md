@@ -37,7 +37,7 @@ Alert you automatically when a certain level of AWS spend has
 been reached. If you are learning AWS for the first time, you should turn it on so that you don't spend money without realizing it.
 
 ### IAM is global
-IAM stands for Identity Access Management Management. It is global, you don't have to specify a 
+IAM stands for Identity Access Management. It is global, you don't have to specify a 
 region when dealing with an IAM. When you create a user or group, this is created globally.
 
 ### You can access AWS platform in 3 ways
@@ -77,7 +77,7 @@ Inside of identity access management
 ### Security Groups - virtual firewalls in cloud. Need to open ports to use them. 
 Popular ports: SSH(22), HTTP(80), HTTPS(443), RDP(3389)
 
-### Always design for failure, Have one EC2 instance in each availability zone.
+### Always design for failure - have one EC2 instance in each availability zone.
 
 ### Using AWS Command Line
 #### Interact with AWS in three ways
@@ -97,7 +97,7 @@ Popular ports: SSH(22), HTTP(80), HTTPS(443), RDP(3389)
 
 ### S3
 #### What does a URL look like?
-  It’s always the region, then S3, then the region, then .amazon.aws.com, then / and the bucket name
+  It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
   ex. Https://s3-eu-west1.amazonaws.com/acloudguru
 *Successful upload = HTTP 200 code
 
