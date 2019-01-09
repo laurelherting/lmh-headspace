@@ -496,3 +496,33 @@ Always enable multi-factor authentication on root account.
 Always use strong, complex password on root account.
 Paying account should be used for billing purposes only. Don't deploy resources into
 paying account.
+
+### AWS Shared Responsibility Model
+* know inside & out going into exam to pass
+Who's responsible for what with the cloud?
+** **Remember this summary:
+
+AWS Responsibility (OF the cloud):
+1. Hardware/AWS Global Instrastructure
+    Regions
+    Availability Zones
+    Edge Locations
+2. Software
+    Compute
+    Storage
+    Database
+    Networking
+
+Customer Responsibility (IN the cloud):
+1. Client-side Data, Encryption & data integrity, authentication
+2. Server-side encryption 
+    file system and/ or data
+3. Networking traffic, Protection
+    encryption, integrity, identity
+4. Operating System, Network, & Firewall Configuration
+5. Platform, Applications, Identity & Access Management 
+6. Customer Data
+
+* read Shared Responsibility Model before exam
+http://aws.amazon.com/compliance/shared-responsibility-model/
+
