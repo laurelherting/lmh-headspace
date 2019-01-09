@@ -522,6 +522,15 @@ Customer Responsibility (IN the cloud):
 4. Operating System, Network, & Firewall Configuration
 5. Platform, Applications, Identity & Access Management 
 6. Customer Data
+ 
+#### Possible exam q's: 
+1. Which of the following Compliance certifications attests to
+the security of the AWS platform regarding credit card transactions? 
+Answer: A PCI DSS Level 1 certification attests to the security
+of the AWS platform regarding credit card transactions
+2. Which of the following Compliance guarantees attests to the fact that the AWS Platform has met the standard required for the secure storage of medical records in the US? 
+Answer: HIPAA 
+
 
 * read Shared Responsibility Model before exam
 http://aws.amazon.com/compliance/shared-responsibility-model/
@@ -529,14 +538,21 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 ### AWS WAF & AWS Shield
 AWS WAF is a Web Application Firewall
     designed to stop hackers
+    can go down to OSI layer 7
+    AWS Shield Advanced 
+      offers automated application 
+        operates @ layer 7 traffic monitoring
 AWS Shield is a DDOS mitigation service
     designed to stop DDOS attacks
+    turned on by default
+    advanced protection available
+      $3,000/ month
 
 ### AWS Inspector & AWS Trusted Advisor
 AWS Inspector
     inspects EC2 instances for vulnurabilities
 AWS Trusted Advisor
-    inspects your AWS Accoutn as a whole (not just EC2)
+    inspects your AWS Account as a whole (not just EC2)
     does more than security checks:
       Cost Optimization
       Performance
