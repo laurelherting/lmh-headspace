@@ -532,4 +532,19 @@ AWS WAF is a Web Application Firewall
 AWS Shield is a DDOS mitigation service
     designed to stop DDOS attacks
 
+### AWS Inspector & AWS Trusted Advisor
+AWS Inspector
+    inspects EC2 instances for vulnurabilities
+AWS Trusted Advisor
+    inspects your AWS Accoutn as a whole (not just EC2)
+    does more than security checks:
+      Cost Optimization
+      Performance
+      Fault Tolerance
+AWS CloudTrail
+    Increases visibility into user & resource activity
+      records AWS Management Console actions & API calls
+    Can identify which user and accounts called AWS
+      1. source IP address from which the calls were made
+      2. when the calls occurred
 
