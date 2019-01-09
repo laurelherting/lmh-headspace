@@ -526,3 +526,10 @@ Customer Responsibility (IN the cloud):
 * read Shared Responsibility Model before exam
 http://aws.amazon.com/compliance/shared-responsibility-model/
 
+### AWS WAF & AWS Shield
+AWS WAF is a Web Application Firewall
+    designed to stop hackers
+AWS Shield is a DDOS mitigation service
+    designed to stop DDOS attacks
+
+
