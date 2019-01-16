@@ -198,7 +198,7 @@ ie. Movie preview
 ** Content Delivery Network 
 1. Edge location
 Not just read-only, can write to them too
-i1. put an object ontot them
+put an object onto them
 Location where content will be cached
 Seperate to an AWS Region/AZ
 2. Origin
