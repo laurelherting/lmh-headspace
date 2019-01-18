@@ -33,12 +33,12 @@ business-$100/month("")
 enterprise-$15,000/month("")-TAM(technical account manager)
 
 ### Billing Alerts/ Billing Alarms 
-Alert you automatically when a certain level of AWS spend has
-been reached. If you are learning AWS for the first time, you should turn it on so that you don't spend money without realizing it.
+Alerts automatically when level has been reached
 
 ### IAM is global
-IAM stands for Identity Access Management. It is global, you don't have to specify a 
-region when dealing with an IAM. When you create a user or group, this is created globally.
+Identity Access Management 
+Global, don't have to specify region
+User or group created globally
 
 ### You can access AWS platform in 3 ways
 1. Via console
@@ -46,7 +46,7 @@ region when dealing with an IAM. When you create a user or group, this is create
 3. Using Software Developers Kit (SDK)
 
 ### Root Account
-Is the email address used to set up AWS account
+Email address used to create AWS account
 Always has full admin access
 Don’t give these credentials away!
 Instead, create a user for each individual w/in organization
@@ -54,17 +54,19 @@ Always secure root account using MFA
 
 ### Group 
 A place to store users
-1. Users inherit all permissions group has
-2. Examples of groups:
-developers, System administrators, Human resources, finance
+    Users inherit all permissions group has
+    Examples of groups:
+      developers
+      System administrators
+      Human resources
+      finance
 
 ### Set permissions
 Need to apply a policy to that group
 Policies consist of Java Script Object Notation (JSON)
-  1. Referred to as key value pairs
-  2. You have your key
-  Such as name, then value
-  ex. {“name”: “A Cloud Guru”}
+   Referred to as key value pairs
+  You have your key
+    ex. {“name”: “A Cloud Guru”}
 
 ### How would you define a policy?
 Define it using JSON
