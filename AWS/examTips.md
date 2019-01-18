@@ -81,21 +81,13 @@ Popular ports: SSH(22), HTTP(80), HTTPS(443), RDP(3389)
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
-### Using AWS Command Line
-#### Interact with AWS in three ways
-1. Using console
-2. Using command Line Interface (CLI)
-3. Using Software Development Kits (SDKs)
-
 ### Using Roles
-#### Roles are more secure than using access key ids
-#### Secret access keys are easier to manage
-#### You can apply roles to EC2 instances anytime
-
-#### Changes takes place immediately
-
-### Roles are universal
-### No need to specify region, similar to users
+    Roles more secure than access key ids
+    Secret access keys - easier to manage
+    Apply roles to EC2 instances 
+    Changes take place immediately
+    Universal
+    No need to specify region, similar to users
 
 ### S3
 #### What does a URL look like?
@@ -111,25 +103,25 @@ Can take some time to propagate
 
 ### S3 Storage Tiers/ Classes
 1. S3 Standard
-99.99% availability,
-Stored across multiple devices in multiple facilities,
-Designed to sustain loss of 2 facilities concurrently
+    99.99% availability,
+    Stored across multiple devices in multiple facilities,
+    Designed to sustain loss of 2 facilities concurrently
 2. S3 - IA
-Infrequently Accessed,
--For data that’s accessed less frequently, but requires rapid access when needed
--Lower fee than S3, but charged retrieval fee
+    For data that’s accessed less frequently, but requires rapid access when needed
+    Lower fee than S3, but charged retrieval fee
 3. S3 One One -IA
-For when you want lower cost option for infrequently accessed data, but do not require the multiple Availability data resilience 
+    Lower cost option for infrequently accessed data
+    do not require the multiple Availability data resilience 
 4. S3 - Intelligent Tiering
-Optimize costs by auto moving data to most cost-effective tier
+    Optimize costs by auto moving data to most cost-effective tier
 5. S3 Glacier
-Very cheap
-Used for archival only
-Expedited, standard or bulk
-Standard retrieval time = 3-5 hours
+    Very cheap
+    Used for archival only
+    Expedited, standard or bulk
+    Standard retrieval time = 3-5 hours
 6. S3 Glacier Deep Dive Archive
-Lowest cost storage class
-where retrieval time of 12 hours is acceptable
+    Lowest cost storage class
+    Retrieval time 12 hours
 
 ### S3 Charges
 1. storage
@@ -138,8 +130,8 @@ where retrieval time of 12 hours is acceptable
 4. Data transfer pricing
 5. Transfer acceleration
 
-### S3 exam tips
-1. s3 is object-based
+### S3 general
+1. S3 is object-based
     ### ex. allows you to upload files
 2. files can be 0 bytes - 5tb
 3. unlimited storage
@@ -178,12 +170,12 @@ Read S3 FAQs before taking exam
   *It comes up a lot!!!
 
 ### Buckets
-1. Names share a common name space
-2. Can’t have the same bucket name as someone else
-3. When you view buckets, you view them globally
-But you can have buckets in individual regions
-4. Can replicate bucket contents to another bucket automatically by using cross region replication
-5. Can change storage classes and encryption of objects on the fly
+    Names share a common name space
+      Can’t have the same bucket name as someone else
+    View buckets, you view them globally
+      can have buckets in individual regions
+    Can replicate bucket contents to another bucket automatically by using cross region replication
+    Can change storage classes and encryption of objects on the fly
 
 ### S3
 Use bucket policies to make entire S3 buckets public
@@ -199,25 +191,25 @@ ie. Movie preview
 ### CDN 
 ** Content Delivery Network 
 1. Edge location
-Not just read-only, can write to them too
-put an object onto them
-Location where content will be cached
-Seperate to an AWS Region/AZ
+    Not just read-only, can write to them too
+    put an object onto them
+    Location where content will be cached
+    Seperate to an AWS Region/AZ
 2. Origin
-Origin of all files that the CDN will distribute
-Can either be:
-S3 Bucket
-EC2 Instance
-Elastic Load Balancer
-Route53
+    Origin of all files that the CDN will distribute
+    Can either be:
+      S3 Bucket
+      EC2 Instance
+      Elastic Load Balancer
+      Route53
 3. Distribution
-Name given the CDN which consists of collection of Edge locations
+		Name given the CDN which consists of collection of Edge locations
 4. Web Distribution
-Typically used for websites
+    Websites
 5. RTMP
-Media Streaming
-* objects are cached for life of TTL(Time To Live)
-* You can clear cached objects, but you'll be charged
+		Media Streaming
+		* objects are cached for life of TTL(Time To Live)
+		* You can clear cached objects, but you'll be charged
 
 ### EC2
 *Virtual server in the cloud
@@ -227,9 +219,9 @@ as your computing requirements change
 
 EC2 Exam Tips
 1. On Demand
-Allows you to pay a fixed rate by hour (or by sec) w/ no commitment
+Pay fixed rate by hour (or by sec) w/ no commitment
 2. Reserved
-Provides a capacity reservation and offer significant discount on hourly charge for an instance 
+Provides capacity reservation and offer significant discount on hourly charge for an instance 
 1 or 3 year terms 
 3. Spot
 Enables you to bid whatever price you want for instance capacity
