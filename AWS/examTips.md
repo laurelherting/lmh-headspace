@@ -251,26 +251,27 @@ Fight DR MC PX!
 
 ### EBS
 *virtual disk, attach to EC2 instance
-1. Elastic Block Store
-2. Exam q: less than 2000 IOPS, want GP2
-3. Exam q: really big NoSQL database, gonna use a lot of IOPS
-Go for Provisioned IOPS SSD
-Not GP2
+    Elastic Block Store
+    Exam q: less than 2000 IOPS? GP2
+    Exam q: huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
+      Not GP2
 
 ### SSD
-1. General purpose SSD(GP2)
-Balances price and performance for a wide variety of workloads 
-2. Provisioned IOPS SSD(IO1)
-Highest-performance SSD volume for mission-critical low-latency or high-throughput workloads
+    General purpose SSD(GP2)
+      Balances price and performance for wide variety of workloads 
+    Provisioned IOPS SSD(IO1)
+      Highest-performance SSD volume for mission-critical low-latency
+      or high-throughput workloads
 
 ### Magnetic
-1. Throughput Optimized HDD(ST1)
-Low cost HDD volume designed for frequently accessed, throughput-intensive workloads
-2. Cold HDD
-Lowest cost HDD volume designed for less frequently accessed workloads
-3. Magnetic
-Previous generation
-Can be a boot volume
+    Throughput Optimized HDD(ST1)
+      Low cost HDD volume designed for frequently accessed,
+      throughput-intensive workloads
+    Cold HDD
+      Lowest cost HDD volume designed for less frequently accessed workloads
+    Magnetic
+      Previous generation
+      Can be a boot volume
 
 ### Common Ports
 Linux=SSH(Port 22)
@@ -282,7 +283,6 @@ HTTPS=Port 443
 Let everything in 0.0.0.0/0
 To let just one IP in X.X.X.X/32
 
-
 ### Elastic Load Balancers
 Three types
 1. Application
@@ -291,36 +291,34 @@ layer 7 (make intelligent decisions)
 extreme performance / static IP Addresses
 3. Classic
 test & Dev, keep costs low
+
 ### RDS
-Has 2 key features
-1. Multi-AZ-for distaster recovery
-2. Read replicas-for performance
+2 key features:
+    1. Multi-AZ-for distaster recovery
+    2. Read replicas-for performance
 
 ### AWS Database Types
 RDS(SQL/OLTP)
 SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
 DynamoDB(NoSQL)
 Red Shift OLAP
--for business or data warehousing
--fully-managed data warehouse in cloud
+    for business or data warehousing
+    fully-managed data warehouse in cloud
 Elasticache
--used to speed up performance of existing databases(frequent identical queries)
--memcached
--redis
-
+    used to speed up performance of existing databases(frequent identical queries)
+    memcached
+    redis
 Aurora - relational, high performance, scales well
-*two key features
-1. multi-AZ-for disaster recovery
-2. read replicas-for performance
-
+    two key features:
+      1. multi-AZ-for disaster recovery
+      2. read replicas-for performance
 DynamoDB
-Fast & flexible NoSQL database service for all applications that need 
-consistent, single-digit millisecond latency at any scale.
-(non-realtional), auto-scaling
-
+    Fast & flexible NoSQL database service for all applications that need 
+    consistent, single-digit millisecond latency at any scale.
+    (non-realtional), auto-scaling
 Data Warehousing
-used for business intelligence
-pulls in very large and complex data sets
+    used for business intelligence
+    pulls in very large and complex data sets
 
 ### Graph databases
 scalability
@@ -557,4 +555,3 @@ AWS CloudTrail
     Can identify which user and accounts called AWS
       1. source IP address from which the calls were made
       2. when the calls occurred
-
