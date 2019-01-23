@@ -77,7 +77,6 @@ Inside of identity access management
 ### Use private key to connect EC2
 
 ### Security Groups - virtual firewalls in cloud. Need to open ports to use them. 
-Popular ports: SSH(22), HTTP(80), HTTPS(443), RDP(3389)
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
@@ -241,10 +240,10 @@ F - FPGA
 I - IOPS
 G - Graphics
 H - High Disk Throughput
-T - cheap general purpose (think T2 Micro)
+T - Cheap general purpose (think T2 Micro)
 D - Density
 R - RAM
-M - main choice for general purpose apps
+M - Main choice for general purpose apps
 C - Compute
 P - Graphics(think Pics)
 X - Extreme Memory
