@@ -24,13 +24,13 @@ Openstack or Vmware
 networking and connectivity, housed in seperate facilities
 3. Edge locations are endpoints for AWS which are used for caching content.
 Typically consists of: CloudFront, Amazon's CDN.
-ie. #Edge locations > # AZ zones > # regions
+#### ie. #Edge locations > # AZ zones > # regions
 
 ### Understand difference between support packages;
-basic-free
-developer-$29/month (scales based on usage)
-business-$100/month("")
-enterprise-$15,000/month("")-TAM(technical account manager)
+    basic-free
+    developer-$29/month (scales based on usage)
+    business-$100/month("")
+    enterprise-$15,000/month("")-TAM(technical account manager)
 
 ### Billing Alerts/ Billing Alarms 
 Alerts automatically when level has been reached
@@ -235,6 +235,7 @@ but if you terminate it yourself, you'll be charged for any hour in which the in
 
 1. Elastic Compute Cloud (Amazon EC2)
 2. Instance Types
+
 *FIGHTDRMCPX
 F - FPGA
 I - IOPS
