@@ -334,8 +334,8 @@ process computers use to resolve domain names to IP Addresses.
 Amazon DNS Service = Route53
 -global, similar to IAM & S3
 -use it to: 
-1.direct traffic world-wide
-2.to register domain name
+    1.direct traffic world-wide
+    2.to register domain name
 
 ### Name all Compute Services
 1.EC2
