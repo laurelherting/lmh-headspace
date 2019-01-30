@@ -1,4 +1,5 @@
-### Cloud Concepts And Technology
+## Cloud Concepts And Technology
+
 ### Six advantages of Cloud 
 1. Trade capital expense for variable expense
 2. Benefit from massive economies of scale
@@ -12,21 +13,23 @@
 2. PAAS
 3. SAAS
 
-### 3 types of cloud computing deployments
+### Three types of cloud computing deployments
 1. Public Cloud - AWS, Azure, GCP
 2. Hybrid - Mixture of public & private
 3. Private Cloud(Or On Premise) - You manage it, in your datacenter.
-Openstack or Vmware
+    Openstack or Vmware
 
-### Understand difference between a region, an Availability zone(AZ) and an Edge Location
+### Understand difference between region, Availability zone(AZ) & Edge Location
 1. Region-physical location in world, consists of 2 or more zones
 2. An AZ is one or more discrete data centers, each w/ redundant power,
 networking and connectivity, housed in seperate facilities
 3. Edge locations are endpoints for AWS which are used for caching content.
 Typically consists of: CloudFront, Amazon's CDN.
-#### ie. #Edge locations > # AZ zones > # regions
+    ie. #Edge locations > # AZ zones > # regions
 
-### Understand difference between support packages;
+## Billing and Pricing
+
+### Understand difference between support packages
     basic-free
     developer-$29/month (scales based on usage)
     business-$100/month("")
@@ -40,7 +43,7 @@ Identity Access Management
 Global, don't have to specify region
 User or group created globally
 
-### You can access AWS platform in 3 ways
+### You can access AWS platform in three ways
 1. Via console
 2. Programmatically - Using command line
 3. Using Software Developers Kit (SDK)
@@ -91,7 +94,7 @@ Inside of identity access management
 ### S3
 #### What does a URL look like?
   It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
-  ex. Https://s3-eu-west1.amazonaws.com/acloudguru
+    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
 *Successful upload = HTTP 200 code
 
 ### S3 Data Consistency Model
@@ -131,12 +134,12 @@ Can take some time to propagate
 
 ### S3 general
 1. S3 is object-based
-    ### ex. allows you to upload files
+    ex. allows you to upload files
 2. files can be 0 bytes - 5tb
 3. unlimited storage
 4. files are stored in buckets
 5. s3 is a universal namespace
-    ### names must be unique globally
+    names must be unique globally
     https://s3-eu-west-1.amazonaws.com/acloudguru
 6. Read after write consistency after PUTS of new objects
 7. Eventual consistency for overwrite PUTS and DELETES
@@ -489,10 +492,12 @@ Always use strong, complex password on root account.
 Paying account should be used for billing purposes only. Don't deploy resources into
 paying account.
 
+## Security in the Cloud
+
 ### AWS Shared Responsibility Model
-* know inside & out going into exam to pass
-Who's responsible for what with the cloud?
-** **Remember this summary:
+Know inside & out going into exam to pass
+    Who's responsible for what with the cloud?
+    Remember this summary:
 
 AWS Responsibility (OF the cloud):
 1. Hardware/AWS Global Instrastructure
@@ -523,35 +528,34 @@ of the AWS platform regarding credit card transactions
 2. Which of the following Compliance guarantees attests to the fact that the AWS Platform has met the standard required for the secure storage of medical records in the US? 
 Answer: HIPAA 
 
-
 * read Shared Responsibility Model before exam
 http://aws.amazon.com/compliance/shared-responsibility-model/
 
 ### AWS WAF & AWS Shield
-AWS WAF is a Web Application Firewall
+1. AWS WAF is a Web Application Firewall
     designed to stop hackers
     can go down to OSI layer 7
     AWS Shield Advanced 
       offers automated application 
-        operates @ layer 7 traffic monitoring
-AWS Shield is a DDOS mitigation service
+      operates @ layer 7 traffic monitoring
+2. AWS Shield is a DDOS mitigation service
     designed to stop DDOS attacks
     turned on by default
     advanced protection available
-      $3,000/ month
+    $3,000/ month
 
 ### AWS Inspector & AWS Trusted Advisor
-AWS Inspector
-    inspects EC2 instances for vulnurabilities
-AWS Trusted Advisor
-    inspects your AWS Account as a whole (not just EC2)
-    does more than security checks:
+    AWS Inspector:
+      Inspects EC2 instances for vulnurabilities
+    AWS Trusted Advisor:
+      Inspects your AWS Account as a whole (not just EC2)
+    Does more than security checks:
       Cost Optimization
       Performance
       Fault Tolerance
-AWS CloudTrail
-    Increases visibility into user & resource activity
-      records AWS Management Console actions & API calls
-    Can identify which user and accounts called AWS
-      1. source IP address from which the calls were made
-      2. when the calls occurred
+    AWS CloudTrail:
+      Increases visibility into user & resource activity
+      Records AWS Management Console actions & API calls
+    Can identify which user and accounts called AWS:
+      Source IP address from which the calls were made
+      When the calls occurred
