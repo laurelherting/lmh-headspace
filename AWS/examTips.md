@@ -214,12 +214,12 @@ ie. Movie preview
 		* You can clear cached objects, but you'll be charged
 
 ### EC2
-*Virtual server in the cloud
-Reduces time required to obtain & boot new server instances to minutes,
-allowing you to quickly scale capacity, both up and down,
-as your computing requirements change
+    Virtual server in the cloud
+    Reduces time required to obtain & boot new server instances to minutes,
+    allowing you to quickly scale capacity, both up and down,
+    as your computing requirements change
 
-EC2 Exam Tips
+### EC2 Exam Tips
 1. On Demand
 Pay fixed rate by hour (or by sec) w/ no commitment
 2. Reserved
@@ -238,6 +238,7 @@ but if you terminate it yourself, you'll be charged for any hour in which the in
 1. Elastic Compute Cloud (Amazon EC2)
 2. Instance Types
 
+*Good to be aware of instance types, but details won't be on cert exam
 *FIGHTDRMCPX
 F - FPGA
 I - IOPS
