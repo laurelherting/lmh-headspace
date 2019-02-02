@@ -302,25 +302,25 @@ test & Dev, keep costs low
     2. Read replicas-for performance
 
 ### AWS Database Types
-RDS(SQL/OLTP)
-SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
-DynamoDB(NoSQL)
-Red Shift OLAP
+* RDS(SQL/OLTP)
+    * SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
+* DynamoDB(NoSQL)
+* Red Shift OLAP
     for business or data warehousing
     fully-managed data warehouse in cloud
-Elasticache
+* Elasticache
     used to speed up performance of existing databases(frequent identical queries)
     memcached
     redis
-Aurora - relational, high performance, scales well
+* Aurora - relational, high performance, scales well
     two key features:
       1. multi-AZ-for disaster recovery
       2. read replicas-for performance
-DynamoDB
+* DynamoDB
     Fast & flexible NoSQL database service for all applications that need 
     consistent, single-digit millisecond latency at any scale.
     (non-realtional), auto-scaling
-Data Warehousing
+* Data Warehousing
     used for business intelligence
     pulls in very large and complex data sets
 
