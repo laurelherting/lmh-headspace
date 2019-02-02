@@ -49,11 +49,11 @@ User or group created globally
 3. Using Software Developers Kit (SDK)
 
 ### Root Account
-Email address used to create AWS account
-Always has full admin access
-Don’t give these credentials away!
-Instead, create a user for each individual w/in organization
-Always secure root account using MFA
+* Email address used to create AWS account
+* Always has full admin access
+* Don’t give these credentials away!
+* Instead, create a user for each individual w/in organization
+* Always secure root account using MFA
 
 ### Group 
 A place to store users
@@ -65,11 +65,11 @@ A place to store users
       finance
 
 ### Set permissions
-Need to apply a policy to that group
-Policies consist of Java Script Object Notation (JSON)
-   Referred to as key value pairs
-  You have your key
-    ex. {“name”: “A Cloud Guru”}
+* Need to apply a policy to that group
+* Policies consist of Java Script Object Notation (JSON)
+* Referred to as key value pairs
+* You have your key
+* ex. {“name”: “A Cloud Guru”}
 
 ### How would you define a policy?
 Define it using JSON
@@ -284,7 +284,7 @@ HTTP=Port 80
 HTTPS=Port 443
 
 ### Firewall
-Let everything in 0.0.0.0/0
+*Let everything in 0.0.0.0/0
 To let just one IP in X.X.X.X/32
 
 ### Elastic Load Balancers
