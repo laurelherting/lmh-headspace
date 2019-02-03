@@ -333,13 +333,15 @@ Allows you to provision multiple EC2 instances behind a load balancer automatica
 depending on your demand.
 
 ### Route53 
-(Domain Name Service) like a phonebook,
-process computers use to resolve domain names to IP Addresses.
-Amazon DNS Service = Route53
--global, similar to IAM & S3
--use it to: 
-    1.direct traffic world-wide
-    2.to register domain name
+* Domain Name Service 
+    * phonebook
+* resolve domain names to IP Addresses.
+* Amazon DNS Service = Route53
+* global
+  * like: IAM & S3
+* use it to: 
+  * direct traffic world-wide
+  * register domain name
 
 ### Name all Compute Services
 1.EC2
