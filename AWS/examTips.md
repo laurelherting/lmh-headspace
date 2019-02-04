@@ -354,11 +354,13 @@ depending on your demand.
 8.Elastic Beanstalk
 
 ### Elastic Beanstalk 
-*You can quickly deploy & manage applications in AWS Cloud
-without worrying about infrastructure that runs those apps.
-Upload App, Elastic Beanstalk automatically handles the details 
-of capacity provisioning, load balancing, scaling, and application
-health monitoring.
+* Quickly deploy & manage applications in AWS Cloud
+  * automatically handles:
+      * capacity provisioning
+      * load balancing 
+      * scaling
+      * application
+      * health monitoring
 
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
@@ -385,19 +387,19 @@ https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
 ### AWS Organization & Consolidated Billing
 Linked accounts:
--20 linked accounts only
--To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
+* 20 linked accounts only
+* To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
 Billing Alerts:
--When monitoring is enabled on paying account, billing data for all 
+* When monitoring is enabled on paying account, billing data for all 
 linked accounts is included.
--You can still create billing alerts per individual account.
+* You can still create billing alerts per individual account.
 CloudTrail:
--For auditing, cloudWatch is for performance.
--Per AWS account and is enabled per region.
--Can consolidate logs using an S3 bucket:
-  1. Turn on CloudTrail in paying account.
-  2. Create bucket policy that allows cross-account access.
-  3. Turn on CloudTrail in other accounts and use bucket in the paying account.
+* CloudTrail For auditing, cloudWatch is for performance.
+* Per AWS account and is enabled per region.
+* Can consolidate logs using an S3 bucket:
+  * Turn on CloudTrail in paying account.
+  * Create bucket policy that allows cross-account access.
+  * Turn on CloudTrail in other accounts and use bucket in the paying account.
 
 Consolidated Billing allows you to get volume discounts on all your accounts.
 
