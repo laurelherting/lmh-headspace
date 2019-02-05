@@ -389,30 +389,23 @@ https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 Linked accounts:
 * 20 linked accounts only
 * To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
-Billing Alerts:
-* When monitoring is enabled on paying account, billing data for all 
-linked accounts is included.
-* You can still create billing alerts per individual account.
-CloudTrail:
-* CloudTrail For auditing, cloudWatch is for performance.
-* Per AWS account and is enabled per region.
-* Can consolidate logs using an S3 bucket:
-  * Turn on CloudTrail in paying account.
-  * Create bucket policy that allows cross-account access.
-  * Turn on CloudTrail in other accounts and use bucket in the paying account.
+* Billing Alerts:
+  * When monitoring is enabled on paying account, billing data for linked accounts included
+* You can still create billing alerts per individual account
+* CloudTrail:
+  * CloudTrail For auditing, cloudWatch is for performance.
+  * Per AWS account and is enabled per region.
+  * Can consolidate logs using an S3 bucket:
+    * Turn on CloudTrail in paying account.
+    * Create bucket policy that allows cross-account access.
+    * Turn on CloudTrail in other accounts and use bucket in the paying account.
 
 Consolidated Billing allows you to get volume discounts on all your accounts.
 
-Unused reserved instances for EC2 are applied across the group.
+Unused reserved EC2 instances are applied across the group.
 
-CloudTrail is on a per account and per region basis, but can be aggregated into single
-bucket belonging to the paying account.
-
-### AWS Organizations:
--Allows you to create organizational units (ie. human resources, developers)
-& than attach accounts to those organizational units and then you can apply poilicies.
--Policies can be directly applied to organizational units, accounts in there will 
-inherit it or you can apply a policy directly to an AWS account.
+CloudTrail is on a per account and per region basis
+* Can be grouped into single bucket belonging to the paying account
 
 ### AWS Quick Start
 Way of deploying evironments quickly, using CloudFormation templates built by
@@ -422,7 +415,7 @@ AWS Solutions Architects who are experts in that particular technology.
 Solution that helps customers more quickly set up secure, multi-account
 AWS environment based on AWS best practices.
 
-### AWS Simply Monthly Calculator
+### AWS Simple Monthly Calculator
 Used to calculate running costs on AWS on a per month basis.
 Not a comparison tool.
 https://calculator.s3.amazonaws.com/index.html
@@ -454,10 +447,6 @@ Conclusion:
   -You pay as you go, pay for what you use, pay less as you use more,
   and pay even less when you reserve capacity. 
 
-  Projecting costs for a use case, such as web application hosting, can be challenging,
-  because a solution typically uses multiple features across multiple AWS products, which in turn
-  means there are more factors and purchase options to consider.
-
 *Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
 
 Remember free services:
@@ -482,13 +471,13 @@ You can group resources that share one or more tags.
   Name
   Health Checks
 
-Using Resource Groups you can apply automation to resources tagged with specific tags. For example,
-we stopped all EC2 instances in the Stockholm region.
+Resource Groups: apply automation to resources with specific tags
+* ie. stopped all EC2 instances in the Stockholm region.
 
 Resource Groups in combination with AWS Systems manager allow you to control and execute
 automation against entire fleets of EC2 instances, all at the push of a button.
 
-Tag editor is a global service that allows us to discover resources and to add additional tags
+Tag editor is a global service that allows us to discover resources and to add tags
 to them, too.
 Newer regions may take some time to be compatible with tag editor.
 
@@ -517,38 +506,38 @@ Know inside & out going into exam to pass
           Networking
 
 Customer Responsibility (IN the cloud):
-1. Client-side Data, Encryption & data integrity, authentication
-2. Server-side encryption 
-    file system and/ or data
-3. Networking traffic, Protection
-    encryption, integrity, identity
-4. Operating System, Network, & Firewall Configuration
-5. Platform, Applications, Identity & Access Management 
-6. Customer Data
+* Client-side Data, Encryption & data integrity, authentication
+  * Server-side encryption 
+      * file system and/ or data
+  * Networking traffic, Protection
+      * encryption, integrity, identity
+  * Operating System, Network, & Firewall Configuration
+  * Platform, Applications, Identity & Access Management 
+  * Customer Data
  
 #### Possible exam q's: 
-1. Which of the following Compliance certifications attests to
+* Which of the following Compliance certifications attests to
 the security of the AWS platform regarding credit card transactions? 
-Answer: A PCI DSS Level 1 certification attests to the security
+  * *Answer: A PCI DSS Level 1 certification attests to the security
 of the AWS platform regarding credit card transactions
-2. Which of the following Compliance guarantees attests to the fact that the AWS Platform has met the standard required for the secure storage of medical records in the US? 
-Answer: HIPAA 
+* Which of the following Compliance guarantees attests to the fact that the AWS Platform has met the standard required for the secure storage of medical records in the US? 
+  *** * Answer: HIPAA 
 
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
 
 ### AWS WAF & AWS Shield
-1. AWS WAF is a Web Application Firewall
-    designed to stop hackers
-    can go down to OSI layer 7
-    AWS Shield Advanced 
-      offers automated application 
-      operates @ layer 7 traffic monitoring
-2. AWS Shield is a DDOS mitigation service
-    designed to stop DDOS attacks
-    turned on by default
-    advanced protection available
-    $3,000/ month
+* AWS WAF is a Web Application Firewall
+  * designed to stop hackers
+  * can go down to OSI layer 7
+* AWS Shield Advanced 
+  * offers automated application 
+  * operates @ layer 7 traffic monitoring
+* AWS Shield is a DDOS mitigation service
+  * designed to stop DDOS attacks
+  * turned on by default
+  * advanced protection available
+  * $3,000/ month
 
 ### AWS Inspector & AWS Trusted Advisor
     AWS Inspector:
