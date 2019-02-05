@@ -537,7 +537,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * designed to stop DDOS attacks
   * turned on by default
   * advanced protection available
-  * $3,000/ month
+    * $3,000/ month
 
 ### AWS Inspector & AWS Trusted Advisor
     AWS Inspector:
@@ -551,6 +551,4 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
     AWS CloudTrail:
       Increases visibility into user & resource activity
       Records AWS Management Console actions & API calls
-    Can identify which user and accounts called AWS:
-      Source IP address from which the calls were made
-      When the calls occurred
+    Identifies which user and accounts were accessed and source IP address from which the calls were made
