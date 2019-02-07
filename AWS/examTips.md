@@ -675,3 +675,16 @@ a user's session to a specific instance
 * form of loose coupling between services
 * one component generates events and another that consumes them
 
+### Synchronous replication 
+* only acknowledges transaction after it has been durably stored in both primary location
+  and its replicas
+
+### Asynchronous replication
+* decouples primary node from its replicas at the expense of introducing replication lag 
+  * changes on primary node are not immediately reflected on its replicas
+* used horizontally
+
+### Quorum-based replication
+*  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
+
+
