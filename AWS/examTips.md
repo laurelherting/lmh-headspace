@@ -544,8 +544,15 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 
 
 ### What is horizontal scaling?
+* increase in number of resources
+  * ie. add more hard drives to storage or servers
+  * great for building internet-scale apps
 
 ### What is vertical scaling?
+  * increase of individual resource
+  * Stop an instance, resize it to a different type (ie. more RAM)
+  * Can reach a limit
+  * costly, but easy to implement, good for short-term
 
 ### What AWS resources are often used to create stateless applications?
 * answer: dynamo db, s3, efs, etc
@@ -612,5 +619,4 @@ It's always S3, then the region, then .amazon.aws.com, then / and the bucket nam
 
 * The most important part of an LB is that it's a DNS name that doesn't change 
   * It's not to a static IP address
-
 
