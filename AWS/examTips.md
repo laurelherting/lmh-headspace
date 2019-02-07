@@ -422,17 +422,18 @@ Examples:
   - c5d.large, 2CPU, 4GiB, billing:3yr up front = $1,539.57.
 
 ### AWS TCO Calculator 
-Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
-It will generate reports that can you can give to your C-level execs to make a 
+* Total Cost of Ownership
+* Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
+* It will generate reports that can you can give to your C-level execs to make a 
 business case to move to the cloud.
-https://aws.amazon.com/tco-calculator
+* https://aws.amazon.com/tco-calculator
 * These come up a lot! 
     Play with both calculators until you are comfortable with them.
-Examples:
-1. comparing physical servers - less savings compared to vm.
+* Examples:
+  * comparing physical servers - less savings compared to vm.
   when max out #s = 35% savings, $138,064,213.
   using lowest possible #s = 77%, $139,476.
-2. comparing vm - greater savings with large outputs
+  * comparing vm - greater savings with large outputs
   vm - when max out #s = 71% savings, $604,198,066.
   using lowest possible #s = 79%, $161,158.
 
@@ -478,10 +479,10 @@ to them, too.
 Newer regions may take some time to be compatible with tag editor.
 
 ### Best Practices with AWS Organizations
-Always enable multi-factor authentication on root account.
-Always use strong, complex password on root account.
-Paying account should be used for billing purposes only. 
-Don't deploy resources into paying account.
+* Always enable multi-factor authentication on root account
+* Always use strong, complex password on root account.
+* Paying account should be used for billing purposes only. 
+* Don't deploy resources into paying account.
 
 ## Security in the Cloud
 
