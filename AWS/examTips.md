@@ -552,3 +552,51 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Increases visibility into user & resource activity
       Records AWS Management Console actions & API calls
     Identifies which user and accounts were accessed and source IP address from which the calls were made
+
+
+### What is horizontal scaling?
+
+### What is vertical scaling?
+
+### What AWS resources are often used to create stateless applications?
+* answer: dynamo db, s3, efs, etc
+	* pg.7 white paper:
+		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+
+### Load Balancing cards (additional)
+* what is bootstrapping on ec2?
+* what is a userdata script in ec2?
+* what is an AMI?
+* what AWS services support using containers?
+  * pg. 11 above whitepaper
+* what is infrastructure as code?
+* What AWS service allows you to use Infrastructure as Code?
+
+### AWS Deck of cards
+* Are uploads to s3 buckets public or private by default?
+* Do new AMIs created default to public or private?
+* Do customers have any access to physical drives on ec2?
+* What are some of the delivery options for sns?
+
+### Possible Q
+* p. 13 of above whitepaper
+  * AWS Elastic Beanstalk: You can use this service to deploy and scaleweb applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code,and the service automatically handles all the details, such as resource provisioning, load balancing, auto scaling, and monitoring.
+* Q: What language is not supported by Elastic Beanstalk? 
+  A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
+  * flashcard:
+  What major language / frameworks are supported by Elastic Beanstalk?
+• Java
+• .NET
+• PHP
+• Node.js
+• Python
+• Ruby
+• Go
+• Docker
+
+### Cloudwatch
+* What are CloudWatch Events?
+  * answer: near real-time stream of system events describing changes in AWS resources
+
+### What is high availability?
+
