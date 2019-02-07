@@ -324,10 +324,6 @@ test & Dev, keep costs low
     used for business intelligence
     pulls in very large and complex data sets
 
-### Graph databases
-scalability
-high availability
-
 ### Autoscaling
 Allows you to provision multiple EC2 instances behind a load balancer automatically 
 depending on your demand.
@@ -599,4 +595,29 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * answer: near real-time stream of system events describing changes in AWS resources
 
 ### What is high availability?
+
+### A security group is stateless 
+* what comes in and is allowed, automatically goes back out
+
+### Network ACLs are stateful 
+* If you want to allow access on port 443, you have to add a rule allowing 443 inbound AND add a rule allowing 443 outbound
+
+### Know the diff between an s3 bucket url and an s3 static hosted website address
+What does a URL look like?
+
+It's always S3, then the region, then .amazon.aws.com, then / and the bucket name ex. Https://s3-eu-west1.amazonaws.com/acloudguru *Successful upload = HTTP 200 code
+
+### EBS
+* You can only attach an EBS volume to 1 EC2 instance 
+* An EBS volume cannot be shared with two instances at the same time
+
+### Elastic Load Balancers
+* Know the different types offered by AWS, and how they are different at a general level
+  • Classic ELB
+  • Application Load Balancer
+  • Network Load Balancer
+
+* The most important part of an LB is that it's a DNS name that doesn't change 
+  * It's not to a static IP address
+
 
