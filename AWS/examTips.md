@@ -542,7 +542,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Records AWS Management Console actions & API calls
     Identifies which user and accounts were accessed and source IP address from which the calls were made
 
-
 ### What is horizontal scaling?
 * increase in number of resources
   * ie. add more hard drives to storage or servers
@@ -554,13 +553,16 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * Can reach a limit
   * costly, but easy to implement, good for short-term
 
-### What AWS resources are often used to create stateless applications?
+### What AWS resources are often used to create sss applications?
 * answer: dynamo db, s3, efs, etc
 	* pg.7 white paper:
 		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
 ### Load Balancing cards (additional)
 * what is bootstrapping on ec2?
+  * Start w/ a default configuration, then execute automated bootstapping actions
+      * scripts that install software or copy data to bring that resource to a 
+        particular state
 * what is a userdata script in ec2?
 * what is an AMI?
 * what AWS services support using containers?
@@ -596,7 +598,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 
 ### What is high availability?
 
-### A security group is stateless 
+### A security group is sss 
 * what comes in and is allowed, automatically goes back out
 
 ### Network ACLs are stateful 
@@ -619,4 +621,38 @@ It's always S3, then the region, then .amazon.aws.com, then / and the bucket nam
 
 * The most important part of an LB is that it's a DNS name that doesn't change 
   * It's not to a static IP address
+
+### Stateless Applications
+* What is a stateless application?
+  * users/services interact w/ app they interact to form a session
+    * session - unique data that exists between requests while they use the app
+* Doesn't need info of previous interactions 
+* Doesn't store session information
+* Provides same response to any end user
+* Can scale horizontally 
+  * any available compute resources can service any request
+
+### Distribute Load to Multiple Nodes
+* use push or pull method
+  * push: use ELB to distribute workloads
+    * ELB routes incoming application requests across multiple EC2 instances
+  * pull: asynchronous, event-driven workloads
+    * tasks need to be performed/data that needs to be processed 
+        * stored as messages 
+
+### Stateless Components
+* Don't store anything that needs to exist for more than a single request in local
+* Use AWS Step Functions to centrally store execution history & make workloads stateless
+
+### Stateful Components
+* layers that won't turn into stateless components
+
+### Implement Session Affinity
+* For HTTP & HTTPS traffic, use sticky session feature of an Application Load Balancer to bind 
+a user's session to a specific instance
+
+### Distributing Processing
+* Use when processing large amounts of data that can't be handled by a single compute
+  resource in a timely manner
+
 
