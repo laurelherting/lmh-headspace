@@ -563,11 +563,21 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * Start w/ a default configuration, then execute automated bootstapping actions
       * scripts that install software or copy data to bring that resource to a 
         particular state
-* what is a userdata script in ec2?
+        * userdata script in ec2
+* what is a golden image?
+  * snapshot of a particular state of that resource
+    * results in faster start times 
+    * removes dependencies to configuration services/3rd party repositories
 * what is an AMI?
+  * Amazon Machine Image
+    * provides the information required to launch an instance
 * what AWS services support using containers?
-  * pg. 11 above whitepaper
+  * AWS Elastic Beanstalk
+  * Amazon Elastic Container Service (Amazon ECS)
+  * AWS Fargate
+  * ie. build golden Docker images & use ECS Container Registry to manage them
 * what is infrastructure as code?
+  * 
 * What AWS service allows you to use Infrastructure as Code?
 
 ### AWS Deck of cards
@@ -597,6 +607,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * answer: near real-time stream of system events describing changes in AWS resources
 
 ### What is high availability?
+* Amazon RDS
+* creates synchronously replicated standby instance in a different AZ
 
 ### A security group is sss 
 * what comes in and is allowed, automatically goes back out
@@ -655,4 +667,11 @@ a user's session to a specific instance
 * Use when processing large amounts of data that can't be handled by a single compute
   resource in a timely manner
 
+### Loose Coupling
+* designed to reduce interdependencies
+  * change/failure in one component shouldn't cascade to other components
+
+### Asynchronous Integration
+* form of loose coupling between services
+* one component generates events and another that consumes them
 
