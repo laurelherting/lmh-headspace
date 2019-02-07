@@ -163,14 +163,6 @@ Version ID
 Metadata
 Subresources
 
-### ACL
-Torrent,
-Object-based storage only (for files)
-NOT suitable to install an operating system on
-Successful uploads generate HTTP 200 Status code
-Read S3 FAQs before taking exam
-  *It comes up a lot!!!
-
 ### Buckets
     Names share a common name space
       Can’t have the same bucket name as someone else
@@ -480,9 +472,9 @@ Newer regions may take some time to be compatible with tag editor.
 
 ### Best Practices with AWS Organizations
 * Always enable multi-factor authentication on root account
-* Always use strong, complex password on root account.
-* Paying account should be used for billing purposes only. 
-* Don't deploy resources into paying account.
+* Always use strong, complex password on root account
+* Paying account should be used for billing purposes only
+* Don't deploy resources into paying account
 
 ## Security in the Cloud
 
