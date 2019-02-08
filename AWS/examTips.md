@@ -438,37 +438,36 @@ Conclusion:
 
 *Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
 
-Remember free services:
-  Amazon VPC
-  Elastic Beanstalk
-  CloudFormation
-  Identity Access Management (IAM)
-  Auto Scaling
-  Opsworks
-  Consolidated Billing
-    But you do have to pay for resources, like EC2 related to above services
+* free services:
+    * Amazon VPC
+    * Elastic Beanstalk
+    * CloudFormation
+    * Identity Access Management (IAM)
+    * Auto Scaling
+    * Opsworks
+    * Consolidated Billing
+        * have to pay for resources, like EC2 related to above services
 
-Tags:
-Key Value Pairs attached to AWS Resources
-Metadata (data about data)
-Tags can sometimes be inherited
+* Tags:
+  * Key Value Pairs attached to AWS Resources
+  * Metadata (data about data)
+  * Tags can sometimes be inherited
 
-Resource Groups:
-Make it easy to group your resources using the tags that are assigned to them.
-You can group resources that share one or more tags.
-  Region
-  Name
-  Health Checks
+* Resource Groups:
+  * apply automation to resources with specific tags
+    * Region
+    * Name
+    * Health Checks
 
-Resource Groups: apply automation to resources with specific tags
-* ie. stopped all EC2 instances in the Stockholm region.
+* group resources that share one or more tags
+* ie. stopped all EC2 instances in the Stockholm region
 
-Resource Groups in combination with AWS Systems manager allow you to control and execute
-automation against entire fleets of EC2 instances, all at the push of a button.
+* Resource Groups with AWS Systems manager controls and executes
+  automation against entire fleets of EC2 instances
 
-Tag editor is a global service that allows us to discover resources and to add tags
-to them, too.
-Newer regions may take some time to be compatible with tag editor.
+* Tag editor 
+  * global service to discover resources & add tags
+  * Newer regions may take some time to be compatible with tag editor
 
 ### Best Practices with AWS Organizations
 * Always enable multi-factor authentication on root account
