@@ -686,4 +686,8 @@ a user's session to a specific instance
 ### Quorum-based replication
 *  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
 
+### CloudTrail
+* for auditing
+* Logs delivered every 5 minutes
+* Logs can be grouped to single file from multiple regions into single bucket
 
