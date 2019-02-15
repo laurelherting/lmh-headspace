@@ -101,13 +101,15 @@ Inside of identity access management
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
-### Using Roles
+### Using IAM Roles
     Roles more secure than access key ids
     Secret access keys - easier to manage
     Apply roles to EC2 instances 
     Changes take place immediately
-    Universal
+    Universal-use across any region
     No need to specify region, similar to users
+	  Users can explicitly switch roles to perform tasks
+		MFA can be added to specific roles
 
 ### S3
 #### What does a URL look like?
@@ -269,6 +271,11 @@ Fight DR MC PX!
     Exam q: less than 2000 IOPS? GP2
     Exam q: huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
       Not GP2
+	Block Storage - Disk in the Cloud
+  Attached to an EC2 Instance
+zones/regions:
+	* Exist in specific AZ Zones NOT across multiple zones
+  * stored in multiple physical locations at no addt'l charge
 
 ### SSD
     General purpose SSD(GP2)
@@ -322,6 +329,9 @@ test & Dev, keep costs low
     used to speed up performance of existing databases(frequent identical queries)
     memcached
     redis
+	* SWAP file
+  	* amount of disk storage space reserved on disk if computer runs out of ram	
+			* Typical size is = size of total RAM
 * Aurora - relational, high performance, scales well
     two key features:
       1. multi-AZ-for disaster recovery
@@ -330,13 +340,24 @@ test & Dev, keep costs low
     Fast & flexible NoSQL database service for all applications that need 
     consistent, single-digit millisecond latency at any scale.
     (non-realtional), auto-scaling
+	Read / Write Capacity
+	Set per Table
+	Can be changed at any time - it's an ASYNC operation
+	Allocated on a per second basis
+	* Facts: 
+	Spread across 3 geographically distinct data centers
+	400KB item size limit
 * Data Warehousing
     used for business intelligence
     pulls in very large and complex data sets
 
 ### Autoscaling
-Allows you to provision multiple EC2 instances behind a load balancer automatically 
-depending on your demand.
+* Allows you to provision multiple EC2 instances behind a load balancer automatically 
+	depending on your demand.
+* does not update current resources unless you set UpdatePolicy
+
+### Scaling vs elasticity
+Easy to scale in and out for cost saving (elastic) hard to scale up then back down
 
 ### Route53 
 * Domain Name Service 
@@ -358,6 +379,10 @@ depending on your demand.
 6.Lambda
 7.Batch
 8.Elastic Beanstalk
+
+### Lightsail
+	* Charged per hour at plan rate as long as an instance is started or in stopped state
+
 
 ### Elastic Beanstalk 
 * Quickly deploy & manage applications in AWS Cloud
@@ -458,13 +483,17 @@ business case to move to the cloud.
     * 71% 3-year
 
 ### Billing & Pricing Summary
-Conclusion:
+* Conclusion:
   While the number & types of services offered by AWS has increased dramatically, philosophy on
   pricing hasn't changed.
   -You pay as you go, pay for what you use, pay less as you use more,
   and pay even less when you reserve capacity. 
-
-*Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+* Pricing:
+	* Spot, On Demand, Reserved, Dedicated Hosts (.GOV)
+* Spot instances:
+	* you terminate, you pay for the hour
+  * AWS termiantes, you get the hour for free
+** * Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
 
 * free services:
     * Amazon VPC
@@ -719,4 +748,13 @@ a user's session to a specific instance
 * Logs delivered every 5 minutes
 * Logs can be grouped to single file from multiple regions into single bucket
 
-### 
+### EC2-amis
+* Acts as template for root volume
+* AMIs are Regional
+  * Can only launch into region from which it is stored
+* AMIs can be copied between Regions
+* AMIs can be shared privately with specific AWS Account Numbers
+* Defaults
+	* Newly created AMIs default to Private
+* AMIs can be instance-store or EBS backed
+
