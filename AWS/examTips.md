@@ -428,6 +428,16 @@ business case to move to the cloud.
   * comparing vm - greater savings with large outputs
   vm - when max out #s = 71% savings, $604,198,066.
   using lowest possible #s = 79%, $161,158.
+* Reserved instance offering types  
+  * Light
+    * 42% savings 1-year
+    * 56% 3-year
+  * medium
+    * 49% savings 1-year
+    * 66% 3-year
+  * heavy
+    * 54% savings 1-year 
+    * 71% 3-year
 
 ### Billing & Pricing Summary
 Conclusion:
@@ -691,3 +701,4 @@ a user's session to a specific instance
 * Logs delivered every 5 minutes
 * Logs can be grouped to single file from multiple regions into single bucket
 
+### 
