@@ -38,6 +38,24 @@ Typically consists of: CloudFront, Amazon's CDN.
 ### Billing Alerts/ Billing Alarms 
 Alerts automatically when level has been reached
 
+### AWS Options
+* AWS Option 1: All Amazon EC2 Reserved Instances
+  * Option - 69% savings over the on-premises alternative
+  * Purchase 3-Year Heavy Utilization Reserved Instances (to match the capacity in the on-premises option)    * get the lowest hourly rate for Amazon EC2 and Amazon RDS DB Instances
+* AWS Option 2: Mix of Amazon EC2 On-Demand Instances & Reserved Instances
+  * Most cost-effective option & most flexible option
+  * 3-Year Heavy Utilization Reserved Instances to handle baseline traffic & leveraging 
+    * On-Demand Instances for peaks, save 75% over the on- premises option
+    * Significant savings driven by highly efficient resource utilization
+      * use resources only when you need them & shut them down after peak traffic subsides
+    * Never pay for capacity when you don’t need it
+    * Have lower total upfront cost ($6,200) than AWS option 1 ($15,500) and the on-premises option ($24,920)
+* AWS Option 3: All Amazon EC2 On-Demand Instances
+  * Choose all On-Demand Instances to run spiky web application
+  * No upfront commitment & get significant savings (43%) over the on-premises alternative
+* Recommended Option for Spiky Web Applications: 
+  * Mix of Reserved Instances and On-Demand Instances
+
 ### IAM is global
 Identity Access Management 
 Global, don't have to specify region
