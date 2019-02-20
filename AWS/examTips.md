@@ -780,3 +780,28 @@ Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
 * Edge locations can write / PUT an object
 * Cache can be cleared but you are charged for the action
 
+### IAM
+* Roles
+  * more secure than storing access key / secret on individual EC2 Instances
+  * Easier to manage
+  * Can only be assigned at EC2 instance provision
+  * Permissions changes to a role happen immediately 
+    * affect ones assigned to EC2 Instances
+
+### IAM Best Practices
+http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+
+* Lock away your AWS account (root) access keys
+* Create individual IAM users
+* Use groups to assign permissions to IAM users
+* Grant least privilege
+* Configure a strong password policy for your users
+* Enable MFA for privileged users
+* Use roles for applications that run on Amazon EC2 instances
+* Delegate by using roles instead of by sharing credentials
+* Rotate credentials regularly
+* Remove unnecessary credentials
+* Use policy conditions for extra security
+* Monitor activity in your AWS account
+* Video presentation about IAM best practices
+
