@@ -203,7 +203,7 @@ to be a large # of requests
 ie. Movie preview
 
 ### CDN 
-** Content Delivery Network 
+**Content Delivery Network 
 1. Edge location
     Not just read-only, can write to them too
     put an object onto them
@@ -657,7 +657,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * What AWS service allows you to use Infrastructure as Code?
 
 ### AWS Deck of cards
-* Are uploads to s3 buckets public or private by default?
+* Are uploads to s3 buckets public or private by default? 
+  * private
 * Do new AMIs created default to public or private?
 * Do customers have any access to physical drives on ec2?
 * What are some of the delivery options for sns?
