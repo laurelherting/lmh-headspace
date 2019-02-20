@@ -764,4 +764,19 @@ a user's session to a specific instance
 *  86400 is 24 hours
 Always in Seconds
 
+### CloudFront
+* like a CDN, serves to users based on their IP region
+* Edge Locations
+  * location where content will be cached, separate from AWS Region/AZ
+* Origin of files
+Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
+* Distribution
+  * collection of Edge Locations
+* Uses a Time To Live (TTL) to limit lifecyle at Edge Location
+* Supports an entire website:
+  * dynamic, static, streaming, interactive content
+* Requests automatically routed to nearest edge location
+* Supports non-AWS origin server as well
+* Edge locations can write / PUT an object
+* Cache can be cleared but you are charged for the action
 
