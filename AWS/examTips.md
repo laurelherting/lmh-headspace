@@ -232,6 +232,24 @@ ie. Movie preview
     allowing you to quickly scale capacity, both up and down,
     as your computing requirements change
 
+### EC2 categories
+*  On Demand
+  * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
+  * Good for Short-term/spiky workloads that cannot be interrupted
+  * Good for test/dev environments
+  * Can't afford any down time - this is the one
+
+*  Reserved
+  * Apps with Steady-state / predictable useage
+  * Able to make upfront payments to reduce costs
+  * Often a 12-36 month timeframe
+
+*  Spot
+  * Apps with flexible start/end times
+  * Apps that are only feasible at low compute prices
+  * Users with urgent computing needs for large amts of addt'l capacity
+  * Instances have 120 seconds to shut down
+
 ### EC2 Exam Tips
 1. On Demand
 Pay fixed rate by hour (or by sec) w/ no commitment
@@ -809,5 +827,5 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 *  Use
   * Media transcoder in the cloud - good for smartphones, etc
 * Pricing
-  * *Pay per minute, per resolution
+  * Pay per minute, per resolution
 
