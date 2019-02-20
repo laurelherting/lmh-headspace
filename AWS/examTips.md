@@ -224,6 +224,7 @@ ie. Movie preview
 		Media Streaming
 		* objects are cached for life of TTL(Time To Live)
 		* You can clear cached objects, but you'll be charged
+      * example: Adobe flash
 
 ### EC2
     Virtual server in the cloud
@@ -575,6 +576,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * AWS WAF is a Web Application Firewall
   * designed to stop hackers
   * can go down to OSI layer 7
+  * you can use web application firewall ACL
 * AWS Shield Advanced 
   * offers automated application 
   * operates @ layer 7 traffic monitoring
@@ -757,4 +759,9 @@ a user's session to a specific instance
 * Defaults
 	* Newly created AMIs default to Private
 * AMIs can be instance-store or EBS backed
+
+### Time To Live (TTL)
+*  86400 is 24 hours
+Always in Seconds
+
 
