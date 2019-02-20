@@ -254,14 +254,14 @@ but if you terminate it yourself, you'll be charged for any hour in which the in
 *Good to be aware of instance types, but details won't be on cert exam
 *FIGHTDRMCPX
 F - FPGA
-I - IOPS
-G - Graphics
+I - IOPS, NoSQL DBs, Data Warehousing
+G - Graphics, Video Encoding/Machine Learning/3D App Streaming
 H - High Disk Throughput
-T - Cheap general purpose (think T2 Micro)
-D - Density
-R - RAM
+T - Cheap general purpose (think T2 Micro), Web Servers/Small DBs
+D - Density, Fileservers, Data Warehousing, Hadoop
+R - RAM, Memory intensive Apps/DBs
 M - Main choice for general purpose apps
-C - Compute
+C - Compute, CPU Intensive Apps/DBs
 P - Graphics(think Pics)
 X - Extreme Memory
 Fight DR MC PX!
@@ -804,4 +804,10 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Use policy conditions for extra security
 * Monitor activity in your AWS account
 * Video presentation about IAM best practices
+
+### Elastic-Transcoder
+*  Use
+  * Media transcoder in the cloud - good for smartphones, etc
+* Pricing
+  * *Pay per minute, per resolution
 
