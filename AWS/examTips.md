@@ -295,6 +295,12 @@ Fight DR MC PX!
 zones/regions:
 	* Exist in specific AZ Zones NOT across multiple zones
   * stored in multiple physical locations at no addt'l charge
+consists of:
+  * SSD, General Purpose - GP2 (Up to 10,000 IOPS)
+  * SSD, Provisioned IOPS - IO1 (More than 10,000 IOPS)
+  * HDD, Throughput Optimized - ST1 - frequently accessed workloads
+  * HDD, Cold - SC1 - less frequently accessed data
+  * HDD, Magnetic - Standard - cheap, infrequently accessed storage
 
 ### SSD
     General purpose SSD(GP2)
@@ -618,6 +624,23 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Records AWS Management Console actions & API calls
     Identifies which user and accounts were accessed and source IP address from which the calls were made
 
+    Cost Optimization
+      design:
+        Transparently attribute expenditure
+        Use managed services to reduce cost of ownership
+        Trade capital expense for operating expense
+        Benefit from economies of scale
+        Stop spending money on data center operations
+      definition:
+        Matched supply and demand: auto scaling, lambda
+        Cost-effective resources: ec2 reserved instances, AWS Trust Advisor
+        Expenditure awareness: CloudWatch Alarms, SNS
+        Optimizing over time: AWS Blog, AWS Trusted Advisor 
+      best practices:
+        optimally align supply with demand
+        Autoscaling, Lambda
+        CloudWatch helps to keep track of demand
+
 ### What is horizontal scaling?
 * increase in number of resources
   * ie. add more hard drives to storage or servers
@@ -656,6 +679,31 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * 
 * What AWS service allows you to use Infrastructure as Code?
 
+* You are charged $$ for ELBs
+* Classic Load Balancer
+  * Layer 4 routing (TCP)
+
+* Application Load Balancer
+  * Layer 7 routing
+  * Has Target Groups
+
+### AWS Security Whitepaper
+* Key Pairs
+	* SSH in to EC2 instances
+	* CloudFront creation of signed URLs
+
+* X.509 Certificates
+	* Digitally sign SOAP requests to AWS APIs
+	* SSL server certs for HTTPS
+
+* If credentials are lost/forgotten, they cannot be recovered/re-downloaded
+	* Have to create new
+
+* AWS Supports multiple concurrant keys so you can swap regularly
+
+* Passwords
+	* max 128 chars
+
 ### AWS Deck of cards
 * Are uploads to s3 buckets public or private by default? 
   * private
@@ -663,7 +711,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Do customers have any access to physical drives on ec2?
 * What are some of the delivery options for sns?
 
-### Possible Q
+###	Possible Q
 * p. 13 of above whitepaper
   * AWS Elastic Beanstalk: You can use this service to deploy and scaleweb applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code,and the service automatically handles all the details, such as resource provisioning, load balancing, auto scaling, and monitoring.
 * Q: What language is not supported by Elastic Beanstalk? 
@@ -829,4 +877,14 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * Media transcoder in the cloud - good for smartphones, etc
 * Pricing
   * Pay per minute, per resolution
+
+### Cloudwatch
+* Standard Monitoring = 5 Minutes (Free)
+* Detailed Monitoring = 1 Minute (Pay Extra)
+
+* Use Cases
+  * create Dashboards
+  * create Alarms - like for auto scaling
+  * Events - respond to state changes in AWS resources
+  * Logs - aggregate, monitor, store logs
 
