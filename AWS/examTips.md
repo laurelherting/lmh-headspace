@@ -730,6 +730,14 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 ### Cloudwatch
 * What are CloudWatch Events?
   * answer: near real-time stream of system events describing changes in AWS resources
+* Standard Monitoring = 5 Minutes (Free)
+* Detailed Monitoring = 1 Minute (Pay Extra)
+
+* Use Cases
+  * create Dashboards
+  * create Alarms - like for auto scaling
+  * Events - respond to state changes in AWS resources
+  * Logs - aggregate, monitor, store logs
 
 ### What is high availability?
 * Amazon RDS
@@ -877,14 +885,3 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * Media transcoder in the cloud - good for smartphones, etc
 * Pricing
   * Pay per minute, per resolution
-
-### Cloudwatch
-* Standard Monitoring = 5 Minutes (Free)
-* Detailed Monitoring = 1 Minute (Pay Extra)
-
-* Use Cases
-  * create Dashboards
-  * create Alarms - like for auto scaling
-  * Events - respond to state changes in AWS resources
-  * Logs - aggregate, monitor, store logs
-
