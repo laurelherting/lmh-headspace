@@ -420,19 +420,19 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
--spend less time managing these resources, more time on Apps that run
+  * spend less time managing these resources, more time on Apps that run
 in AWS.
--Create template that describes all AWS recources you want 
+  * Create template that describes all AWS recources you want 
 (ex. EC2, Amazon RDS DB instances), and AWS CloudFormation takes
 care of provisioning & configuring resources for you.
--Don't need to individually create & configure AWS resources
+  * Don't need to individually create & configure AWS resources
 & figure out what's dependent on what;
-AWS CloudFormation handles all of that.
+    * AWS CloudFormation handles all of that.
 
 ### Elastic Beanstalk and CloudFormation
--Both are free, but the resources they provision (ex. EC2 instances)
+Both are free, but the resources they provision (ex. EC2 instances)
 are not free.
--Difference between the two:
+* Difference between the two:
 1. Elastic Beanstalk is limited in what it can provision and is not 
 programmable.
 2. CloudFormation can provision almost any AWS service & is completely
@@ -460,8 +460,39 @@ Consolidated Billing allows you to get volume discounts on all your accounts.
 
 Unused reserved EC2 instances are applied across the group.
 
-CloudTrail is on a per account and per region basis
-* Can be grouped into single bucket belonging to the paying account
+### CloudTrail
+* for auditing
+* Logs delivered every 5 minutes
+* Logs can be grouped to single file / bucket from multiple regions into single bucket
+* per account and per region basis
+
+### CloudFront
+* like a CDN, serves to users based on their IP region
+* Edge Locations
+  * location where content will be cached, separate from AWS Region/AZ
+* Origin of files
+Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
+* Distribution
+  * collection of Edge Locations
+* Uses a Time To Live (TTL) to limit lifecyle at Edge Location
+* Supports an entire website:
+  * dynamic, static, streaming, interactive content
+* Requests automatically routed to nearest edge location
+* Supports non-AWS origin server as well
+* Edge locations can write / PUT an object
+* Cache can be cleared but you are charged for the action
+
+### Cloudwatch
+* What are CloudWatch Events?
+  * answer: near real-time stream of system events describing changes in AWS resources
+* Standard Monitoring = 5 Minutes (Free)
+* Detailed Monitoring = 1 Minute (Pay Extra)
+
+* Use Cases
+  * create Dashboards
+  * create Alarms - like for auto scaling
+  * Events - respond to state changes in AWS resources
+  * Logs - aggregate, monitor, store logs
 
 ### AWS Quick Start
 Way of deploying evironments quickly, using CloudFormation templates built by
@@ -711,7 +742,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Do customers have any access to physical drives on ec2?
 * What are some of the delivery options for sns?
 
-###	Possible Q
+###	Possible Questions:
 * p. 13 of above whitepaper
   * AWS Elastic Beanstalk: You can use this service to deploy and scaleweb applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code,and the service automatically handles all the details, such as resource provisioning, load balancing, auto scaling, and monitoring.
 * Q: What language is not supported by Elastic Beanstalk? 
@@ -727,18 +758,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 • Go
 • Docker
 
-### Cloudwatch
-* What are CloudWatch Events?
-  * answer: near real-time stream of system events describing changes in AWS resources
-* Standard Monitoring = 5 Minutes (Free)
-* Detailed Monitoring = 1 Minute (Pay Extra)
-
-* Use Cases
-  * create Dashboards
-  * create Alarms - like for auto scaling
-  * Events - respond to state changes in AWS resources
-  * Logs - aggregate, monitor, store logs
-
 ### What is high availability?
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
@@ -749,10 +768,12 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 ### Network ACLs are stateful 
 * If you want to allow access on port 443, you have to add a rule allowing 443 inbound AND add a rule allowing 443 outbound
 
-### Know the diff between an s3 bucket url and an s3 static hosted website address
-What does a URL look like?
-
-It's always S3, then the region, then .amazon.aws.com, then / and the bucket name ex. Https://s3-eu-west1.amazonaws.com/acloudguru *Successful upload = HTTP 200 code
+### Know the difference between an s3 bucket url and an s3 static hosted website address
+* What does a URL look like?
+  * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
+    * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
+    
+### Successful upload = HTTP 200 code
 
 ### EBS
 * You can only attach an EBS volume to 1 EC2 instance 
@@ -820,11 +841,6 @@ a user's session to a specific instance
 ### Quorum-based replication
 *  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
 
-### CloudTrail
-* for auditing
-* Logs delivered every 5 minutes
-* Logs can be grouped to single file from multiple regions into single bucket
-
 ### EC2-amis
 * Acts as template for root volume
 * AMIs are Regional
@@ -838,22 +854,6 @@ a user's session to a specific instance
 ### Time To Live (TTL)
 *  86400 is 24 hours
 Always in Seconds
-
-### CloudFront
-* like a CDN, serves to users based on their IP region
-* Edge Locations
-  * location where content will be cached, separate from AWS Region/AZ
-* Origin of files
-Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
-* Distribution
-  * collection of Edge Locations
-* Uses a Time To Live (TTL) to limit lifecyle at Edge Location
-* Supports an entire website:
-  * dynamic, static, streaming, interactive content
-* Requests automatically routed to nearest edge location
-* Supports non-AWS origin server as well
-* Edge locations can write / PUT an object
-* Cache can be cleared but you are charged for the action
 
 ### IAM
 * Roles
