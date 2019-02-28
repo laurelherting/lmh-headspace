@@ -338,6 +338,14 @@ extreme performance / static IP Addresses
 3. Classic
 test & Dev, keep costs low
 
+* Know the different types offered by AWS, and how they are different at a general level
+  • Classic ELB
+  • Application Load Balancer
+  • Network Load Balancer
+
+* The most important part of an LB is that it's a DNS name that doesn't change 
+  * It's not to a static IP address
+
 ### RDS
 2 key features:
     1. Multi-AZ-for distaster recovery
@@ -778,15 +786,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 ### EBS
 * You can only attach an EBS volume to 1 EC2 instance 
 * An EBS volume cannot be shared with two instances at the same time
-
-### Elastic Load Balancers
-* Know the different types offered by AWS, and how they are different at a general level
-  • Classic ELB
-  • Application Load Balancer
-  • Network Load Balancer
-
-* The most important part of an LB is that it's a DNS name that doesn't change 
-  * It's not to a static IP address
 
 ### Stateless Applications
 * What is a stateless application?
