@@ -193,14 +193,13 @@ Subresources
     Can change storage classes and encryption of objects on the fly
 
 ### S3
-Use bucket policies to make entire S3 buckets public
-Can use S3 to host STATIC websites
-1. ex. As html
-2. Websites that require database connections such as Wordpress etc can’t be hosted on S3
+* Use bucket policies to make entire S3 buckets public
+* Can use S3 to host STATIC websites
+  * ex. As html
+  * Websites that require database connections such as Wordpress etc can’t be hosted on S3
 
 ### S3 Scales automatically to meet demand
-* Many enterprises will put static websites on S3 when they think there is going
-to be a large # of requests 
+* Many enterprises will put static websites on S3 when they forsee large # requests 
   * ie. Movie preview
 
 ### CDN 
