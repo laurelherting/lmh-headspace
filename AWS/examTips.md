@@ -36,7 +36,7 @@ Typically consists of: CloudFront, Amazon's CDN.
     enterprise-$15,000/month("")-TAM(technical account manager)
 
 ### Billing Alerts/ Billing Alarms 
-Alerts automatically when level has been reached
+  * Alerts automatically when level has been reached
 
 ### AWS Options
 * AWS Option 1: All Amazon EC2 Reserved Instances
@@ -57,9 +57,9 @@ Alerts automatically when level has been reached
   * Mix of Reserved Instances and On-Demand Instances
 
 ### IAM is global
-Identity Access Management 
-Global, don't have to specify region
-User or group created globally
+* Identity Access Management 
+* Global, don't have to specify region
+* User or group created globally
 
 ### You can access AWS platform in three ways
 1. Via console
@@ -74,7 +74,7 @@ User or group created globally
 * Always secure root account using MFA
 
 ### Group 
-A place to store users
+* A place to store users
     Users inherit all permissions group has
     Examples of groups:
       developers
@@ -90,8 +90,8 @@ A place to store users
 * ex. {“name”: “A Cloud Guru”}
 
 ### How would you define a policy?
-Define it using JSON
-Inside of identity access management
+* Define it using JSON
+* Inside of identity access management
 
 ### EC2 - compute based service, not serverless, it's a server!
 
@@ -112,16 +112,17 @@ Inside of identity access management
 		MFA can be added to specific roles
 
 ### S3
-#### What does a URL look like?
-  It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
+* What does a URL look like?
+  * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
     ex. Https://s3-eu-west1.amazonaws.com/acloudguru
-*Successful upload = HTTP 200 code
+
+### Successful upload = HTTP 200 code
 
 ### S3 Data Consistency Model
-popular exam q
+* popular exam q
 1. Read after write consistency for PUTS of new objects
 2. Eventual Consistency for overwrite PUTS and Deletes 
-Can take some time to propagate
+    Can take some time to propagate
 
 ### S3 Storage Tiers/ Classes
 1. S3 Standard
@@ -198,9 +199,9 @@ Can use S3 to host STATIC websites
 2. Websites that require database connections such as Wordpress etc can’t be hosted on S3
 
 ### S3 Scales automatically to meet demand
-Many enterprises will put static websites on S3 when they think there is going
+* Many enterprises will put static websites on S3 when they think there is going
 to be a large # of requests 
-ie. Movie preview
+  * ie. Movie preview
 
 ### CDN 
 **Content Delivery Network 
