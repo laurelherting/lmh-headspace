@@ -681,15 +681,18 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
         CloudWatch helps to keep track of demand
 
 ### What is horizontal scaling?
-* increase in number of resources
+* scale by adding more machines
+  * increase in number of resources
   * ie. add more hard drives to storage or servers
-  * great for building internet-scale apps
+* great for building internet-scale apps
 
 ### What is vertical scaling?
+* scale by adding more power to existing machine
+  * ex. CPU, RAM
   * increase of individual resource
-  * Stop an instance, resize it to a different type (ie. more RAM)
-  * Can reach a limit
-  * costly, but easy to implement, good for short-term
+* Stop an instance, resize it to a different type (ie. more RAM)
+* Can reach a limit
+* costly, but easy to implement, good for short-term
 
 ### What AWS resources are often used to create sss applications?
 * answer: dynamo db, s3, efs, etc
