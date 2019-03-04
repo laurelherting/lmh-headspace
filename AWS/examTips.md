@@ -369,6 +369,8 @@ test & Dev, keep costs low
     two key features:
       1. multi-AZ-for disaster recovery
       2. read replicas-for performance
+    AWS' managed database service
+      up to 5X faster than traditional MySQL database
 * DynamoDB
     Fast & flexible NoSQL database service for all applications that need 
     consistent, single-digit millisecond latency at any scale.
