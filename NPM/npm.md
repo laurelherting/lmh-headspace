@@ -49,8 +49,8 @@ Good Practice:
 list all of code that is depended on in app
 npm list and npm prune
 
-# check to see list of packages global
-npm ls -g - -depth=0
+# list of packages installed globally
+npm ls -g
 
 # npm uninstall packages globally npm uninstall -g *package name
 
