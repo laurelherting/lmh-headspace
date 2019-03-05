@@ -889,3 +889,9 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * Media transcoder in the cloud - good for smartphones, etc
 * Pricing
   * Pay per minute, per resolution
+
+### EMR
+* Web service 
+  * makes it easy to process large amounts of data efficiently
+  * specifically designed to assist in processing large data sets
+
