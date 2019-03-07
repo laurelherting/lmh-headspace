@@ -896,9 +896,19 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Web service 
   * makes it easy to process large amounts of data efficiently
   * specifically designed to assist in processing large data sets
+* Principles of sound cloud design:
+  * Assume *everything* will fail
+  * Disposable resources, Infrastructure as code, Scalability.
 
 ### DMS
 * Project requires 90 hours of computing time, no deadline, work can 
   be stopped and restarted without adverse effect: spot instances 
   (cost effective)
 * migrate an existing database to AWS
+
+### EC2-Spread Placement Group (deployment)
+* Q: How to: Deploy clustered application on a small number of EC2 instances.
+* The application must be placed across multiple Availability Zones,
+  have high speed, low latency communication between each of the nodes,
+  and minimize the chance of underlying hardware failure
+* answer: deploy the EC2 servers in a Spread Placement Group
