@@ -656,6 +656,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Inspects EC2 instances for vulnurabilities
     AWS Trusted Advisor:
       Inspects your AWS Account as a whole (not just EC2)
+      example: implement automated service that will scan
+      AWS environment to improve security and reduce costs
     Does more than security checks:
       Cost Optimization
       Performance
@@ -895,3 +897,8 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * makes it easy to process large amounts of data efficiently
   * specifically designed to assist in processing large data sets
 
+### DMS
+* Project requires 90 hours of computing time, no deadline, work can 
+  be stopped and restarted without adverse effect: spot instances 
+  (cost effective)
+* migrate an existing database to AWS
