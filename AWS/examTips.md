@@ -306,6 +306,15 @@ consists of:
   * HDD, Cold - SC1 - less frequently accessed data
   * HDD, Magnetic - Standard - cheap, infrequently accessed storage
 
+* Q: Thinking of moving an on-premise SQL Server cluster into AWS, 
+  using EC2 instances rather than RDS? You need to recommend the most 
+  suitable EBS volume type for the cluster to use, and pair it with a
+  suitable EC2 instance type. You know that the throughput must be good,
+  most important thing is to maintain a consistent level of IOPS under 
+  normal load which can increase to a much higher level at busy times. 
+  Which EC2 and EBS pairings?
+* A: IOPS w/ec2
+
 ### SSD
     General purpose SSD(GP2)
       Balances price and performance for wide variety of workloads 
@@ -410,17 +419,17 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
   * register domain name
 
 ### Name all Compute Services
-1.EC2
+1.EC2 *
 2.Lightsail
 3.ECR
 4.ECS
 5.EKS
-6.Lambda
+6.Lambda *
 7.Batch
 8.Elastic Beanstalk
 
 ### Lightsail
-	* Charged per hour at plan rate as long as an instance is started or in stopped state
+* Charged per hour at plan rate as long as an instance is started or in stopped state
 
 
 ### Elastic Beanstalk 
@@ -692,6 +701,11 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
         Autoscaling, Lambda
         CloudWatch helps to keep track of demand
 
+  * Q: AWS service - run code without concern about provisioning 
+    any underlying resources?
+    * ie. virtual machines, databases
+    A: Lambda
+
 ### What is horizontal scaling?
 * scale by adding more machines
   * increase in number of resources
@@ -924,4 +938,12 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 ### AWS Storage Gateway
 * AWS service - acts as a file system mounted on an S3 bucket
 
+### EBS
+* Q: Make sure EC2 instances are types that can be optimised for
+  use with EBS?
+* A: Schedule snapshots of HDD based volumes for periods of low use
 
+### RAID O 
+* Q: Choose correct EBS volume type for specific task,
+  what else can be done to increase performance of volume?
+* A: Stripe volumes together in a RAID 0 configuration
