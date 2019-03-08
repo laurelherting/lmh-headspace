@@ -177,6 +177,10 @@ Even cheaper than IA, but only in 1 availability zone
 4. Glacier
 Achieved data, where you can wait 3-5 hours before accessing
 
+* Q: Best AWS service to host a file in a location that's publicly
+  accessible from anywhere
+* A: S3
+
 ### Key fundamentals of S3
 Key (name of object)
 Value (data, made up of a sequence of bytes)
@@ -503,6 +507,10 @@ Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
   * create Alarms - like for auto scaling
   * Events - respond to state changes in AWS resources
   * Logs - aggregate, monitor, store logs
+
+* Q: AWS services to use if you'd like to be notified when
+  you have crossed a billing threshold?
+* A: budgets and cloudwatch
 
 ### AWS Quick Start
 Way of deploying evironments quickly, using CloudFormation templates built by
@@ -912,3 +920,8 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   have high speed, low latency communication between each of the nodes,
   and minimize the chance of underlying hardware failure
 * answer: deploy the EC2 servers in a Spread Placement Group
+
+### AWS Storage Gateway
+* AWS service - acts as a file system mounted on an S3 bucket
+
+
