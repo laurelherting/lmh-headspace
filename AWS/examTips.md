@@ -803,13 +803,13 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * what comes in and is allowed, automatically goes back out
 
 ### Network ACLs are stateful 
-* If you want to allow access on port 443, you have to add a rule allowing 443 inbound AND add a rule allowing 443 outbound
+* To allow access on port 443, add rule allowing 443 inbound AND add rule allowing 443 outbound
 
 ### Know the difference between an s3 bucket url and an s3 static hosted website address
 * What does a URL look like?
   * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
     * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
-    
+  
 ### Successful upload = HTTP 200 code
 
 ### EBS
@@ -947,3 +947,4 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Q: Choose correct EBS volume type for specific task,
   what else can be done to increase performance of volume?
 * A: Stripe volumes together in a RAID 0 configuration
+
