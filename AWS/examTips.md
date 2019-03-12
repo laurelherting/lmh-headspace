@@ -315,22 +315,21 @@ consists of:
   Which EC2 and EBS pairings?
 * A: IOPS w/ec2
 
+### EBS Magnetic
+* Throughput Optimized HDD(ST1)
+  * Low cost HDD volume designed for frequently accessed,
+  throughput-intensive workloads
+* Cold HDD
+  * Lowest cost HDD volume designed for less frequently accessed workloads
+* Previous generation
+* Can be a boot volume
+
 ### SSD
     General purpose SSD(GP2)
       Balances price and performance for wide variety of workloads 
     Provisioned IOPS SSD(IO1)
       Highest-performance SSD volume for mission-critical low-latency
       or high-throughput workloads
-
-### Magnetic
-    Throughput Optimized HDD(ST1)
-      Low cost HDD volume designed for frequently accessed,
-      throughput-intensive workloads
-    Cold HDD
-      Lowest cost HDD volume designed for less frequently accessed workloads
-    Magnetic
-      Previous generation
-      Can be a boot volume
 
 ### Common Ports
 Linux=SSH(Port 22)
