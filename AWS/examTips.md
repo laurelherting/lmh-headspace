@@ -430,7 +430,6 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 ### Lightsail
 * Charged per hour at plan rate as long as an instance is started or in stopped state
 
-
 ### Elastic Beanstalk 
 * Quickly deploy & manage applications in AWS Cloud
   * automatically handles:
@@ -946,4 +945,14 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Q: Choose correct EBS volume type for specific task,
   what else can be done to increase performance of volume?
 * A: Stripe volumes together in a RAID 0 configuration
+
+### AWS Rekognition
+* video and image
+
+### AWS Snowball
+* Secure device
+* Transfers large amounts of data in and out of cloud
+
+### AWS Athena
+* Serverless interactive query service
 
