@@ -109,7 +109,7 @@ Typically consists of: CloudFront, Amazon's CDN.
     Universal-use across any region
     No need to specify region, similar to users
 	  Users can explicitly switch roles to perform tasks
-		MFA can be added to specific roles
+    MFA can be added to specific roles
 
 ### S3
 * What does a URL look like?
@@ -126,16 +126,16 @@ Typically consists of: CloudFront, Amazon's CDN.
 
 ### S3 Storage Tiers/ Classes
 1. S3 Standard
-    99.99% availability,
-    Stored across multiple devices in multiple facilities,
+    99.99% availability
+    Stored across multiple devices in multiple facilities
     Designed to sustain loss of 2 facilities concurrently
-2. S3 - IA
+2. S3-IA
     For data that’s accessed less frequently, but requires rapid access when needed
     Lower fee than S3, but charged retrieval fee
-3. S3 One One -IA
+3. S3 One zone-IA
     Lower cost option for infrequently accessed data
-    do not require the multiple Availability data resilience 
-4. S3 - Intelligent Tiering
+    Doesn't require multiple availability data resilience 
+4. S3-Intelligent Tiering
     Optimize costs by auto moving data to most cost-effective tier
 5. S3 Glacier
     Very cheap
@@ -165,7 +165,7 @@ Typically consists of: CloudFront, Amazon's CDN.
 6. Read after write consistency after PUTS of new objects
 7. Eventual consistency for overwrite PUTS and DELETES
 8. NOT suitable to install an operating system on
-9. Successful uploads generate HTTP 200 Status code
+9. Successful uploads generate HTTP 200 status code
 
 ### S3 Tiers
 1. S3
@@ -192,7 +192,7 @@ Subresources
     Names share a common name space
       Can’t have the same bucket name as someone else
     View buckets, you view them globally
-      can have buckets in individual regions
+    Can have buckets in individual regions
     Can replicate bucket contents to another bucket automatically by using cross region replication
     Can change storage classes and encryption of objects on the fly
 
