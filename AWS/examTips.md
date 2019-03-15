@@ -193,8 +193,8 @@ Subresources
       Can’t have the same bucket name as someone else
     View buckets, you view them globally
     Can have buckets in individual regions
-    Can replicate bucket contents to another bucket automatically by using cross region replication
-    Can change storage classes and encryption of objects on the fly
+    Replicate contents to another bucket automatically via cross-region replication
+    Change storage classes and encryption of objects at anytime
 
 ### S3
 * Use bucket policies to make entire S3 buckets public
