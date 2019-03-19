@@ -231,10 +231,9 @@ Subresources
       * example: Adobe flash
 
 ### EC2
-    Virtual server in the cloud
-    Reduces time required to obtain & boot new server instances to minutes,
-    allowing you to quickly scale capacity, both up and down,
-    as your computing requirements change
+* Virtual server in the cloud
+  * Reduces time required to obtain & boot new server instances to minutes
+    * quickly scale capacity, both up and down, to meet computing requirements
 
 ### EC2 categories
 *  On Demand
