@@ -240,10 +240,10 @@ Subresources
   * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
   * Good for Short-term/spiky workloads that cannot be interrupted
   * Good for test/dev environments
-  * Can't afford any down time - this is the one
+  * No downtime
 
 *  Reserved
-  * Apps with Steady-state / predictable useage
+  * Apps with Steady-state/predictable useage
   * Able to make upfront payments to reduce costs
   * Often a 12-36 month timeframe
 
