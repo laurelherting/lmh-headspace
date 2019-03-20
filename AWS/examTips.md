@@ -266,8 +266,8 @@ Provided greater savings if your apps have flex start/end times
 Physical EC2 server dedicated for use
 Can help reduce costs by allowing you to use your existing server-bound software licenses
 
-* If spot instance is terminated by Amazon EC2, you will be charged for partial usage,
-but if you terminate it yourself, you'll be charged for any hour in which the instance ran.
+* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
+* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
 
 1. Elastic Compute Cloud (Amazon EC2)
 2. Instance Types
@@ -288,17 +288,16 @@ X - Extreme Memory
 Fight DR MC PX!
 
 ### EBS
-*virtual disk, attach to EC2 instance
+* *Virtual disk, attached to EC2 instance
     Elastic Block Store
     Exam q: less than 2000 IOPS? GP2
     Exam q: huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
       Not GP2
-	Block Storage - Disk in the Cloud
-  Attached to an EC2 Instance
-zones/regions:
+
+* Zones/regions:
 	* Exist in specific AZ Zones NOT across multiple zones
   * stored in multiple physical locations at no addt'l charge
-consists of:
+* Consists of:
   * SSD, General Purpose - GP2 (Up to 10,000 IOPS)
   * SSD, Provisioned IOPS - IO1 (More than 10,000 IOPS)
   * HDD, Throughput Optimized - ST1 - frequently accessed workloads
@@ -312,7 +311,7 @@ consists of:
   most important thing is to maintain a consistent level of IOPS under 
   normal load which can increase to a much higher level at busy times. 
   Which EC2 and EBS pairings?
-* A: IOPS w/ec2
+* A: IOPS w/ EC2
 
 ### EBS Magnetic
 * Throughput Optimized HDD(ST1)
@@ -397,9 +396,9 @@ test & Dev, keep costs low
     used for business intelligence
     pulls in very large and complex data sets
 
-### Autoscaling
+### Auto Scaling
 * Allows you to provision multiple EC2 instances behind a load balancer automatically 
-	depending on your demand.
+depending on your demand.
 * does not update current resources unless you set UpdatePolicy
 
 ### Scaling vs elasticity
