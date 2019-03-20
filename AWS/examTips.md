@@ -482,7 +482,7 @@ Unused reserved EC2 instances are applied across the group.
 ### CloudTrail
 * Used for auditing
 * Logs delivered every 5 minutes
-* Logs can be grouped to single file / bucket from multiple regions into single bucket
+* Logs can be grouped into single file / bucket from multiple regions into single bucket
 * Per account and per region basis
 
 ### CloudFront
