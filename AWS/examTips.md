@@ -261,12 +261,12 @@ Provides capacity reservation and offer significant discount on hourly charge fo
 1 or 3 year terms 
 3. Spot
 Enables you to bid whatever price you want for instance capacity
-Providing for greater savings if your apps have flex start/end times
-4. Dedicated hosts 
+Provided greater savings if your apps have flex start/end times
+4. Dedicated Hosts 
 Physical EC2 server dedicated for use
 Can help reduce costs by allowing you to use your existing server-bound software licenses
 
-* If spot instance is termanated by Amazon EC2, you will be charged for partial usage,
+* If spot instance is terminated by Amazon EC2, you will be charged for partial usage,
 but if you terminate it yourself, you'll be charged for any hour in which the instance ran.
 
 1. Elastic Compute Cloud (Amazon EC2)
