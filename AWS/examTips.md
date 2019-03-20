@@ -480,17 +480,17 @@ Consolidated Billing allows you to get volume discounts on all your accounts.
 Unused reserved EC2 instances are applied across the group.
 
 ### CloudTrail
-* for auditing
+* Used for auditing
 * Logs delivered every 5 minutes
 * Logs can be grouped to single file / bucket from multiple regions into single bucket
-* per account and per region basis
+* Per account and per region basis
 
 ### CloudFront
 * like a CDN, serves to users based on their IP region
 * Edge Locations
   * location where content will be cached, separate from AWS Region/AZ
 * Origin of files
-Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
+* Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
 * Distribution
   * collection of Edge Locations
 * Uses a Time To Live (TTL) to limit lifecyle at Edge Location
