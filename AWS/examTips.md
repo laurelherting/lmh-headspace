@@ -486,9 +486,10 @@ Unused reserved EC2 instances are applied across the group.
 * Per account and per region basis
 
 ### CloudFront
-* like a CDN, serves to users based on their IP region
+* Like a CDN, serves to users based on their IP region
 * Edge Locations
-  * location where content will be cached, separate from AWS Region/AZ
+  * location where content will be cached
+  * separate from AWS Region or AZ
 * Origin of files
 * Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
 * Distribution
