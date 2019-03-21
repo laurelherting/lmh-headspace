@@ -641,13 +641,11 @@ business case to move to the cloud.
     4.  Platform, Applications, Identity & Access Management 
     5.  Customer Data
  
-#### Possible exam q's: 
-* Which of the following Compliance certifications attests to
-the security of the AWS platform regarding credit card transactions? 
-  * *Answer: A PCI DSS Level 1 certification attests to the security
-of the AWS platform regarding credit card transactions
-* Which of the following Compliance guarantees attests to the fact that the AWS Platform has met the standard required for the secure storage of medical records in the US? 
-  *** * Answer: HIPAA 
+#### Possible exam security q's: 
+1. This Compliance certifications handles security AWS platform for credit card transactions? 
+Answer: PCI DSS Level 1 cert
+2. This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
+Answer: HIPAA 
 
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
@@ -671,8 +669,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Inspects EC2 instances for vulnurabilities
     AWS Trusted Advisor:
       Inspects your AWS Account as a whole (not just EC2)
-      example: implement automated service that will scan
-      AWS environment to improve security and reduce costs
+        example: automated service scans to improve security, reduces costs
     Does more than security checks:
       Cost Optimization
       Performance
@@ -680,7 +677,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
     AWS CloudTrail:
       Increases visibility into user & resource activity
       Records AWS Management Console actions & API calls
-    Identifies which user and accounts were accessed and source IP address from which the calls were made
+      Identifies user and accounts were accessed and source IP address calls were made from
 
     Cost Optimization
       design:
@@ -699,10 +696,9 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
         Autoscaling, Lambda
         CloudWatch helps to keep track of demand
 
-  * Q: AWS service - run code without concern about provisioning 
-    any underlying resources?
+  * Q: AWS service - run code without concern about provisioning underlying resources?
     * ie. virtual machines, databases
-    A: Lambda
+    * Answer: Lambda
 
 ### What is horizontal scaling?
 * scale by adding more machines
@@ -711,14 +707,14 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * great for building internet-scale apps
 
 ### What is vertical scaling?
-* scale by adding more power to existing machine
+* Scale by adding more power to existing machine
   * ex. CPU, RAM
   * increase of individual resource
 * Stop an instance, resize it to a different type (ie. more RAM)
 * Can reach a limit
-* costly, but easy to implement, good for short-term
+* Costly, but easy to implement, good for short-term
 
-### What AWS resources are often used to create sss applications?
+### What AWS resources are often used to create S3 applications?
 * answer: dynamo db, s3, efs, etc
 	* pg.7 white paper:
 		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
@@ -955,4 +951,3 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### AWS Athena
 * Serverless interactive query service
-
