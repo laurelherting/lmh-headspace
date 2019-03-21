@@ -619,25 +619,27 @@ business case to move to the cloud.
   * Who's responsible for what with the cloud?
   * Remember this summary:
     * AWS Responsibility (OF the cloud):
-    1. Hardware/AWS Global Instrastructure
-      Regions
-      Availability Zones
-      Edge Locations
-    2. Software
-      Compute
-      Storage
-      Database
-      Networking
+    1.  Hardware/AWS Global Instrastructure
+    Regions
+    Availability Zones
+    Edge Locations
+    2.  Software
+    Compute
+    Storage
+    Database
+    Networking
 
-* Customer Responsibility (IN the cloud):
+  * Customer Responsibility (IN the cloud):
   * Client-side Data, Encryption & data integrity, authentication
-    * Server-side encryption 
-      * file system and/ or data
-    * Networking traffic, Protection
-      * encryption, integrity, identity
-    * Operating System, Network, & Firewall Configuration
-    * Platform, Applications, Identity & Access Management 
-    * Customer Data
+    1. Server-side encryption 
+    file system and/ or data
+    2.  Networking traffic, Protection
+    encryption
+    integrity
+    identity
+    3.  Operating System, Network, & Firewall Configuration
+    4.  Platform, Applications, Identity & Access Management 
+    5.  Customer Data
  
 #### Possible exam q's: 
 * Which of the following Compliance certifications attests to
