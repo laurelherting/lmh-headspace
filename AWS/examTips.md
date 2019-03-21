@@ -615,30 +615,29 @@ business case to move to the cloud.
 ## Security in the Cloud
 
 ### AWS Shared Responsibility Model
-Know inside & out going into exam to pass
-    Who's responsible for what with the cloud?
-    Remember this summary:
+* Know inside & out going into exam to pass
+  * Who's responsible for what with the cloud?
+  * Remember this summary:
+    * AWS Responsibility (OF the cloud):
+    1. Hardware/AWS Global Instrastructure
+      Regions
+      Availability Zones
+      Edge Locations
+    2. Software
+      Compute
+      Storage
+      Database
+      Networking
 
-      AWS Responsibility (OF the cloud):
-        1. Hardware/AWS Global Instrastructure
-          Regions
-          Availability Zones
-          Edge Locations
-        2. Software
-          Compute
-          Storage
-          Database
-          Networking
-
-Customer Responsibility (IN the cloud):
-* Client-side Data, Encryption & data integrity, authentication
-  * Server-side encryption 
+* Customer Responsibility (IN the cloud):
+  * Client-side Data, Encryption & data integrity, authentication
+    * Server-side encryption 
       * file system and/ or data
-  * Networking traffic, Protection
+    * Networking traffic, Protection
       * encryption, integrity, identity
-  * Operating System, Network, & Firewall Configuration
-  * Platform, Applications, Identity & Access Management 
-  * Customer Data
+    * Operating System, Network, & Firewall Configuration
+    * Platform, Applications, Identity & Access Management 
+    * Customer Data
  
 #### Possible exam q's: 
 * Which of the following Compliance certifications attests to
