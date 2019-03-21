@@ -502,7 +502,7 @@ Unused reserved EC2 instances are applied across the group.
 * Edge locations can write / PUT an object
 * Cache can be cleared but you are charged for the action
 
-### Cloudwatch
+### CloudWatch
 * What are CloudWatch Events?
   * answer: near real-time stream of system events describing changes in AWS resources
 * Standard Monitoring = 5 Minutes (Free)
