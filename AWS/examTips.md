@@ -720,19 +720,18 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
 ### Load Balancing cards (additional)
-* what is bootstrapping on ec2?
+* What is bootstrapping on ec2?
   * Start w/ a default configuration, then execute automated bootstapping actions
-      * scripts that install software or copy data to bring that resource to a 
-        particular state
-        * userdata script in ec2
-* what is a golden image?
+  * scripts that install software or copy data to bring resource to particular state
+  * userdata scripts in ec2
+* What is a Golden Image?
   * snapshot of a particular state of that resource
     * results in faster start times 
     * removes dependencies to configuration services/3rd party repositories
-* what is an AMI?
+* What is an AMI?
   * Amazon Machine Image
-    * provides the information required to launch an instance
-* what AWS services support using containers?
+  * provides information required to launch an instance
+* What AWS services support using containers?
   * AWS Elastic Beanstalk
   * Amazon Elastic Container Service (Amazon ECS)
   * AWS Fargate
