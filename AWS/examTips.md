@@ -735,18 +735,19 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * AWS Elastic Beanstalk
   * Amazon Elastic Container Service (Amazon ECS)
   * AWS Fargate
+    * run containers w/out servers or clusters
   * ie. build golden Docker images & use ECS Container Registry to manage them
-* what is infrastructure as code?
-  * 
+* What is Infrastructure as Code?
+  * known as IaC 
 * What AWS service allows you to use Infrastructure as Code?
-
+  * CloudFormation
+    * model and provision cloud infrastructure resources
 * You are charged $$ for ELBs
 * Classic Load Balancer
   * Layer 4 routing (TCP)
-
 * Application Load Balancer
   * Layer 7 routing
-  * Has Target Groups
+  * has Target Groups
 
 ### AWS Security Whitepaper
 * Key Pairs
