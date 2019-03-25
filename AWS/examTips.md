@@ -750,16 +750,17 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * has Target Groups
 
 ### AWS Security Whitepaper
-* Key Pairs
-	* SSH in to EC2 instances
-	* CloudFront creation of signed URLs
+* Use Key Pairs to:
+	* connect SSH EC2 instances
+	* create signed URLs w/ CloudFront
 
-* X.509 Certificates
+* Use X.509 Certificate (PKI) to:
+  * public key infrastructure - PKI
 	* Digitally sign SOAP requests to AWS APIs
-	* SSL server certs for HTTPS
+	* Use SSL server cert w/ LB to support HTTPS
 
 * If credentials are lost/forgotten, they cannot be recovered/re-downloaded
-	* Have to create new
+	* have to create new
 
 * AWS Supports multiple concurrant keys so you can swap regularly
 
