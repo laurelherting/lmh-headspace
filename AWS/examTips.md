@@ -768,11 +768,14 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 	* max 128 chars
 
 ### AWS Deck of cards
-* Are uploads to s3 buckets public or private by default? 
+* Are uploads to S3 buckets public or private by default? 
   * private
 * Do new AMIs created default to public or private?
+  * private
 * Do customers have any access to physical drives on ec2?
-* What are some of the delivery options for sns?
+  * yes
+* What are some of the delivery options for SNS?
+  * HTTP and HTTPS subscription types
 
 ###	Possible Questions:
 * p. 13 of above whitepaper
