@@ -779,9 +779,15 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 
 ###	Possible Questions:
 * p. 13 of above whitepaper
-  * AWS Elastic Beanstalk: You can use this service to deploy and scaleweb applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code,and the service automatically handles all the details, such as resource provisioning, load balancing, auto scaling, and monitoring.
+  * Question: Use this service to deploy and scale web applications and services developed
+  with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as:
+  Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code, 
+  and the service automatically handles all the details, such as: resource provisioning, 
+  load balancing, auto scaling, and monitoring.
+   Answer: Elastic Beanstalk
 * Q: What language is not supported by Elastic Beanstalk? 
   A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
+   Answer: Rust
   * flashcard:
   What major language / frameworks are supported by Elastic Beanstalk?
 • Java
