@@ -788,8 +788,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Q: What language is not supported by Elastic Beanstalk? 
   A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
    Answer: Rust
-  * flashcard:
-  What major language / frameworks are supported by Elastic Beanstalk?
+* Q: What major language / frameworks are supported by Elastic Beanstalk?
+  * Answer:
 • Java
 • .NET
 • PHP
