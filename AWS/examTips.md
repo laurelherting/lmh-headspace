@@ -823,8 +823,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 
 ### Stateless Applications
 * What is a stateless application?
-  * users/services interact w/ app they interact to form a session
-    * session - unique data that exists between requests while they use the app
+  * an application program that doesn't save client data from one session to the next
+    * a session constains unique data that exists between requests while they use app
 * Doesn't need info of previous interactions 
 * Doesn't store session information
 * Provides same response to any end user
