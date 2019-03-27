@@ -803,7 +803,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
 
-### A security group is sss 
+### A security group - S3 
 * what comes in and is allowed, automatically goes back out
 
 ### Network ACLs are stateful 
