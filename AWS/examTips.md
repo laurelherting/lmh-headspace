@@ -236,18 +236,18 @@ Subresources
     * quickly scale capacity, both up and down, to meet computing requirements
 
 ### EC2 categories
-*  On Demand
+* On Demand
   * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
   * Good for Short-term/spiky workloads that cannot be interrupted
   * Good for test/dev environments
   * No downtime
 
-*  Reserved
+* Reserved
   * Apps with Steady-state/predictable useage
   * Able to make upfront payments to reduce costs
   * Often a 12-36 month timeframe
 
-*  Spot
+* Spot
   * Apps with flexible start/end times
   * Apps that are only feasible at low compute prices
   * Users with urgent computing needs for large amts of addt'l capacity
