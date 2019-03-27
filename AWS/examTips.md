@@ -810,7 +810,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * To allow access on port 443: 
   add rules allowing 443 for both both inbound AND add outbound traffic
 
-### Know the difference between an s3 bucket url and an s3 static hosted website address
+### Know the difference between S3 bucket url and S3 static hosted website address
 * What does a URL look like?
   * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
     * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
