@@ -807,7 +807,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * what comes in and is allowed, automatically goes back out
 
 ### Network ACLs are stateful 
-* To allow access on port 443, add rule allowing 443 inbound AND add rule allowing 443 outbound
+* To allow access on port 443: 
+  add rules allowing 443 for both both inbound AND add outbound traffic
 
 ### Know the difference between an s3 bucket url and an s3 static hosted website address
 * What does a URL look like?
