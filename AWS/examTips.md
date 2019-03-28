@@ -102,6 +102,7 @@ Typically consists of: CloudFront, Amazon's CDN.
 * Need to open ports to use them
 * By default block all inbound traffic
 * Default NACL in VPC allows all inbound traffic
+* Needed bc they protect instances w/ Subnet
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
