@@ -380,8 +380,6 @@ test & Dev, keep costs low
     two key features:
       1. multi-AZ-for disaster recovery
       2. read replicas-for performance
-    AWS' managed database service
-      up to 5X faster than traditional MySQL database
 * DynamoDB
     Fast & flexible NoSQL database service for all applications that need 
     consistent, single-digit millisecond latency at any scale.
@@ -396,6 +394,10 @@ test & Dev, keep costs low
 * Data Warehousing
     used for business intelligence
     pulls in very large and complex data sets
+
+* AWS Managed Service
+  * up to 5X faster than traditional MySQL database
+  * provision to make controlled changes to infrastructure
 
 ### Auto Scaling
 * Allows you to provision multiple EC2 instances behind a load balancer automatically 
@@ -1008,4 +1010,8 @@ for certain AWS accounts in OU’s
 ### Server-Side Encryption 
 * with auditing features:
 	* Server-Side Encryption using AWS Key Management Service, Managed Keys - SSE-KMS
+
+### VPC
+* #Internet Gateways allowed per VPC? 
+  * 1
 
