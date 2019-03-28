@@ -246,6 +246,7 @@ Subresources
   * Apps with Steady-state/predictable useage
   * Able to make upfront payments to reduce costs
   * Often a 12-36 month timeframe
+  * 1 or 3 year term
 
 * Spot
   * Apps with flexible start/end times
@@ -835,6 +836,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * use push or pull method
   * push: use ELB to distribute workloads
     * ELB routes incoming application requests across multiple EC2 instances
+  * you can configure Network ELB with Static Elastic IP address
   * pull: asynchronous, event-driven workloads
     * tasks need to be performed/data that needs to be processed 
         * stored as messages 
@@ -962,3 +964,39 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### AWS Athena
 * Serverless interactive query service
+
+### Windows Password*
+* use key pair to decrypt pwd
+
+### Lifecycle Management
+* automatically move objects from one storage to another
+  * helps reduce cost
+
+### Grant permissions on S3
+* both at bucket and individually
+  * use bucket policy and Access Control List
+
+### AWS Concierge
+* Qs about billing and overall account
+
+### Aurora
+* compatible database read replicas 
+  * MySQL and PostgreSQL
+
+### Geolocation Routing
+*  lets you to direct traffic based on the user's location
+
+### AWS Organizations 
+* help consolidate multiple AWS Accounts to centrally manage them
+
+### Policies
+* configure Policies in AWS Organizations so only certain actions can be performed 
+for certain AWS accounts in OU’s
+
+### Trusted Advisor five Categories
+* cost optimization
+* security
+* performance
+* fault tolerance 
+* service limits
+
