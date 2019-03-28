@@ -147,6 +147,7 @@ Typically consists of: CloudFront, Amazon's CDN.
     Used for archival only
     Expedited, standard or bulk
     Standard retrieval time = 3-5 hours
+    Max single archive size: 40TB
 6. S3 Glacier Deep Dive Archive
     Lowest cost storage class
     Retrieval time 12 hours
@@ -704,6 +705,11 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
         optimally align supply with demand
         Autoscaling, Lambda
         CloudWatch helps to keep track of demand
+
+    CloudWatch Alarm states:
+      OK
+      alarm
+      Insufficient_Data
 
   * Q: AWS service - run code without concern about provisioning underlying resources?
     * ie. virtual machines, databases
