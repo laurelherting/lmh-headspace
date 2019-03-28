@@ -508,6 +508,7 @@ Unused reserved EC2 instances are applied across the group.
   * answer: near real-time stream of system events describing changes in AWS resources
 * Standard Monitoring = 5 Minutes (Free)
 * Detailed Monitoring = 1 Minute (Pay Extra)
+* Comes with Basic and Detailed Monitoring options
 
 * Use Cases
   * create Dashboards
@@ -999,4 +1000,12 @@ for certain AWS accounts in OU’s
 * performance
 * fault tolerance 
 * service limits
+
+### AWS Config
+* generates historical configuration change records
+  * use for auditing
+
+### Server-Side Encryption 
+* with auditing features:
+	* Server-Side Encryption using AWS Key Management Service, Managed Keys - SSE-KMS
 
