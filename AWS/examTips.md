@@ -97,7 +97,11 @@ Typically consists of: CloudFront, Amazon's CDN.
 
 ### Use private key to connect EC2
 
-### Security Groups - virtual firewalls in cloud. Need to open ports to use them. 
+### Security Groups 
+* Virtual firewalls in cloud
+* Need to open ports to use them
+* By default block all inbound traffic
+* Default NACL in VPC allows all inbound traffic
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
