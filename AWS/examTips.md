@@ -829,7 +829,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Doesn't store session information
 * Provides same response to any end user
 * Can scale horizontally 
-  * any available compute resources can service any request
+  * any available compute resource can service any request
 
 ### Distribute Load to Multiple Nodes
 * use push or pull method
