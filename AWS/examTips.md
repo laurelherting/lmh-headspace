@@ -1017,6 +1017,8 @@ for certain AWS accounts in OU’s
 	* Server-Side Encryption using AWS Key Management Service, Managed Keys - SSE-KMS
 
 ### VPC
-* #Internet Gateways allowed per VPC? 
-  * 1
+* Only 1 Internet Gateway allowed per VPC
+
+### AWS Service Catalog
+* create project portfolio, choose how and who deploys
 
