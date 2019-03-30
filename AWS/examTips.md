@@ -853,7 +853,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * you can configure Network ELB with Static Elastic IP address
   * pull: asynchronous, event-driven workloads
     * tasks need to be performed/data that needs to be processed 
-        * stored as messages 
+    * stored as messages 
 
 ### Stateless Components
 * Don't store anything that needs to exist for more than a single request in local
