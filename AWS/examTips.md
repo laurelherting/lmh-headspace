@@ -850,7 +850,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * use push or pull method
   * push: use ELB to distribute workloads
     * ELB routes incoming application requests across multiple EC2 instances
-  * you can configure Network ELB with Static Elastic IP address
+  * configure Network ELB with Static Elastic IP address
   * pull: asynchronous, event-driven workloads
     * tasks need to be performed/data that needs to be processed 
     * stored as messages 
