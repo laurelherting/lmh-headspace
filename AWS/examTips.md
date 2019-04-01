@@ -852,7 +852,8 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
     * ELB routes incoming application requests across multiple EC2 instances
   * configure Network ELB with Static Elastic IP address
   * pull: asynchronous, event-driven workloads
-    * tasks need to be performed/data that needs to be processed 
+    * tasks need to be performed 
+    * data that needs to be processed 
     * stored as messages 
 
 ### Stateless Components
