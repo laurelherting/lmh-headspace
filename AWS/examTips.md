@@ -864,8 +864,10 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * layers that won't turn into stateless components
 
 ### Implement Session Affinity
-* For HTTP & HTTPS traffic, use sticky session feature of an Application Load Balancer to bind 
-a user's session to a specific instance
+* aka sticky session
+* For HTTP & HTTPS traffic:
+  * use Load Balancer to bind 
+  user's session to specific instance
 
 ### Distributing Processing
 * Use when processing large amounts of data that can't be handled by a single compute
