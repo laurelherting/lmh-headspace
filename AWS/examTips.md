@@ -904,8 +904,9 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * AMIs can be instance-store or EBS backed
 
 ### Time To Live (TTL)
-*  86400 is 24 hours
-Always in Seconds
+* value: 86400 is 24 hours
+* Always in Seconds
+* keep low: 30 secs to 5 mins (good range)
 
 ### IAM
 * Roles
