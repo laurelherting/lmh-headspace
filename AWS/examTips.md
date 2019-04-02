@@ -904,7 +904,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * AMIs can be instance-store or EBS backed
 
 ### Time To Live (TTL)
-* value: 86400 is 24 hours
+* DNS value: 86400 is 24 hours
 * Always in Seconds
 * keep low: 30 secs to 5 mins (good range)
 
@@ -948,9 +948,11 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * Disposable resources, Infrastructure as code, Scalability.
 
 ### DMS
-* Project requires 90 hours of computing time, no deadline, work can 
-  be stopped and restarted without adverse effect: spot instances 
-  (cost effective)
+* spot instance:
+  * Project requires 90 hours of computing time
+  * no deadline
+  * work can be stopped and restarted without adverse effect 
+  * cost effective
 * migrate an existing database to AWS
 
 ### EC2-Spread Placement Group (deployment)
