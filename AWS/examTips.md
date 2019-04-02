@@ -882,7 +882,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * one component generates events and another consumes them
 
 ### Synchronous replication 
-* only acknowledges transaction after it has been durably stored in both primary location
+* only acknowledges transaction after its been stored in both primary location
   and its replicas
 
 ### Asynchronous replication
@@ -893,10 +893,10 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 ### Quorum-based replication
 *  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
 
-### EC2-amis
+### EC2-AMIs
 * Acts as template for root volume
 * AMIs are Regional
-  * Can only launch into region from which it is stored
+* Can only launch into region from which it is stored
 * AMIs can be copied between Regions
 * AMIs can be shared privately with specific AWS Account Numbers
 * Defaults
