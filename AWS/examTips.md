@@ -870,16 +870,16 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   user's session to specific instance
 
 ### Distributing Processing
-* Use when processing large amounts of data that can't be handled by a single compute
-  resource in a timely manner
+* Use when processing large amounts of data that can't be handled by single compute
+  resource in timely manner
 
 ### Loose Coupling
 * designed to reduce interdependencies
-  * change/failure in one component shouldn't cascade to other components
+  * change/failure in one component shouldn't affect other components
 
 ### Asynchronous Integration
 * form of loose coupling between services
-* one component generates events and another that consumes them
+* one component generates events and another consumes them
 
 ### Synchronous replication 
 * only acknowledges transaction after it has been durably stored in both primary location
