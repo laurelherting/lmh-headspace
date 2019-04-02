@@ -949,7 +949,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### DMS
 * spot instance:
-  * Project requires 90 hours of computing time
+  * project requires 90 hours of computing time
   * no deadline
   * work can be stopped and restarted without adverse effect 
   * cost effective
