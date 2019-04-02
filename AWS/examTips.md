@@ -966,14 +966,12 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * AWS service - acts as a file system mounted on an S3 bucket
 
 ### EBS
-* Q: Make sure EC2 instances are types that can be optimised for
-  use with EBS?
+* Q: EC2 instances are types that can be optimized with EBS?
 * A: Schedule snapshots of HDD based volumes for periods of low use
 
-### RAID O 
-* Q: Choose correct EBS volume type for specific task,
-  what else can be done to increase performance of volume?
-* A: Stripe volumes together in a RAID 0 configuration
+### RAID 0 
+* Q: EBS volume type for specific task & increase performance of volume?
+* A: Stripe volumes together in RAID 0 configuration
 
 ### AWS Rekognition
 * video and image
