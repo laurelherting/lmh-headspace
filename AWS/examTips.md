@@ -1002,7 +1002,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * MySQL and PostgreSQL
 
 ### Geolocation Routing
-*  lets you to direct traffic based on the user's location
+* direct traffic based on the user's location
 
 ### AWS Organizations 
 * help consolidate multiple AWS Accounts to centrally manage them
