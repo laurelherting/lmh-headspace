@@ -1002,14 +1002,14 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * MySQL and PostgreSQL
 
 ### Geolocation Routing
-* direct traffic based on the user's location
+* directs traffic based on user's location
 
 ### AWS Organizations 
-* help consolidate multiple AWS Accounts to centrally manage them
+* help consolidate multiple AWS accounts to centrally manage them
 
 ### Policies
-* configure Policies in AWS Organizations so only certain actions can be performed 
-for certain AWS accounts in OU’s
+* configure Policies in AWS Organizations 
+  * only certain actions can be performed for certain AWS accounts in OU’s
 
 ### Trusted Advisor five Categories
 * cost optimization
