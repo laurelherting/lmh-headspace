@@ -1024,11 +1024,13 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### Server-Side Encryption 
 * with auditing features:
-	* Server-Side Encryption using AWS Key Management Service, Managed Keys - SSE-KMS
+	* uses AWS Key Management Service
+    * Managed Keys - SSE-KMS
 
 ### VPC
 * Only 1 Internet Gateway allowed per VPC
 
 ### AWS Service Catalog
-* create project portfolio, choose how and who deploys
+* create project portfolio
+* choose how and who deploys
 
