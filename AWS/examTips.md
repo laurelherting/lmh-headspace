@@ -1009,7 +1009,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### Policies
 * configure Policies in AWS Organizations 
-  * only certain actions can be performed for certain AWS accounts in OU’s
+* only certain actions can be performed for certain AWS accounts in OUs
 
 ### Trusted Advisor five Categories
 * cost optimization
@@ -1020,7 +1020,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### AWS Config
 * generates historical configuration change records
-  * use for auditing
+  * used for auditing
 
 ### Server-Side Encryption 
 * with auditing features:
