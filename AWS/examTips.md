@@ -360,7 +360,7 @@ test & Dev, keep costs low
   • Application Load Balancer
   • Network Load Balancer
 
-* The most important part of an LB is that it's a DNS name that doesn't change 
+* Most important part of LB: DNS name doesn't change 
   * It's not to a static IP address
 
 ### RDS
