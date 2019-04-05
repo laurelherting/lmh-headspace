@@ -1044,3 +1044,9 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * create project portfolio
 * choose how and who deploys
 
+### Convertible Reserved Instance (RI)
+* Change reserved instance with different configuration, Operating System,
+and tenancy 
+  * target must be of equal / higher value
+* no limits on # exchanges 
+
