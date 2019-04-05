@@ -160,18 +160,19 @@ Typically consists of: CloudFront, Amazon's CDN.
 5. Transfer acceleration
 
 ### S3 general
-1. S3 is object-based
+* S3 is object-based
     ex. allows you to upload files
-2. files can be 0 bytes - 5tb
-3. unlimited storage
-4. files are stored in buckets
-5. s3 is a universal namespace
+* files can be 0 bytes - 5tb
+* unlimited storage
+* files are stored in buckets
+* S3 is a universal namespace
     names must be unique globally
     https://s3-eu-west-1.amazonaws.com/acloudguru
-6. Read after write consistency after PUTS of new objects
-7. Eventual consistency for overwrite PUTS and DELETES
-8. NOT suitable to install an operating system on
-9. Successful uploads generate HTTP 200 status code
+* Read after write consistency after PUTS of new objects
+* Eventual consistency for overwrite PUTS and DELETES
+* NOT suitable to install an operating system on
+* Successful uploads generate HTTP 200 status code
+* RDS Automated backups stored here
 
 ### S3 Tiers
 1. S3
@@ -262,16 +263,16 @@ Subresources
 
 ### EC2 Exam Tips
 1. On Demand
-Pay fixed rate by hour (or by sec) w/ no commitment
+* Pay fixed rate by hour (or by sec) w/ no commitment
 2. Reserved
-Provides capacity reservation and offer significant discount on hourly charge for an instance 
+* Provides capacity reservation & discounts on hourly charge 
 1 or 3 year terms 
 3. Spot
-Enables you to bid whatever price you want for instance capacity
-Provided greater savings if your apps have flex start/end times
+* bid price you want for instance capacity
+* greater savings for flex start/end times
 4. Dedicated Hosts 
-Physical EC2 server dedicated for use
-Can help reduce costs by allowing you to use your existing server-bound software licenses
+* Physical EC2 server dedicated for use
+* reduce costs - use existing server-bound software licenses
 
 * If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
 * If you terminate it yourself, you'll be charged for any hour in which the instance ran.
@@ -409,6 +410,9 @@ test & Dev, keep costs low
 * Allows you to provision multiple EC2 instances behind a load balancer automatically 
 depending on your demand.
 * does not update current resources unless you set UpdatePolicy
+* scale out and in based on demand and workload
+* automatically balances EC2 instances across zones when you configure
+multiple zones in Auto Scaling group settings
 
 ### Scaling vs elasticity
 Easy to scale in and out for cost saving (elastic) hard to scale up then back down
@@ -436,6 +440,8 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 
 ### Lightsail
 * Charged per hour at plan rate as long as an instance is started or in stopped state
+* good if you just need virtual private servers
+  * includes everything to launch quickly
 
 ### Elastic Beanstalk 
 * Quickly deploy & manage applications in AWS Cloud
@@ -979,6 +985,9 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 ### AWS Snowball
 * Secure device
 * Transfers large amounts of data in and out of cloud
+* offers petabyte-scale data transport solution 
+- uses devices designed secure to transfer large # data into and out of Cloud
+- workaround for internet
 
 ### AWS Athena
 * Serverless interactive query service
@@ -1010,6 +1019,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 ### Policies
 * configure Policies in AWS Organizations 
 * only certain actions can be performed for certain AWS accounts in OUs
+* use to restrict actions
 
 ### Trusted Advisor five Categories
 * cost optimization
