@@ -1,4 +1,4 @@
-### Understand difference between region, Availability zone(AZ) & Edge Location
+### Region, Availability zone(AZ) & Edge Location
 1. Region-physical location in world, consists of 2 or more zones
 2. An AZ is one or more discrete data centers, each w/ redundant power,
 networking and connectivity, housed in seperate facilities
