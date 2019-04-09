@@ -1,36 +1,3 @@
-### IAM is global
-* Identity Access Management 
-* Global, don't have to specify region
-* User or group created globally
-
-### You can access AWS platform in three ways
-1. Via console
-2. Programmatically - Using command line
-3. Using Software Developers Kit (SDK)
-
-### Root Account
-* Email address used to create AWS account
-* Always has full admin access
-* Don’t give these credentials away!
-* Instead, create a user for each individual w/in organization
-* Always secure root account using MFA
-
-### Group 
-* A place to store users
-    Users inherit all permissions group has
-    Examples of groups:
-      developers
-      System administrators
-      Human resources
-      finance
-
-### Set permissions
-* Need to apply a policy to that group
-* Policies consist of Java Script Object Notation (JSON)
-* Referred to as key value pairs
-* You have your key
-* ex. {“name”: “A Cloud Guru”}
-
 ### How would you define a policy?
 * Define it using JSON
 * Inside of identity access management
@@ -908,3 +875,12 @@ and tenancy
   * target must be of equal / higher value
 * no limits on # exchanges 
 
+### IAM is global
+* Identity Access Management 
+* Global, don't have to specify region
+* User or group created globally
+
+### You can access AWS platform in three ways
+1. Via console
+2. Programmatically - Using command line
+3. Using Software Developers Kit (SDK)
