@@ -1,14 +1,6 @@
-### Region, Availability zone(AZ) & Edge Location
-1. Region-physical location in world, consists of 2 or more zones
-2. An AZ is one or more discrete data centers, each w/ redundant power,
-networking and connectivity, housed in seperate facilities
-3. Edge locations are endpoints for AWS which are used for caching content.
-Typically consists of: CloudFront, Amazon's CDN.
-    ie. #Edge locations > # AZ zones > # regions
-
 ## Billing and Pricing
 
-### Understand difference between support packages
+### Support Packages
     basic-free
     developer-$29/month (scales based on usage)
     business-$100/month("")
