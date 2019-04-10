@@ -2,8 +2,6 @@
 * Define it using JSON
 * Inside of identity access management
 
-### EC2 - compute based service, not serverless, it's a server!
-
 ### S3
 * What does a URL look like?
   * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
@@ -40,64 +38,6 @@
 		* objects are cached for life of TTL(Time To Live)
 		* You can clear cached objects, but you'll be charged
       * example: Adobe flash
-
-### EC2
-* Virtual server in the cloud
-  * Reduces time required to obtain & boot new server instances to minutes
-    * quickly scale capacity, both up and down, to meet computing requirements
-
-### EC2 categories
-* On Demand
-  * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
-  * Good for Short-term/spiky workloads that cannot be interrupted
-  * Good for test/dev environments
-  * No downtime
-
-* Reserved
-  * Apps with Steady-state/predictable useage
-  * Able to make upfront payments to reduce costs
-  * Often a 12-36 month timeframe
-  * 1 or 3 year term
-
-* Spot
-  * Apps with flexible start/end times
-  * Apps that are only feasible at low compute prices
-  * Users with urgent computing needs for large amts of addt'l capacity
-  * Instances have 120 seconds to shut down
-
-### EC2 Exam Tips
-1. On Demand
-* Pay fixed rate by hour (or by sec) w/ no commitment
-2. Reserved
-* Provides capacity reservation & discounts on hourly charge 
-1 or 3 year terms 
-3. Spot
-* bid price you want for instance capacity
-* greater savings for flex start/end times
-4. Dedicated Hosts 
-* Physical EC2 server dedicated for use
-* reduce costs - use existing server-bound software licenses
-
-* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
-* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
-
-1. Elastic Compute Cloud (Amazon EC2)
-2. Instance Types
-
-*Good to be aware of instance types, but details won't be on cert exam
-*FIGHTDRMCPX
-F - FPGA
-I - IOPS, NoSQL DBs, Data Warehousing
-G - Graphics, Video Encoding/Machine Learning/3D App Streaming
-H - High Disk Throughput
-T - Cheap general purpose (think T2 Micro), Web Servers/Small DBs
-D - Density, Fileservers, Data Warehousing, Hadoop
-R - RAM, Memory intensive Apps/DBs
-M - Main choice for general purpose apps
-C - Compute, CPU Intensive Apps/DBs
-P - Graphics(think Pics)
-X - Extreme Memory
-Fight DR MC PX!
 
 ### EBS
 * *Virtual disk, attached to EC2 instance
