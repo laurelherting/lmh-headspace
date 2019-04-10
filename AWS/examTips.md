@@ -157,41 +157,6 @@ multiple zones in Auto Scaling group settings
 ### Scaling vs elasticity
 Easy to scale in and out for cost saving (elastic) hard to scale up then back down
 
-### Route53 
-* Domain Name Service 
-    * phonebook
-* resolve domain names to IP Addresses.
-* Amazon DNS Service = Route53
-* global
-  * like: IAM & S3
-* use it to: 
-  * direct traffic world-wide
-  * register domain name
-
-### Name all Compute Services
-1.EC2 *
-2.Lightsail
-3.ECR
-4.ECS
-5.EKS
-6.Lambda *
-7.Batch
-8.Elastic Beanstalk
-
-### Lightsail
-* Charged per hour at plan rate as long as an instance is started or in stopped state
-* good if you just need virtual private servers
-  * includes everything to launch quickly
-
-### Elastic Beanstalk 
-* Quickly deploy & manage applications in AWS Cloud
-  * automatically handles:
-      * capacity provisioning
-      * load balancing 
-      * scaling
-      * application
-      * health monitoring
-
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
   * spend less time managing these resources, more time on Apps that run
@@ -349,28 +314,6 @@ AWS environment based on AWS best practices.
 * What are some of the delivery options for SNS?
   * HTTP and HTTPS subscription types
 
-###	Possible Questions:
-* p. 13 of above whitepaper
-  * Question: Use this service to deploy and scale web applications and services developed
-  with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as:
-  Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code, 
-  and the service automatically handles all the details, such as: resource provisioning, 
-  load balancing, auto scaling, and monitoring.
-   Answer: Elastic Beanstalk
-* Q: What language is not supported by Elastic Beanstalk? 
-  A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
-   Answer: Rust
-* Q: What major language / frameworks are supported by Elastic Beanstalk?
-  * Answer:
-• Java
-• .NET
-• PHP
-• Node.js
-• Python
-• Ruby
-• Go
-• Docker
-
 ### What is high availability?
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
@@ -495,14 +438,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   * Media transcoder in the cloud - good for smartphones, etc
 * Pricing:
   * Pay per minute, per resolution
-
-### EMR
-* Web service:
-  * makes it easy to process large amounts of data efficiently
-  * specifically designed to assist in processing large data sets
-* Principles of sound cloud design:
-  * Assume *everything* will fail
-  * Disposable resources, Infrastructure as code, Scalability.
 
 ### DMS
 * spot instance:
