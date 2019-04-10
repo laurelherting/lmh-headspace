@@ -278,3 +278,126 @@ P - Graphics(think Pics)
 X - Extreme Memory
 Fight DR MC PX!
 
+### EC2
+* Virtual server in the cloud
+  * Reduces time required to obtain & boot new server instances to minutes
+    * quickly scale capacity, both up and down, to meet computing requirements
+
+### EC2 categories
+* On Demand
+  * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
+  * Good for Short-term/spiky workloads that cannot be interrupted
+  * Good for test/dev environments
+  * No downtime
+
+* Reserved
+  * Apps with Steady-state/predictable useage
+  * Able to make upfront payments to reduce costs
+  * Often a 12-36 month timeframe
+  * 1 or 3 year term
+
+* Spot
+  * Apps with flexible start/end times
+  * Apps that are only feasible at low compute prices
+  * Users with urgent computing needs for large amts of addt'l capacity
+  * Instances have 120 seconds to shut down
+
+### EC2 Exam Tips
+1. On Demand
+* Pay fixed rate by hour (or by sec) w/ no commitment
+2. Reserved
+* Provides capacity reservation & discounts on hourly charge 
+1 or 3 year terms 
+3. Spot
+* bid price you want for instance capacity
+* greater savings for flex start/end times
+4. Dedicated Hosts 
+* Physical EC2 server dedicated for use
+* reduce costs - use existing server-bound software licenses
+
+* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
+* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
+
+1. Elastic Compute Cloud (Amazon EC2)
+2. Instance Types
+
+*Good to be aware of instance types, but details won't be on cert exam
+*FIGHTDRMCPX
+F - FPGA
+I - IOPS, NoSQL DBs, Data Warehousing
+G - Graphics, Video Encoding/Machine Learning/3D App Streaming
+H - High Disk Throughput
+T - Cheap general purpose (think T2 Micro), Web Servers/Small DBs
+D - Density, Fileservers, Data Warehousing, Hadoop
+R - RAM, Memory intensive Apps/DBs
+M - Main choice for general purpose apps
+C - Compute, CPU Intensive Apps/DBs
+P - Graphics(think Pics)
+X - Extreme Memory
+Fight DR MC PX!
+
+### Route53 
+* Domain Name Service 
+    * phonebook
+* resolve domain names to IP Addresses.
+* Amazon DNS Service = Route53
+* global
+  * like: IAM & S3
+* use it to: 
+  * direct traffic world-wide
+  * register domain name
+
+### Name all Compute Services
+1.EC2 *
+2.Lightsail
+3.ECR
+4.ECS
+5.EKS
+6.Lambda *
+7.Batch
+8.Elastic Beanstalk
+
+### Lightsail
+* Charged per hour at plan rate as long as an instance is started or in stopped state
+* good if you just need virtual private servers
+  * includes everything to launch quickly
+
+### Elastic Beanstalk 
+* Quickly deploy & manage applications in AWS Cloud
+  * automatically handles:
+      * capacity provisioning
+      * load balancing 
+      * scaling
+      * application
+      * health monitoring
+
+###	Possible Questions:
+* p. 13 of whitepaper
+  * Question: Use this service to deploy and scale web applications and services developed
+  with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as:
+  Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code, 
+  and the service automatically handles all the details, such as: resource provisioning, 
+  load balancing, auto scaling, and monitoring.
+   Answer: Elastic Beanstalk
+* Q: What language is not supported by Elastic Beanstalk? 
+  A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
+   Answer: Rust
+* Q: What major language / frameworks are supported by Elastic Beanstalk?
+  * Answer:
+• Java
+• .NET
+• PHP
+• Node.js
+• Python
+• Ruby
+• Go
+• Docker
+
+### EMR
+* Web service:
+  * makes it easy to process large amounts of data efficiently
+  * specifically designed to assist in processing large data sets
+* Principles of sound cloud design:
+  * Assume *everything* will fail
+  * Disposable resources, Infrastructure as code, Scalability.
+
