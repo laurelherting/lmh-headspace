@@ -342,86 +342,6 @@ AWS Solutions Architects who are experts in that particular technology.
 Solution that helps customers more quickly set up secure, multi-account
 AWS environment based on AWS best practices.
 
-### AWS Simple Monthly Calculator
-Used to calculate running costs on AWS on a per month basis.
-Not a comparison tool.
-https://calculator.s3.amazonaws.com/index.html
-Examples:
-1. More instances = higher monthly cost
-2. Type: CPU, memory, & billing options effect cost changes
-  - z1d.12xxlarge, 48CPU, 384GiB, billing:onDemand = $362,709.15/month.
-  - c5d.large, 2CPU, 4GiB, billing:3yr up front = $1,539.57.
-
-### AWS TCO Calculator 
-* Total Cost of Ownership
-* Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
-* It will generate reports that can you can give to your C-level execs to make a 
-business case to move to the cloud.
-* https://aws.amazon.com/tco-calculator
-* These come up a lot! 
-    Play with both calculators until you are comfortable with them.
-* Examples:
-  * comparing physical servers - less savings compared to vm.
-  when max out #s = 35% savings, $138,064,213.
-  using lowest possible #s = 77%, $139,476.
-  * comparing vm - greater savings with large outputs
-  vm - when max out #s = 71% savings, $604,198,066.
-  using lowest possible #s = 79%, $161,158.
-* Reserved instance offering types  
-  * Light
-    * 42% savings 1-year
-    * 56% 3-year
-  * medium
-    * 49% savings 1-year
-    * 66% 3-year
-  * heavy
-    * 54% savings 1-year 
-    * 71% 3-year
-
-### Billing & Pricing Summary
-* Conclusion:
-  While the number & types of services offered by AWS has increased dramatically, philosophy on
-  pricing hasn't changed.
-  -You pay as you go, pay for what you use, pay less as you use more,
-  and pay even less when you reserve capacity. 
-* Pricing:
-	* Spot, On Demand, Reserved, Dedicated Hosts (.GOV)
-* Spot instances:
-	* you terminate, you pay for the hour
-  * AWS termiantes, you get the hour for free
-** * Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
-
-* free services:
-    * Amazon VPC
-    * Elastic Beanstalk
-    * CloudFormation
-    * Identity Access Management (IAM)
-    * Auto Scaling
-    * Opsworks
-    * Consolidated Billing
-        * have to pay for resources, like EC2 related to above services
-
-* Tags:
-  * Key Value Pairs attached to AWS Resources
-  * Metadata (data about data)
-  * Tags can sometimes be inherited
-
-* Resource Groups:
-  * apply automation to resources with specific tags
-    * Region
-    * Name
-    * Health Checks
-
-* group resources that share one or more tags
-* ie. stopped all EC2 instances in the Stockholm region
-
-* Resource Groups with AWS Systems manager controls and executes
-  automation against entire fleets of EC2 instances
-
-* Tag editor 
-  * global service to discover resources & add tags
-  * Newer regions may take some time to be compatible with tag editor
-
 ### Best Practices with AWS Organizations
 * Always enable multi-factor authentication on root account
 * Always use strong, complex password on root account
@@ -659,9 +579,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
   and minimize the chance of underlying hardware failure
 * A: deploy the EC2 servers in a Spread Placement Group
 
-### AWS Storage Gateway
-* AWS service - acts as a file system mounted on an S3 bucket
-
 ### EBS
 * Q: EC2 instances are types that can be optimized with EBS?
 * A: Schedule snapshots of HDD based volumes for periods of low use
@@ -669,19 +586,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 ### RAID 0 
 * Q: EBS volume type for specific task & increase performance of volume?
 * A: Stripe volumes together in RAID 0 configuration
-
-### AWS Rekognition
-* video and image
-
-### AWS Snowball
-* Secure device
-* Transfers large amounts of data in and out of cloud
-* offers petabyte-scale data transport solution 
-- uses devices designed secure to transfer large # data into and out of Cloud
-- workaround for internet
-
-### AWS Athena
-* Serverless interactive query service
 
 ### Lifecycle Management
 * automatically move objects from one storage to another
@@ -693,10 +597,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 ### AWS Concierge
 * Qs about billing and overall account
-
-### Aurora
-* compatible database read replicas 
-  * MySQL and PostgreSQL
 
 ### Geolocation Routing
 * directs traffic based on user's location
