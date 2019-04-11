@@ -443,3 +443,42 @@ Fight DR MC PX!
   * up to 5X faster than traditional MySQL database
   * provision to make controlled changes to infrastructure
 
+### AWS CloudFormation
+Service that helps model and set up AWS recources
+  * spend less time managing these resources, more time on Apps that run
+in AWS.
+  * Create template that describes all AWS recources you want 
+(ex. EC2, Amazon RDS DB instances), and AWS CloudFormation takes
+care of provisioning & configuring resources for you.
+  * Don't need to individually create & configure AWS resources
+& figure out what's dependent on what;
+    * AWS CloudFormation handles all of that.
+
+### Elastic Beanstalk and CloudFormation
+Both are free, but the resources they provision (ex. EC2 instances)
+are not free.
+* Difference between the two:
+1. Elastic Beanstalk is limited in what it can provision and is not 
+programmable.
+2. CloudFormation can provision almost any AWS service & is completely
+programmable
+
+### AWS Organization & Consolidated Billing
+Linked accounts:
+* 20 linked accounts only
+* To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
+* Billing Alerts:
+  * When monitoring is enabled on paying account, billing data for linked accounts included
+* You can still create billing alerts per individual account
+* CloudTrail:
+  * CloudTrail For auditing, cloudWatch is for performance.
+  * Per AWS account and is enabled per region.
+  * Can consolidate logs using an S3 bucket:
+    * Turn on CloudTrail in paying account.
+    * Create bucket policy that allows cross-account access.
+    * Turn on CloudTrail in other accounts and use bucket in the paying account.
+
+Consolidated Billing allows you to get volume discounts on all your accounts.
+
+Unused reserved EC2 instances are applied across the group.
+
