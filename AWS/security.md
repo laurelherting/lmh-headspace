@@ -331,3 +331,77 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * create project portfolio
 * choose how and who deploys
 
+### Best Practices with AWS Organizations
+* Always enable multi-factor authentication on root account
+* Always use strong, complex password on root account
+* Paying account should be used for billing purposes only
+* Don't deploy resources into paying account
+
+### AWS Security Qs
+* Are uploads to S3 buckets public or private by default? 
+  * private
+* Do new AMIs created default to public or private?
+  * private
+* Do customers have any access to physical drives on ec2?
+  * yes
+* What are some of the delivery options for SNS?
+  * HTTP and HTTPS subscription types
+
+### A security group - S3 
+* what comes in and is allowed, automatically goes back out
+
+### Network ACLs are stateful 
+* To allow access on port 443: 
+  add rules allowing 443 for both both inbound AND add outbound traffic
+
+### Successful upload = HTTP 200 code
+
+### IAM
+* Roles
+  * more secure than storing access key / secret on individual EC2 Instances
+  * Easier to manage
+  * Can only be assigned at EC2 instance provision
+  * Permissions changes to role happen immediately 
+    * affect ones assigned to EC2 Instances
+
+### IAM Best Practices
+http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
+
+* Lock away your AWS account (root) access keys
+* Create individual IAM users
+* Use groups to assign permissions to IAM users
+* Grant least privilege
+* Configure a strong password policy for your users
+* Enable MFA for privileged users
+* Use roles for applications that run on Amazon EC2 instances
+* Delegate by using roles instead of by sharing credentials
+* Rotate credentials regularly
+* Remove unnecessary credentials
+* Use policy conditions for extra security
+* Monitor activity in your AWS account
+* Video presentation about IAM best practices
+
+### Grant permissions on S3
+* both at bucket and individually
+  * use bucket policy and Access Control List
+
+### AWS Concierge
+* Qs about billing and overall account
+
+### AWS Organizations 
+* help consolidate multiple AWS accounts to centrally manage them
+
+### Policies
+* configure Policies in AWS Organizations 
+* only certain actions can be performed for certain AWS accounts in OUs
+* use to restrict actions
+
+### IAM is global
+* Identity Access Management 
+* Global, don't have to specify region
+* User or group created globally
+
+### How would you define a policy?
+* Define it using JSON
+* Inside of identity access management
+
