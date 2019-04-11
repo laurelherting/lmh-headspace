@@ -1,7 +1,3 @@
-### How would you define a policy?
-* Define it using JSON
-* Inside of identity access management
-
 ### S3
 * What does a URL look like?
   * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
@@ -79,12 +75,6 @@
       Highest-performance SSD volume for mission-critical low-latency
       or high-throughput workloads
 
-### Common Ports
-Linux = SSH(Port 22)
-Microsoft = Remote Desktop Protocol(Port 3389)
-HTTP = Port 80
-HTTPS = Port 443
-
 ### Elastic Load Balancers
 Three types
 1. Application
@@ -101,45 +91,6 @@ test & Dev, keep costs low
 
 * Most important part of LB: DNS name doesn't change 
   * It's not to a static IP address
-
-### AWS CloudFormation
-Service that helps model and set up AWS recources
-  * spend less time managing these resources, more time on Apps that run
-in AWS.
-  * Create template that describes all AWS recources you want 
-(ex. EC2, Amazon RDS DB instances), and AWS CloudFormation takes
-care of provisioning & configuring resources for you.
-  * Don't need to individually create & configure AWS resources
-& figure out what's dependent on what;
-    * AWS CloudFormation handles all of that.
-
-### Elastic Beanstalk and CloudFormation
-Both are free, but the resources they provision (ex. EC2 instances)
-are not free.
-* Difference between the two:
-1. Elastic Beanstalk is limited in what it can provision and is not 
-programmable.
-2. CloudFormation can provision almost any AWS service & is completely
-programmable
-
-### AWS Organization & Consolidated Billing
-Linked accounts:
-* 20 linked accounts only
-* To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
-* Billing Alerts:
-  * When monitoring is enabled on paying account, billing data for linked accounts included
-* You can still create billing alerts per individual account
-* CloudTrail:
-  * CloudTrail For auditing, cloudWatch is for performance.
-  * Per AWS account and is enabled per region.
-  * Can consolidate logs using an S3 bucket:
-    * Turn on CloudTrail in paying account.
-    * Create bucket policy that allows cross-account access.
-    * Turn on CloudTrail in other accounts and use bucket in the paying account.
-
-Consolidated Billing allows you to get volume discounts on all your accounts.
-
-Unused reserved EC2 instances are applied across the group.
 
 ### CloudTrail
 * Used for auditing
@@ -189,14 +140,6 @@ AWS Solutions Architects who are experts in that particular technology.
 Solution that helps customers more quickly set up secure, multi-account
 AWS environment based on AWS best practices.
 
-### Best Practices with AWS Organizations
-* Always enable multi-factor authentication on root account
-* Always use strong, complex password on root account
-* Paying account should be used for billing purposes only
-* Don't deploy resources into paying account
-
-## Security in the Cloud
-
 ### What AWS resources are often used to create S3 applications?
 * answer: dynamo db, s3, efs, etc
 	* pg.7 white paper:
@@ -232,34 +175,15 @@ AWS environment based on AWS best practices.
   * Layer 7 routing
   * has Target Groups
 
-### AWS Deck of cards
-* Are uploads to S3 buckets public or private by default? 
-  * private
-* Do new AMIs created default to public or private?
-  * private
-* Do customers have any access to physical drives on ec2?
-  * yes
-* What are some of the delivery options for SNS?
-  * HTTP and HTTPS subscription types
-
 ### What is high availability?
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
-
-### A security group - S3 
-* what comes in and is allowed, automatically goes back out
-
-### Network ACLs are stateful 
-* To allow access on port 443: 
-  add rules allowing 443 for both both inbound AND add outbound traffic
 
 ### Know the difference between S3 bucket url and S3 static hosted website address
 * What does a URL look like?
   * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
     * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
   
-### Successful upload = HTTP 200 code
-
 ### EBS
 * You can only attach an EBS volume to 1 EC2 instance 
 * An EBS volume cannot be shared with two instances at the same time
@@ -336,31 +260,6 @@ AWS environment based on AWS best practices.
 * Always in Seconds
 * keep low: 30 secs to 5 mins (good range)
 
-### IAM
-* Roles
-  * more secure than storing access key / secret on individual EC2 Instances
-  * Easier to manage
-  * Can only be assigned at EC2 instance provision
-  * Permissions changes to role happen immediately 
-    * affect ones assigned to EC2 Instances
-
-### IAM Best Practices
-http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
-
-* Lock away your AWS account (root) access keys
-* Create individual IAM users
-* Use groups to assign permissions to IAM users
-* Grant least privilege
-* Configure a strong password policy for your users
-* Enable MFA for privileged users
-* Use roles for applications that run on Amazon EC2 instances
-* Delegate by using roles instead of by sharing credentials
-* Rotate credentials regularly
-* Remove unnecessary credentials
-* Use policy conditions for extra security
-* Monitor activity in your AWS account
-* Video presentation about IAM best practices
-
 ### Elastic-Transcoder
 *  Use:
   * Media transcoder in the cloud - good for smartphones, etc
@@ -394,23 +293,8 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * automatically move objects from one storage to another
   * helps reduce cost
 
-### Grant permissions on S3
-* both at bucket and individually
-  * use bucket policy and Access Control List
-
-### AWS Concierge
-* Qs about billing and overall account
-
 ### Geolocation Routing
 * directs traffic based on user's location
-
-### AWS Organizations 
-* help consolidate multiple AWS accounts to centrally manage them
-
-### Policies
-* configure Policies in AWS Organizations 
-* only certain actions can be performed for certain AWS accounts in OUs
-* use to restrict actions
 
 ### Convertible Reserved Instance (RI)
 * Change reserved instance with different configuration, Operating System,
@@ -418,7 +302,3 @@ and tenancy
   * target must be of equal / higher value
 * no limits on # exchanges 
 
-### IAM is global
-* Identity Access Management 
-* Global, don't have to specify region
-* User or group created globally
