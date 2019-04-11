@@ -7,8 +7,6 @@
   * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
     ex. Https://s3-eu-west1.amazonaws.com/acloudguru
 
-### Successful upload = HTTP 200 code
-
 ### S3 Data Consistency Model
 * popular exam q
 1. Read after write consistency for PUTS of new objects
@@ -146,17 +144,6 @@ test & Dev, keep costs low
   * up to 5X faster than traditional MySQL database
   * provision to make controlled changes to infrastructure
 
-### Auto Scaling
-* Allows you to provision multiple EC2 instances behind a load balancer automatically 
-depending on your demand.
-* does not update current resources unless you set UpdatePolicy
-* scale out and in based on demand and workload
-* automatically balances EC2 instances across zones when you configure
-multiple zones in Auto Scaling group settings
-
-### Scaling vs elasticity
-Easy to scale in and out for cost saving (elastic) hard to scale up then back down
-
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
   * spend less time managing these resources, more time on Apps that run
@@ -176,9 +163,6 @@ are not free.
 programmable.
 2. CloudFormation can provision almost any AWS service & is completely
 programmable
-
-### Day before exam read:
-https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
 ### AWS Organization & Consolidated Billing
 Linked accounts:
@@ -254,20 +238,6 @@ AWS environment based on AWS best practices.
 * Don't deploy resources into paying account
 
 ## Security in the Cloud
-
-### What is horizontal scaling?
-* scale by adding more machines
-  * increase in number of resources
-  * ie. add more hard drives to storage or servers
-* great for building internet-scale apps
-
-### What is vertical scaling?
-* Scale by adding more power to existing machine
-  * ex. CPU, RAM
-  * increase of individual resource
-* Stop an instance, resize it to a different type (ie. more RAM)
-* Can reach a limit
-* Costly, but easy to implement, good for short-term
 
 ### What AWS resources are often used to create S3 applications?
 * answer: dynamo db, s3, efs, etc
@@ -494,8 +464,3 @@ and tenancy
 * Identity Access Management 
 * Global, don't have to specify region
 * User or group created globally
-
-### You can access AWS platform in three ways
-1. Via console
-2. Programmatically - Using command line
-3. Using Software Developers Kit (SDK)
