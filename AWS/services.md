@@ -401,3 +401,45 @@ Fight DR MC PX!
   * Assume *everything* will fail
   * Disposable resources, Infrastructure as code, Scalability.
 
+### RDS
+2 key features:
+    1. Multi-AZ-for distaster recovery
+    2. Read replicas-for performance
+
+### AWS Database Types
+* RDS(SQL/OLTP)
+    * SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
+* DynamoDB(NoSQL)
+* Red Shift OLAP
+    for business or data warehousing
+    fully-managed data warehouse in cloud
+* Elasticache
+    used to speed up performance of existing databases(frequent identical queries)
+    memcached
+    redis
+	* SWAP file
+  	* amount of disk storage space reserved on disk if computer runs out of ram	
+			* Typical size is = size of total RAM
+* Aurora - relational, high performance, scales well
+    two key features:
+      1. multi-AZ-for disaster recovery
+      2. read replicas-for performance
+* DynamoDB
+    Fast & flexible NoSQL database service for all applications that need 
+    consistent, single-digit millisecond latency at any scale.
+    (non-realtional), auto-scaling
+	Read / Write Capacity
+	Set per Table
+	Can be changed at any time - it's an ASYNC operation
+	Allocated on a per second basis
+	* Facts: 
+	Spread across 3 geographically distinct data centers
+	400KB item size limit
+* Data Warehousing
+    used for business intelligence
+    pulls in very large and complex data sets
+
+* AWS Managed Service
+  * up to 5X faster than traditional MySQL database
+  * provision to make controlled changes to infrastructure
+
