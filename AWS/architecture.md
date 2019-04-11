@@ -60,3 +60,9 @@ https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 * Can reach a limit
 * Costly, but easy to implement, good for short-term
 
+### Common Ports
+Linux = SSH(Port 22)
+Microsoft = Remote Desktop Protocol(Port 3389)
+HTTP = Port 80
+HTTPS = Port 443
+
