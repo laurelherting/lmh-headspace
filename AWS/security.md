@@ -405,3 +405,167 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       alarm
       Insufficient_Data
 
+### CDN 
+**Content Delivery Network 
+1. Edge location
+    Not just read-only, can write to them too
+    put an object onto them
+    Location where content will be cached
+    Seperate to an AWS Region/AZ
+2. Origin
+    Origin of all files that the CDN will distribute
+    Can either be:
+      S3 Bucket
+      EC2 Instance
+      Elastic Load Balancer
+      Route53
+3. Distribution
+		Name given the CDN which consists of collection of Edge locations
+4. Web Distribution
+    Websites
+5. RTMP
+		Media Streaming
+		* objects are cached for life of TTL(Time To Live)
+		* You can clear cached objects, but you'll be charged
+      * example: Adobe flash
+
+### EBS
+* *Virtual disk, attached to EC2 instance
+    Elastic Block Store
+    Exam q: less than 2000 IOPS? GP2
+    Exam q: huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
+      Not GP2
+
+* Zones/regions:
+	* Exist in specific AZ Zones NOT across multiple zones
+  * stored in multiple physical locations at no addt'l charge
+* Consists of:
+  * SSD, General Purpose - GP2 (Up to 10,000 IOPS)
+  * SSD, Provisioned IOPS - IO1 (More than 10,000 IOPS)
+  * HDD, Throughput Optimized - ST1 - frequently accessed workloads
+  * HDD, Cold - SC1 - less frequently accessed data
+  * HDD, Magnetic - Standard - cheap, infrequently accessed storage
+
+* Q: Thinking of moving an on-premise SQL Server cluster into AWS, 
+  using EC2 instances rather than RDS? You need to recommend the most 
+  suitable EBS volume type for the cluster to use, and pair it with a
+  suitable EC2 instance type. You know that the throughput must be good,
+  most important thing is to maintain a consistent level of IOPS under 
+  normal load which can increase to a much higher level at busy times. 
+  Which EC2 and EBS pairings?
+* A: IOPS w/ EC2
+
+### EBS Magnetic
+* Throughput Optimized HDD(ST1)
+  * Low cost HDD volume designed for frequently accessed,
+  throughput-intensive workloads
+* Cold HDD
+  * Lowest cost HDD volume designed for less frequently accessed workloads
+* Previous generation
+* Can be a boot volume
+
+### SSD
+    General purpose SSD(GP2)
+      Balances price and performance for wide variety of workloads 
+    Provisioned IOPS SSD(IO1)
+      Highest-performance SSD volume for mission-critical low-latency
+      or high-throughput workloads
+
+### Elastic Load Balancers
+Three types
+1. Application
+layer 7 (make intelligent decisions)
+2. Network 
+extreme performance / static IP Addresses
+3. Classic
+test & Dev, keep costs low
+
+* Know the different types offered by AWS, and how they are different at a general level
+  • Classic ELB
+  • Application Load Balancer
+  • Network Load Balancer
+
+* Most important part of LB: DNS name doesn't change 
+  * It's not to a static IP address
+
+### CloudTrail
+* Used for auditing
+* Logs delivered every 5 minutes
+* Logs can be grouped into single file / bucket from multiple regions into single bucket
+* Per account and per region basis
+
+### CloudFront
+* Like a CDN, serves to users based on their IP region
+* Edge Locations
+  * location where content will be cached
+  * separate from AWS Region or AZ
+* Origin of files
+* Can be S3 Bucket, EC2 Instance, Elastic Load Balancer, or Route 53
+* Distribution
+  * collection of Edge Locations
+* Uses a Time To Live (TTL) to limit lifecyle at Edge Location
+* Supports an entire website:
+  * dynamic, static, streaming, interactive content
+* Requests automatically routed to nearest edge location
+* Supports non-AWS origin server as well
+* Edge locations can write / PUT an object
+* Cache can be cleared but you are charged for the action
+
+### CloudWatch
+* What are CloudWatch Events?
+  * answer: near real-time stream of system events describing changes in AWS resources
+* Standard Monitoring = 5 Minutes (Free)
+* Detailed Monitoring = 1 Minute (Pay Extra)
+* Comes with Basic and Detailed Monitoring options
+
+* Use Cases
+  * create Dashboards
+  * create Alarms - like for auto scaling
+  * Events - respond to state changes in AWS resources
+  * Logs - aggregate, monitor, store logs
+
+* Q: AWS services to use if you'd like to be notified when
+  you have crossed a billing threshold?
+* A: budgets and cloudwatch
+
+### What is high availability?
+* Amazon RDS
+* creates synchronously replicated standby instance in a different AZ
+
+### EBS
+* You can only attach an EBS volume to 1 EC2 instance 
+* An EBS volume cannot be shared with two instances at the same time
+
+### Stateless Applications
+* What is a stateless application?
+  * an application program that doesn't save client data from one session to the next
+    * a session constains unique data that exists between requests while they use app
+* Doesn't need info of previous interactions 
+* Doesn't store session information
+* Provides same response to any end user
+* Can scale horizontally 
+  * any available compute resource can service any request
+
+### Distribute Load to Multiple Nodes
+* use push or pull method
+  * push: use ELB to distribute workloads
+    * ELB routes incoming application requests across multiple EC2 instances
+  * configure Network ELB with Static Elastic IP address
+  * pull: asynchronous, event-driven workloads
+    * tasks need to be performed 
+    * data that needs to be processed 
+    * stored as messages 
+
+### Stateless Components
+* Don't store anything that needs to exist for more than a single request in local
+* Use AWS Step Functions to centrally store execution history & make workloads stateless
+
+### Stateful Components
+* layers that won't turn into stateless components
+
+### Implement Session Affinity
+* aka sticky session
+* For HTTP & HTTPS traffic:
+  * use Load Balancer to bind 
+  user's session to specific instance
+
