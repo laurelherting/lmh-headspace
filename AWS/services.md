@@ -541,3 +541,9 @@ AWS environment based on AWS best practices.
 	* pg.7 white paper:
 		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
+### Elastic-Transcoder
+*  Use:
+  * Media transcoder in the cloud - good for smartphones, etc
+* Pricing:
+  * Pay per minute, per resolution
+
