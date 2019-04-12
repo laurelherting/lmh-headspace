@@ -66,3 +66,77 @@ Microsoft = Remote Desktop Protocol(Port 3389)
 HTTP = Port 80
 HTTPS = Port 443
 
+### Distributing Processing
+* Use when processing large amounts of data that can't be handled by single compute
+  resource in timely manner
+
+### Loose Coupling
+* designed to reduce interdependencies
+  * change/failure in one component shouldn't affect other components
+
+### Asynchronous Integration
+* form of loose coupling between services
+* one component generates events and another consumes them
+
+### Synchronous replication 
+* only acknowledges transaction after its been stored in both primary location
+  and its replicas
+
+### Asynchronous replication
+* decouples primary node from its replicas at the expense of introducing replication lag 
+  * changes on primary node are not immediately reflected on its replicas
+* used horizontally
+
+### Quorum-based replication
+*  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
+
+### EC2-AMIs
+* Acts as template for root volume
+* AMIs are Regional
+* Can only launch into region from which it is stored
+* AMIs can be copied between Regions
+* AMIs can be shared privately with specific AWS Account Numbers
+* Defaults
+	* Newly created AMIs default to Private
+* AMIs can be instance-store or EBS backed
+
+### Time To Live (TTL)
+* DNS value: 86400 is 24 hours
+* Always in Seconds
+* keep low: 30 secs to 5 mins (good range)
+
+### DMS
+* spot instance:
+  * project requires 90 hours of computing time
+  * no deadline
+  * work can be stopped and restarted without adverse effect 
+  * cost effective
+* migrate an existing database to AWS
+
+### EC2-Spread Placement Group (deployment)
+* Q: How to: Deploy clustered application on a small number of EC2 instances.
+  The application must be placed across multiple Availability Zones,
+  have high speed, low latency communication between each of the nodes,
+  and minimize the chance of underlying hardware failure
+* A: deploy the EC2 servers in a Spread Placement Group
+
+### EBS
+* Q: EC2 instances are types that can be optimized with EBS?
+* A: Schedule snapshots of HDD based volumes for periods of low use
+
+### RAID 0 
+* Q: EBS volume type for specific task & increase performance of volume?
+* A: Stripe volumes together in RAID 0 configuration
+
+### Lifecycle Management
+* automatically move objects from one storage to another
+  * helps reduce cost
+
+### Geolocation Routing
+* directs traffic based on user's location
+
+### Convertible Reserved Instance (RI)
+* Change reserved instance with different configuration, Operating System,
+and tenancy 
+  * target must be of equal / higher value
+* no limits on # exchanges 
