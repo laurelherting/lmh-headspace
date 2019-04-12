@@ -145,45 +145,10 @@ AWS environment based on AWS best practices.
 	* pg.7 white paper:
 		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
-### Load Balancing cards (additional)
-* What is bootstrapping on ec2?
-  * Start w/ a default configuration, then execute automated bootstapping actions
-  * scripts that install software or copy data to bring resource to particular state
-  * userdata scripts in ec2
-* What is a Golden Image?
-  * snapshot of a particular state of that resource
-    * results in faster start times 
-    * removes dependencies to configuration services/3rd party repositories
-* What is an AMI?
-  * Amazon Machine Image
-  * provides information required to launch an instance
-* What AWS services support using containers?
-  * AWS Elastic Beanstalk
-  * Amazon Elastic Container Service (Amazon ECS)
-  * AWS Fargate
-    * run containers w/out servers or clusters
-  * ie. build golden Docker images & use ECS Container Registry to manage them
-* What is Infrastructure as Code?
-  * known as IaC 
-* What AWS service allows you to use Infrastructure as Code?
-  * CloudFormation
-    * model and provision cloud infrastructure resources
-* You are charged $$ for ELBs
-* Classic Load Balancer
-  * Layer 4 routing (TCP)
-* Application Load Balancer
-  * Layer 7 routing
-  * has Target Groups
-
 ### What is high availability?
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
 
-### Know the difference between S3 bucket url and S3 static hosted website address
-* What does a URL look like?
-  * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
-  
 ### EBS
 * You can only attach an EBS volume to 1 EC2 instance 
 * An EBS volume cannot be shared with two instances at the same time
@@ -301,4 +266,3 @@ AWS environment based on AWS best practices.
 and tenancy 
   * target must be of equal / higher value
 * no limits on # exchanges 
-

@@ -482,3 +482,38 @@ Consolidated Billing allows you to get volume discounts on all your accounts.
 
 Unused reserved EC2 instances are applied across the group.
 
+### Load Balancing
+* What is bootstrapping on ec2?
+  * Start w/ a default configuration, then execute automated bootstapping actions
+  * scripts that install software or copy data to bring resource to particular state
+  * userdata scripts in ec2
+* What is a Golden Image?
+  * snapshot of a particular state of that resource
+    * results in faster start times 
+    * removes dependencies to configuration services/3rd party repositories
+* What is an AMI?
+  * Amazon Machine Image
+  * provides information required to launch an instance
+* What AWS services support using containers?
+  * AWS Elastic Beanstalk
+  * Amazon Elastic Container Service (Amazon ECS)
+  * AWS Fargate
+    * run containers w/out servers or clusters
+  * ie. build golden Docker images & use ECS Container Registry to manage them
+* What is Infrastructure as Code?
+  * known as IaC 
+* What AWS service allows you to use Infrastructure as Code?
+  * CloudFormation
+    * model and provision cloud infrastructure resources
+* You are charged $$ for ELBs
+* Classic Load Balancer
+  * Layer 4 routing (TCP)
+* Application Load Balancer
+  * Layer 7 routing
+  * has Target Groups
+
+### Difference between S3 bucket url and S3 static hosted website address
+* What does a URL look like?
+  * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
+    * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
+  
