@@ -1,14 +1,3 @@
-### S3
-* What does a URL look like?
-  * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
-
-### S3 Data Consistency Model
-* popular exam q
-1. Read after write consistency for PUTS of new objects
-2. Eventual Consistency for overwrite PUTS and Deletes 
-    Can take some time to propagate
-
 ### CDN 
 **Content Delivery Network 
 1. Edge location
@@ -131,19 +120,6 @@ test & Dev, keep costs low
 * Q: AWS services to use if you'd like to be notified when
   you have crossed a billing threshold?
 * A: budgets and cloudwatch
-
-### AWS Quick Start
-Way of deploying evironments quickly, using CloudFormation templates built by
-AWS Solutions Architects who are experts in that particular technology.
-
-### AWS Landing Zone 
-Solution that helps customers more quickly set up secure, multi-account
-AWS environment based on AWS best practices.
-
-### What AWS resources are often used to create S3 applications?
-* answer: dynamo db, s3, efs, etc
-	* pg.7 white paper:
-		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
 ### What is high availability?
 * Amazon RDS
