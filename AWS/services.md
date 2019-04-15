@@ -402,9 +402,11 @@ Fight DR MC PX!
   * Disposable resources, Infrastructure as code, Scalability.
 
 ### RDS
-2 key features:
+* key features:
     1. Multi-AZ-for distaster recovery
     2. Read replicas-for performance
+* retention for auto RDS backups
+  * 1 - 35 days
 
 ### AWS Database Types
 * RDS(SQL/OLTP)
