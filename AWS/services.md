@@ -31,6 +31,7 @@
 * AWS Option 3: All Amazon EC2 On-Demand Instances
   * Choose all On-Demand Instances to run spiky web application
   * No upfront commitment & get significant savings (43%) over the on-premises alternative
+  * Turn off instance w/out losing data & start up again at will
 * Recommended Option for Spiky Web Applications: 
   * Mix of Reserved Instances and On-Demand Instances
 
@@ -196,6 +197,9 @@ business case to move to the cloud.
     * Opsworks
     * Consolidated Billing
         * have to pay for resources, like EC2 related to above services
+
+* VPC
+  * Use IPSEC VPN to connect on-premise datacenters to VPC
 
 * Tags:
   * Key Value Pairs attached to AWS Resources
