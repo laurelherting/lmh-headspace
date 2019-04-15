@@ -523,6 +523,7 @@ Unused reserved EC2 instances are applied across the group.
 * Application Load Balancer
   * Layer 7 routing
   * has Target Groups
+* Stops sending traffic to failed instance
 
 ### Difference between S3 bucket url and S3 static hosted website address
 * What does a URL look like?
@@ -560,7 +561,8 @@ AWS environment based on AWS best practices.
   * Pay per minute, per resolution
 
 ### AWS DeepLens
-* wireless-enabled video camera & dev platform
-* use to develop vision apps
-* deep learning model
+* Wireless-enabled video camera & dev platform
+* Use to develop vision apps
+* Deep learning model
+* Lets you use AI 
 
