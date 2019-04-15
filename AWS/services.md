@@ -315,6 +315,9 @@ Fight DR MC PX!
 * Physical EC2 server dedicated for use
 * reduce costs - use existing server-bound software licenses
 
+* Two root storage devices types:
+  * Instance store
+  * EBS
 * If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
 * If you terminate it yourself, you'll be charged for any hour in which the instance ran.
 
