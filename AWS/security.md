@@ -574,3 +574,8 @@ test & Dev, keep costs low
   * use Load Balancer to bind 
   user's session to specific instance
 
+### AWS Compliance Certifications
+* ISO 27001
+* PCI DSS Level 1
+* SOC 3
+
