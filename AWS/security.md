@@ -244,6 +244,11 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 ### VPC
 * Only 1 Internet Gateway allowed per VPC
 
+### AWS CloudHSM
+* Deals with sensitive information
+* helps generate and use encryption keys
+* protects keys with single access to HSMs in VPC
+
 ### AWS Service Catalog
 * create project portfolio
 * choose how and who deploys
