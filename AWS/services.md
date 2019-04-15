@@ -45,6 +45,8 @@
     Lower fee than S3, but charged retrieval fee
 3. S3 One zone-IA
     Lower cost option for infrequently accessed data
+    quickly accessible
+    can be re-created
     Doesn't require multiple availability data resilience 
 4. S3-Intelligent Tiering
     Optimize costs by auto moving data to most cost-effective tier
@@ -556,4 +558,9 @@ AWS environment based on AWS best practices.
   * Media transcoder in the cloud - good for smartphones, etc
 * Pricing:
   * Pay per minute, per resolution
+
+### AWS DeepLens
+* wireless-enabled video camera & dev platform
+* use to develop vision apps
+* deep learning model
 
