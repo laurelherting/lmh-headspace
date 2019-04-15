@@ -228,6 +228,10 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * fault tolerance 
 * service limits
 
+### Access Advisor
+* IAM - identify services used by user, group, role 
+* use to locate unncessary permissions
+
 ### AWS Config
 * generates historical configuration change records
   * used for auditing
