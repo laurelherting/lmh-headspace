@@ -362,11 +362,12 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * AWS Shield Advanced 
   * offers automated application 
   * operates @ layer 7 traffic monitoring
-* AWS Shield is a DDOS mitigation service
-  * designed to stop DDOS attacks
-  * turned on by default
   * advanced protection available
     * $3,000/ month
+* AWS Shield is a DDOS mitigation service
+  * free DDOS protection
+  * turned on by default
+  * designed to stop DDOS attacks
 
 ### AWS Inspector & AWS Trusted Advisor
     AWS Inspector:
