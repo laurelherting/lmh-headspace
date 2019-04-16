@@ -596,3 +596,11 @@ test & Dev, keep costs low
 * PCI DSS Level 1
 * SOC 3
 
+### Bastion Host
+* limit access to Bastion host from corporate IP address
+  * thus, protect instance from further malicious attacks from anywhere else
+
+### Failover Routing
+* Monitor site in US region using Health Checks
+  * if they become unhealthy, create a secondary policy to failover to another region
+
