@@ -1,4 +1,4 @@
-  * Q: AWS service - run code without concern about provisioning underlying resources?
+* Q: AWS service - run code without concern about provisioning underlying resources?
     * ie. virtual machines, databases
     * Answer: Lambda
 
@@ -86,6 +86,9 @@
 
 ### Use private key to connect EC2
 
+### Resource Tags
+* group resources using assigned tags
+
 ### Security Groups 
 * Virtual firewalls in cloud
 * Need to open ports to use them
@@ -170,7 +173,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Performance
       Fault Tolerance
     AWS CloudTrail:
-      Increases visibility into user & resource activity
+               Increases visibility into user & resource activity
       Records AWS Management Console actions & API calls
       Identifies user and accounts were accessed and source IP address calls were made from
 
@@ -183,7 +186,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
         Stop spending money on data center operations
       definition:
         Matched supply and demand: auto scaling, lambda
-        Cost-effective resources: ec2 reserved instances, AWS Trust Advisor
+      Cost-effective resources: ec2 reserved instances, AWS Trust Advisor
         Expenditure awareness: CloudWatch Alarms, SNS
         Optimizing over time: AWS Blog, AWS Trusted Advisor 
       best practices:
@@ -196,7 +199,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       alarm
       Insufficient_Data
 
-  * Q: AWS service - run code without concern about provisioning underlying resources?
+* Q: AWS service - run code without concern about provisioning underlying resources?
     * ie. virtual machines, databases
     * Answer: Lambda
 
@@ -257,7 +260,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Always enable multi-factor authentication on root account
 * Always use strong, complex password on root account
 * Paying account should be used for billing purposes only
-* Don't deploy resources into paying account
+                  * Don't deploy resources into paying account
 
 ### AWS Security Qs
 * Are uploads to S3 buckets public or private by default? 
@@ -271,6 +274,11 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 
 ### A security group - S3 
 * what comes in and is allowed, automatically goes back out
+
+### S3 - 11 9’s of durability
+* standard storage class
+* Glacier
+* Infrequently Accessed
 
 ### Network ACLs are stateful 
 * To allow access on port 443: 
@@ -389,7 +397,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       Performance
       Fault Tolerance
     AWS CloudTrail:
-      Increases visibility into user & resource activity
+               Increases visibility into user & resource activity
       Records AWS Management Console actions & API calls
       Identifies user and accounts were accessed and source IP address calls were made from
 
@@ -402,7 +410,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
         Stop spending money on data center operations
       definition:
         Matched supply and demand: auto scaling, lambda
-        Cost-effective resources: ec2 reserved instances, AWS Trust Advisor
+      Cost-effective resources: ec2 reserved instances, AWS Trust Advisor
         Expenditure awareness: CloudWatch Alarms, SNS
         Optimizing over time: AWS Blog, AWS Trusted Advisor 
       best practices:
@@ -523,7 +531,7 @@ test & Dev, keep costs low
 
 ### CloudWatch
 * What are CloudWatch Events?
-  * answer: near real-time stream of system events describing changes in AWS resources
+* answer: near real-time stream of system events describing changes in AWS resources
 * Standard Monitoring = 5 Minutes (Free)
 * Detailed Monitoring = 1 Minute (Pay Extra)
 * Comes with Basic and Detailed Monitoring options
@@ -531,7 +539,7 @@ test & Dev, keep costs low
 * Use Cases
   * create Dashboards
   * create Alarms - like for auto scaling
-  * Events - respond to state changes in AWS resources
+              * Events - respond to state changes in AWS resources
   * Logs - aggregate, monitor, store logs
 
 * Q: AWS services to use if you'd like to be notified when
@@ -554,7 +562,7 @@ test & Dev, keep costs low
 * Doesn't store session information
 * Provides same response to any end user
 * Can scale horizontally 
-  * any available compute resource can service any request
+            * any available compute resource can service any request
 
 ### Distribute Load to Multiple Nodes
 * use push or pull method
