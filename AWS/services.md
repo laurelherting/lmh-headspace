@@ -124,6 +124,11 @@ Subresources
 ### AWS Rekognition
 * video and image
 
+### RTMP
+* Real-Time Messaging Protocol
+* Adobe
+* Use it to stream media files
+
 ### AWS Snowball
 * Secure device
 * Transfers large amounts of data in and out of cloud
@@ -176,6 +181,9 @@ business case to move to the cloud.
   * heavy
     * 54% savings 1-year 
     * 71% 3-year
+
+### Cost Explorer
+* Gives historical cost - EC2 usage
 
 ### Billing & Pricing Summary
 * Conclusion:
@@ -414,6 +422,7 @@ Fight DR MC PX!
 * key features:
     1. Multi-AZ-for distaster recovery
     2. Read replicas-for performance
+    * configure read replicas to reduce excess read traffic
 * retention for auto RDS backups
   * 1 - 35 days
 
