@@ -430,6 +430,10 @@ Fight DR MC PX!
 * RDS(SQL/OLTP)
     * SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
 * DynamoDB(NoSQL)
+  * scales automatically
+  * high scalability
+  * high availability
+  * use with no complex transactions
 * Red Shift OLAP
     for business or data warehousing
     fully-managed data warehouse in cloud
