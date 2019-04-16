@@ -56,6 +56,10 @@
 * Global, don't have to specify region
 * User or group created globally
 
+### IAM Password Policy
+* Create password Policy in Account Settings 
+  * configure IAM Account password Policies
+
 ### You can access AWS platform in three ways
 1. Via console
 2. Programmatically - Using command line
