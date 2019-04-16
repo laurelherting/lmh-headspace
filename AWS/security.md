@@ -294,6 +294,10 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
   * Permissions changes to role happen immediately 
     * affect ones assigned to EC2 Instances
 
+### IAM Federation
+* AWS IAM Identify Federation 
+* Use third-party identity providers to authenticate
+
 ### IAM Best Practices
 http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
