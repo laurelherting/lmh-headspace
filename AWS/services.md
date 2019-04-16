@@ -582,3 +582,8 @@ AWS environment based on AWS best practices.
 ### AWS X-Ray
 * Debug distributed apps to troubleshoot root performance problems
 
+### AWS Alias Record
+* Map an Alias record to a Zone Apex
+* Map one DNS name to another 
+  * like CNAME
+
