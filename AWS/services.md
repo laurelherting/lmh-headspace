@@ -9,6 +9,9 @@
 ### Billing Alerts/ Billing Alarms 
   * Alerts automatically when level has been reached
 
+### Reserved Instance Marketplace
+* List Reserved Instances for sale 
+
 ### AWS Options
 * AWS Option 1: All Amazon EC2 Reserved Instances
   * Option - 69% savings over the on-premises alternative
@@ -434,9 +437,11 @@ Fight DR MC PX!
   * high scalability
   * high availability
   * use with no complex transactions
-* Red Shift OLAP
+* Redshift OLAP
     for business or data warehousing
     fully-managed data warehouse in cloud
+  * cluster runs 24/7 - prolonged periods - keep costs low...
+    * purchase reserved-node offerings
 * Elasticache
     used to speed up performance of existing databases(frequent identical queries)
     memcached
