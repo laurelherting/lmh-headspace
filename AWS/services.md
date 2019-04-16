@@ -579,3 +579,6 @@ AWS environment based on AWS best practices.
 * Deep learning model
 * Lets you use AI 
 
+### AWS X-Ray
+* Debug distributed apps to troubleshoot root performance problems
+
