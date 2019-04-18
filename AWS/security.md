@@ -1,7 +1,3 @@
-* Q: AWS service - run code without concern about provisioning underlying resources?
-    * ie. virtual machines, databases
-    * Answer: Lambda
-
 ### AWS Security Whitepaper
 * Use Key Pairs to:
 	* connect SSH EC2 instances
@@ -207,24 +203,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
     * ie. virtual machines, databases
     * Answer: Lambda
 
-### AWS Security Whitepaper
-* Use Key Pairs to:
-	* connect SSH EC2 instances
-	* create signed URLs w/ CloudFront
-
-* Use X.509 Certificate (PKI) to:
-  * public key infrastructure - PKI
-	* Digitally sign SOAP requests to AWS APIs
-	* Use SSL server cert w/ LB to support HTTPS
-
-* If credentials are lost/forgotten, they cannot be recovered/re-downloaded
-	* have to create new
-
-* AWS Supports multiple concurrant keys so you can swap regularly
-
-* Passwords
-	* max 128 chars
-
 ### Windows Password*
 * use key pair to decrypt pwd
 
@@ -264,7 +242,7 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Always enable multi-factor authentication on root account
 * Always use strong, complex password on root account
 * Paying account should be used for billing purposes only
-                  * Don't deploy resources into paying account
+   * Don't deploy resources into paying account
 
 ### AWS Security Qs
 * Are uploads to S3 buckets public or private by default? 
