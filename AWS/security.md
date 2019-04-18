@@ -254,14 +254,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * What are some of the delivery options for SNS?
   * HTTP and HTTPS subscription types
 
-### A security group - S3 
-* what comes in and is allowed, automatically goes back out
-
-### S3 - 11 9’s of durability
-* standard storage class
-* Glacier
-* Infrequently Accessed
-
 ### Network ACLs are stateful 
 * To allow access on port 443: 
   add rules allowing 443 for both both inbound AND add outbound traffic
@@ -297,6 +289,13 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Monitor activity in your AWS account
 * Video presentation about IAM best practices
 
+### A security group - S3 
+* what comes in and is allowed, automatically goes back out
+
+### S3 - 11 9’s of durability
+* standard storage class
+* Glacier
+* Infrequently Accessed
 ### Grant permissions on S3
 * both at bucket and individually
   * use bucket policy and Access Control List
@@ -548,7 +547,7 @@ test & Dev, keep costs low
 * Doesn't store session information
 * Provides same response to any end user
 * Can scale horizontally 
-            * any available compute resource can service any request
+  * any available compute resource can service any request
 
 ### Distribute Load to Multiple Nodes
 * use push or pull method
@@ -585,4 +584,3 @@ test & Dev, keep costs low
 ### Failover Routing
 * Monitor site in US region using Health Checks
   * if they become unhealthy, create a secondary policy to failover to another region
-
