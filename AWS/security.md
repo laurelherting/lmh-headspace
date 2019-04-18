@@ -244,16 +244,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
 * Paying account should be used for billing purposes only
    * Don't deploy resources into paying account
 
-### AWS Security Qs
-* Are uploads to S3 buckets public or private by default? 
-  * private
-* Do new AMIs created default to public or private?
-  * private
-* Do customers have any access to physical drives on ec2?
-  * yes
-* What are some of the delivery options for SNS?
-  * HTTP and HTTPS subscription types
-
 ### Network ACLs are stateful 
 * To allow access on port 443: 
   add rules allowing 443 for both both inbound AND add outbound traffic
@@ -584,3 +574,14 @@ test & Dev, keep costs low
 ### Failover Routing
 * Monitor site in US region using Health Checks
   * if they become unhealthy, create a secondary policy to failover to another region
+
+### AWS Security Qs
+* Are uploads to S3 buckets public or private by default? 
+  * private
+* Do new AMIs created default to public or private?
+  * private
+* Do customers have any access to physical drives on ec2?
+  * yes
+* What are some of the delivery options for SNS?
+  * HTTP and HTTPS subscription types
+
