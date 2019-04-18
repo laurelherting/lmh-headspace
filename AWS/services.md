@@ -1,5 +1,25 @@
 ## Billing and Pricing
 
+### AWS Organization & Consolidated Billing
+Linked accounts:
+* 20 linked accounts only
+* To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
+* Billing Alerts:
+  * detailed monitoring and ELBs increase EC2 costs
+  * When monitoring is enabled on paying account, billing data for linked accounts included
+* You can still create billing alerts per individual account
+* CloudTrail:
+  * CloudTrail For auditing, cloudWatch is for performance.
+  * Per AWS account and is enabled per region.
+  * Can consolidate logs using an S3 bucket:
+    * Turn on CloudTrail in paying account.
+    * Create bucket policy that allows cross-account access.
+    * Turn on CloudTrail in other accounts and use bucket in the paying account.
+
+Consolidated Billing allows you to get volume discounts on all your accounts.
+
+Unused reserved EC2 instances are applied across the group.
+
 ### Support Packages
     basic-free
     developer-$29/month (scales based on usage)
@@ -70,84 +90,7 @@
 4. Data transfer pricing
 5. Transfer acceleration
 
-### S3 general
-* S3 is object-based
-    ex. allows you to upload files
-* files can be 0 bytes - 5tb
-* unlimited storage
-* files are stored in buckets
-* S3 is a universal namespace
-    names must be unique globally
-    https://s3-eu-west-1.amazonaws.com/acloudguru
-* Read after write consistency after PUTS of new objects
-* Eventual consistency for overwrite PUTS and DELETES
-* NOT suitable to install an operating system on
-* Successful uploads generate HTTP 200 status code
-* RDS Automated backups stored here
-
-### S3 Tiers
-1. S3
-Durable, immediately available, frequently accessed
-2. S3 - IA
-Durable, immediately available, infrequently accessed
-3. S3 One Zone - IA 
-Even cheaper than IA, but only in 1 availability zone
-4. Glacier
-Achieved data, where you can wait 3-5 hours before accessing
-
-* Q: Best AWS service to host a file in a location that's publicly
-  accessible from anywhere
-* A: S3
-
-### Key fundamentals of S3
-Key (name of object)
-Value (data, made up of a sequence of bytes)
-Version ID
-Metadata
-Subresources
-
-### Buckets
-    Names share a common name space
-      Can’t have the same bucket name as someone else
-    View buckets, you view them globally
-    Can have buckets in individual regions
-    Replicate contents to another bucket automatically via cross-region replication
-    Change storage classes and encryption of objects at anytime
-
-### S3
-* Use bucket policies to make entire S3 buckets public
-* Can use S3 to host STATIC websites
-  * ex. As html
-  * Websites that require database connections such as Wordpress etc can’t be hosted on S3
-
-### S3 Scales automatically to meet demand
-* Many enterprises will put static websites on S3 when they forsee large # requests 
-  * ie. Movie preview
-
-### AWS Rekognition
-* video and image
-
-### RTMP
-* Real-Time Messaging Protocol
-* Adobe
-* Use it to stream media files
-
-### AWS Snowball
-* Secure device
-* Transfers large amounts of data in and out of cloud
-* offers petabyte-scale data transport solution 
-- uses devices designed secure to transfer large # data into and out of Cloud
-- workaround for internet
-
-### AWS Athena
-* Serverless interactive query service
-
-### AWS Storage Gateway
-* AWS service - acts as a file system mounted on an S3 bucket
-
-### Aurora
-* compatible database read replicas 
-  * MySQL and PostgreSQL
+## Cost Calculators
 
 ### AWS Simple Monthly Calculator
 Used to calculate running costs on AWS on a per month basis.
@@ -235,12 +178,102 @@ business case to move to the cloud.
   * global service to discover resources & add tags
   * Newer regions may take some time to be compatible with tag editor
 
-### EC2 - compute based service, not serverless, it's a server!
+## Services
+
+### S3 general
+* S3 is object-based
+    ex. allows you to upload files
+* files can be 0 bytes - 5tb
+* unlimited storage
+* files are stored in buckets
+* S3 is a universal namespace
+    names must be unique globally
+    https://s3-eu-west-1.amazonaws.com/acloudguru
+* Read after write consistency after PUTS of new objects
+* Eventual consistency for overwrite PUTS and DELETES
+* NOT suitable to install an operating system on
+* Successful uploads generate HTTP 200 status code
+* RDS Automated backups stored here
+
+* Use bucket policies to make entire S3 buckets public
+* Can use S3 to host STATIC websites
+  * ex. As html
+  * Websites that require database connections such as Wordpress etc can’t be hosted on S3
+
+### S3 Tiers
+1. S3
+Durable, immediately available, frequently accessed
+2. S3 - IA
+Durable, immediately available, infrequently accessed
+3. S3 One Zone - IA 
+Even cheaper than IA, but only in 1 availability zone
+4. Glacier
+Achieved data, where you can wait 3-5 hours before accessing
+
+* Q: Best AWS service to host a file in a location that's publicly
+  accessible from anywhere
+* A: S3
+
+### Key fundamentals of S3
+Key (name of object)
+Value (data, made up of a sequence of bytes)
+Version ID
+Metadata
+Subresources
+
+### Buckets
+    Names share a common name space
+      Can’t have the same bucket name as someone else
+    View buckets, you view them globally
+    Can have buckets in individual regions
+    Replicate contents to another bucket automatically via cross-region replication
+    Change storage classes and encryption of objects at anytime
+
+### S3 Scales automatically to meet demand
+* Many enterprises will put static websites on S3 when they forsee large # requests 
+  * ie. Movie preview
+
+* What does a URL look like?
+  * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
+    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
+
+### S3 Data Consistency Model
+* popular exam q
+1. Read after write consistency for PUTS of new objects
+2. Eventual Consistency for overwrite PUTS and Deletes 
+    Can take some time to propagate
+
+### AWS Rekognition
+* video and image
+
+### RTMP
+* Real-Time Messaging Protocol
+* Adobe
+* Use it to stream media files
+
+### AWS Snowball
+* Secure device
+* Transfers large amounts of data in and out of cloud
+* offers petabyte-scale data transport solution 
+- uses devices designed secure to transfer large # data into and out of Cloud
+- workaround for internet
+
+### AWS Athena
+* Serverless interactive query service
+
+### AWS Storage Gateway
+* AWS service - acts as a file system mounted on an S3 bucket
+
+### Aurora
+* compatible database read replicas 
+  * MySQL and PostgreSQL
 
 ### EC2
 * Virtual server in the cloud
   * Reduces time required to obtain & boot new server instances to minutes
     * quickly scale capacity, both up and down, to meet computing requirements
+
+* Compute based service, not serverless, it's a server!
 
 ### EC2 categories
 * On Demand
@@ -274,67 +307,6 @@ business case to move to the cloud.
 * Physical EC2 server dedicated for use
 * reduce costs - use existing server-bound software licenses
 
-* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
-* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
-
-1. Elastic Compute Cloud (Amazon EC2)
-2. Instance Types
-
-*Good to be aware of instance types, but details won't be on cert exam
-*FIGHTDRMCPX
-F - FPGA
-I - IOPS, NoSQL DBs, Data Warehousing
-G - Graphics, Video Encoding/Machine Learning/3D App Streaming
-H - High Disk Throughput
-T - Cheap general purpose (think T2 Micro), Web Servers/Small DBs
-D - Density, Fileservers, Data Warehousing, Hadoop
-R - RAM, Memory intensive Apps/DBs
-M - Main choice for general purpose apps
-C - Compute, CPU Intensive Apps/DBs
-P - Graphics(think Pics)
-X - Extreme Memory
-Fight DR MC PX!
-
-### EC2
-* Virtual server in the cloud
-  * Reduces time required to obtain & boot new server instances to minutes
-    * quickly scale capacity, both up and down, to meet computing requirements
-
-### EC2 categories
-* On Demand
-  * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
-  * Good for Short-term/spiky workloads that cannot be interrupted
-  * Good for test/dev environments
-  * No downtime
-
-* Reserved
-  * Apps with Steady-state/predictable useage
-  * Able to make upfront payments to reduce costs
-  * Often a 12-36 month timeframe
-  * 1 or 3 year term
-
-* Spot
-  * Apps with flexible start/end times
-  * Apps that are only feasible at low compute prices
-  * Users with urgent computing needs for large amts of addt'l capacity
-  * Instances have 120 seconds to shut down
-
-### EC2 Exam Tips
-1. On Demand
-* Pay fixed rate by hour (or by sec) w/ no commitment
-2. Reserved
-* Provides capacity reservation & discounts on hourly charge 
-1 or 3 year terms 
-3. Spot
-* bid price you want for instance capacity
-* greater savings for flex start/end times
-4. Dedicated Hosts 
-* Physical EC2 server dedicated for use
-* reduce costs - use existing server-bound software licenses
-
-* Two root storage devices types:
-  * Instance store
-  * EBS
 * If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
 * If you terminate it yourself, you'll be charged for any hour in which the instance ran.
 
@@ -492,26 +464,6 @@ programmable.
 2. CloudFormation can provision almost any AWS service & is completely
 programmable
 
-### AWS Organization & Consolidated Billing
-Linked accounts:
-* 20 linked accounts only
-* To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
-* Billing Alerts:
-  * detailed monitoring and ELBs increase EC2 costs
-  * When monitoring is enabled on paying account, billing data for linked accounts included
-* You can still create billing alerts per individual account
-* CloudTrail:
-  * CloudTrail For auditing, cloudWatch is for performance.
-  * Per AWS account and is enabled per region.
-  * Can consolidate logs using an S3 bucket:
-    * Turn on CloudTrail in paying account.
-    * Create bucket policy that allows cross-account access.
-    * Turn on CloudTrail in other accounts and use bucket in the paying account.
-
-Consolidated Billing allows you to get volume discounts on all your accounts.
-
-Unused reserved EC2 instances are applied across the group.
-
 ### Load Balancing
 * What is bootstrapping on ec2?
   * Start w/ a default configuration, then execute automated bootstapping actions
@@ -548,17 +500,6 @@ Unused reserved EC2 instances are applied across the group.
   * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
     * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
   
-### S3
-* What does a URL look like?
-  * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
-
-### S3 Data Consistency Model
-* popular exam q
-1. Read after write consistency for PUTS of new objects
-2. Eventual Consistency for overwrite PUTS and Deletes 
-    Can take some time to propagate
-
 ### AWS Quick Start
 Way of deploying evironments quickly, using CloudFormation templates built by
 AWS Solutions Architects who are experts in that particular technology.
@@ -591,4 +532,3 @@ AWS environment based on AWS best practices.
 * Map an Alias record to a Zone Apex
 * Map one DNS name to another 
   * like CNAME
-
