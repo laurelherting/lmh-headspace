@@ -288,6 +288,10 @@ Subresources
   * Often a 12-36 month timeframe
   * 1 or 3 year term
 
+
+  * Reserved EC2 instance classes 
+    * Convertible 
+    * Standard
 * Spot
   * Apps with flexible start/end times
   * Apps that are only feasible at low compute prices
