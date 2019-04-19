@@ -43,16 +43,13 @@ multiple zones in Auto Scaling group settings
 ### Scaling vs elasticity
 Easy to scale in and out for cost saving (elastic) hard to scale up then back down
 
-### Day before exam read:
-https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
-
-### What is horizontal scaling?
+### Horizontal Scaling
 * scale by adding more machines
   * increase in number of resources
   * ie. add more hard drives to storage or servers
 * great for building internet-scale apps
 
-### What is vertical scaling?
+### Vertical Scaling
 * Scale by adding more power to existing machine
   * ex. CPU, RAM
   * increase of individual resource
@@ -140,3 +137,7 @@ HTTPS = Port 443
 and tenancy 
   * target must be of equal / higher value
 * no limits on # exchanges 
+
+### Day before exam read:
+https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+
