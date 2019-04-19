@@ -575,6 +575,10 @@ test & Dev, keep costs low
 * Monitor site in US region using Health Checks
   * if they become unhealthy, create a secondary policy to failover to another region
 
+### AWS Customer responsibility
+* patch Windows OS
+* implement password policies
+
 ### AWS Security Qs
 * Are uploads to S3 buckets public or private by default? 
   * private
