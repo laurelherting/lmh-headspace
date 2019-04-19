@@ -213,6 +213,10 @@ To let just one IP in X.X.X.X/32
 	* uses AWS Key Management Service
     * Managed Keys - SSE-KMS
 
+### AWS Artifact
+* Gives on-demand access to security and compliance reports & agreements
+* central resource for compliance-related information 
+
 ### VPC
 * Only 1 Internet Gateway allowed per VPC
 
