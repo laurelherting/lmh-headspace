@@ -454,10 +454,14 @@ Service that helps model and set up AWS recources
 in AWS.
   * Create template that describes all AWS recources you want 
 (ex. EC2, Amazon RDS DB instances), and AWS CloudFormation takes
+    * template file format: YAML and JSON
 care of provisioning & configuring resources for you.
   * Don't need to individually create & configure AWS resources
 & figure out what's dependent on what;
     * AWS CloudFormation handles all of that.
+
+### Workspaces
+* Deploy virtual desktop infrastructure in cloud
 
 ### Elastic Beanstalk and CloudFormation
 Both are free, but the resources they provision (ex. EC2 instances)
