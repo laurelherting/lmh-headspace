@@ -584,6 +584,8 @@ test & Dev, keep costs low
   * private
 * Do new AMIs created default to public or private?
   * private
+* Make AMI available across regions?
+  * copy AMI to other regions
 * Do customers have any access to physical drives on ec2?
   * yes
 * What are some of the delivery options for SNS?
