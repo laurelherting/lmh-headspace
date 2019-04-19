@@ -56,6 +56,10 @@
 * Create password Policy in Account Settings 
   * configure IAM Account password Policies
 
+### Access AWS Management Console 
+* via url
+* https://AWSAccountID.signin.aws.amazon.com/console
+
 ### You can access AWS platform in three ways
 1. Via console
 2. Programmatically - Using command line
@@ -97,6 +101,8 @@
 * Needed bc they protect instances w/ Subnet
 
 ### Always design for failure - have one EC2 instance in each availability zone.
+
+### NACLs traffic rules & restrictions - apply to Subnets
 
 ### Using IAM Roles
     Roles more secure than access key ids
