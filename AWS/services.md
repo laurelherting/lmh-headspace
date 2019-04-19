@@ -251,6 +251,10 @@ Subresources
 * Adobe
 * Use it to stream media files
 
+### AWS Kinesis Video Stream
+* securely stream video from connected devices
+  * processing: analytics, machine learning, playback
+
 ### AWS Snowball
 * Secure device
 * Transfers large amounts of data in and out of cloud
