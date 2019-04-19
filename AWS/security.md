@@ -139,15 +139,6 @@ To let just one IP in X.X.X.X/32
     4.  Platform, Applications, Identity & Access Management 
     5.  Customer Data
  
-#### Possible exam security q's: 
-1. This Compliance certifications handles security AWS platform for credit card transactions? 
-Answer: PCI DSS Level 1 cert
-2. This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
-Answer: HIPAA 
-
-* read Shared Responsibility Model before exam:
-http://aws.amazon.com/compliance/shared-responsibility-model/
-
 ### AWS WAF & AWS Shield
 * AWS WAF is a Web Application Firewall
   * designed to stop hackers
@@ -198,10 +189,6 @@ http://aws.amazon.com/compliance/shared-responsibility-model/
       OK
       alarm
       Insufficient_Data
-
-* Q: AWS service - run code without concern about provisioning underlying resources?
-    * ie. virtual machines, databases
-    * Answer: Lambda
 
 ### Windows Password*
 * use key pair to decrypt pwd
@@ -286,6 +273,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * standard storage class
 * Glacier
 * Infrequently Accessed
+
 ### Grant permissions on S3
 * both at bucket and individually
   * use bucket policy and Access Control List
@@ -337,15 +325,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
     4.  Platform, Applications, Identity & Access Management 
     5.  Customer Data
  
-### Possible exam security q's: 
-1. This Compliance certifications handles security AWS platform for credit card transactions? 
-Answer: PCI DSS Level 1 cert
-2. This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
-Answer: HIPAA 
-
-* read Shared Responsibility Model before exam:
-http://aws.amazon.com/compliance/shared-responsibility-model/
-
 ### AWS WAF & AWS Shield
 * AWS WAF is a Web Application Firewall
   * designed to stop hackers
@@ -579,6 +558,9 @@ test & Dev, keep costs low
 * patch Windows OS
 * implement password policies
 
+### Versioning
+* Prevents accidental deletion of objects
+
 ### AWS Security Qs
 * Are uploads to S3 buckets public or private by default? 
   * private
@@ -590,4 +572,19 @@ test & Dev, keep costs low
   * yes
 * What are some of the delivery options for SNS?
   * HTTP and HTTPS subscription types
+
+* read Shared Responsibility Model before exam:
+* Q: AWS service - run code without concern about provisioning underlying resources?
+    * ie. virtual machines, databases
+    * Answer: Lambda
+
+### Possible exam security q's: 
+1. This Compliance certifications handles security AWS platform for credit card transactions? 
+Answer: PCI DSS Level 1 cert
+2. This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
+Answer: HIPAA 
+3. Compliance for data resiliency: never...
+Answer: AWS never replicates auto stored s3 data across Regions 
+* read Shared Responsibility Model before exam:
+http://aws.amazon.com/compliance/shared-responsibility-model/
 
