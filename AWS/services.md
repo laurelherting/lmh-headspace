@@ -314,6 +314,9 @@ Subresources
 * If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
 * If you terminate it yourself, you'll be charged for any hour in which the instance ran.
 
+* Price / hour charge for several Spot instances
+  * Spot Price
+
 1. Elastic Compute Cloud (Amazon EC2)
 2. Instance Types
 
