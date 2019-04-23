@@ -89,6 +89,9 @@ Unused reserved EC2 instances are applied across the group.
 3. Storage management pricing
 4. Data transfer pricing
 5. Transfer acceleration
+6. Number & size of objects
+
+* don't have to worry about IOPS
 
 ## Cost Calculators
 
@@ -264,6 +267,7 @@ Subresources
 - workaround for internet
 
 ### AWS Athena
+* Helps analyze data in s3 using SQL
 * Serverless interactive query service
 
 ### AWS Storage Gateway
