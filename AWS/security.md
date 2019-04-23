@@ -144,6 +144,10 @@ To let just one IP in X.X.X.X/32
     3.  Operating System, Network, & Firewall Configuration
     4.  Platform, Applications, Identity & Access Management 
     5.  Customer Data
+
+* examples of security in cloud
+  * AWS services used with content
+  * country stored
  
 ### AWS WAF & AWS Shield
 * AWS WAF is a Web Application Firewall
@@ -266,6 +270,8 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Create individual IAM users
 * Use groups to assign permissions to IAM users
 * Grant least privilege
+* Give only needed access: 
+  * Principal of least privilege
 * Configure a strong password policy for your users
 * Enable MFA for privileged users
 * Use roles for applications that run on Amazon EC2 instances
@@ -586,7 +592,6 @@ test & Dev, keep costs low
 * What are some of the delivery options for SNS?
   * HTTP and HTTPS subscription types
 
-* read Shared Responsibility Model before exam:
 * Q: AWS service - run code without concern about provisioning underlying resources?
     * ie. virtual machines, databases
     * Answer: Lambda
@@ -600,6 +605,7 @@ Answer: HIPAA
 Answer: AWS never replicates auto stored s3 data across Regions 
 4. Who retains complete control & ownership of your (data) region?
 Answer: you do
+
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
 
