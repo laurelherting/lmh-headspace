@@ -309,6 +309,9 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Inside of identity access management
 
 ### AWS Shared Responsibility Model
+* Security benefits:
+  * Secure global infrastructure
+  * meets compliance requirements
 * Know inside & out going into exam to pass
   * Who's responsible for what with the cloud?
   * Remember this summary:
@@ -595,6 +598,8 @@ Answer: PCI DSS Level 1 cert
 Answer: HIPAA 
 3. Compliance for data resiliency: never...
 Answer: AWS never replicates auto stored s3 data across Regions 
+4. Who retains complete control & ownership of your (data) region?
+Answer: you do
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
 
