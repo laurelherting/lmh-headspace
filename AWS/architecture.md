@@ -138,6 +138,9 @@ and tenancy
   * target must be of equal / higher value
 * no limits on # exchanges 
 
+### SNS
+* SMS / Email notifications
+
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
