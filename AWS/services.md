@@ -181,7 +181,8 @@ business case to move to the cloud.
 ## Services
 
 ### S3 general
-* S3 is object-based
+* uploaded file called: Object
+  * S3 is object-based
     ex. allows you to upload files
 * files can be 0 bytes - 5tb
 * unlimited storage
