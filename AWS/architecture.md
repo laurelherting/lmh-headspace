@@ -141,6 +141,9 @@ and tenancy
 ### SNS
 * SMS / Email notifications
 
+### Global Insfrastructure
+* benefit: lower latency
+
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
