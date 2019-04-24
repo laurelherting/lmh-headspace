@@ -329,7 +329,7 @@ Subresources
 * Price / hour charge for several Spot instances
   * Spot Price
 
-1. Elastic Compute Cloud (Amazon EC2)
+1. EC2 stands for: Elastic Compute Cloud
 2. Instance Types
 
 *Good to be aware of instance types, but details won't be on cert exam
