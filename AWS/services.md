@@ -558,3 +558,9 @@ AWS environment based on AWS best practices.
 * Map an Alias record to a Zone Apex
 * Map one DNS name to another 
   * like CNAME
+
+### Sample Practice Questions
+* EC2 hosting: most cost effective
+  * 60 day run
+  * use On-Demand instance type
+
