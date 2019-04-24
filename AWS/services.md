@@ -307,6 +307,9 @@ Subresources
   * Users with urgent computing needs for large amts of addt'l capacity
   * Instances have 120 seconds to shut down
 
+* Use EC2 to create Linux server to run app to
+  * use to create Linux server
+
 ### EC2 Exam Tips
 1. On Demand
 * Pay fixed rate by hour (or by sec) w/ no commitment
