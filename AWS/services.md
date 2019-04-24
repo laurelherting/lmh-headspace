@@ -1,6 +1,6 @@
 ## Billing and Pricing
 
-### AWS Organization & Consolidated Billing
+### AWS Organizations & Consolidated Billing
 Linked accounts:
 * 20 linked accounts only
 * To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
@@ -9,6 +9,7 @@ Linked accounts:
   * When monitoring is enabled on paying account, billing data for linked accounts included
 * You can still create billing alerts per individual account
 * CloudTrail:
+  * Use to monitor all events in account
   * CloudTrail For auditing, cloudWatch is for performance.
   * Per AWS account and is enabled per region.
   * Can consolidate logs using an S3 bucket:
@@ -16,9 +17,11 @@ Linked accounts:
     * Create bucket policy that allows cross-account access.
     * Turn on CloudTrail in other accounts and use bucket in the paying account.
 
-Consolidated Billing allows you to get volume discounts on all your accounts.
+* Consolidated Billing allows you to get volume discounts on all your accounts.
 
-Unused reserved EC2 instances are applied across the group.
+* Unused reserved EC2 instances are applied across the group.
+
+* Service Control Polcies are created in AWS Organizations
 
 ### Support Packages
     basic-free
@@ -214,9 +217,6 @@ Even cheaper than IA, but only in 1 availability zone
 4. Glacier
 Achieved data, where you can wait 3-5 hours before accessing
 
-* Q: Best AWS service to host a file in a location that's publicly
-  accessible from anywhere
-* A: S3
 
 ### Key fundamentals of S3
 Key (name of object)
@@ -266,6 +266,10 @@ Subresources
 - uses devices designed secure to transfer large # data into and out of Cloud
 - workaround for internet
 
+### AWS Lambda
+* Serverless
+* run code without provisioning or managing servers
+
 ### AWS Athena
 * Helps analyze data in s3 using SQL
 * Serverless interactive query service
@@ -274,6 +278,7 @@ Subresources
 * AWS service - acts as a file system mounted on an S3 bucket
 
 ### Aurora
+* AWS's RDS SQL Database engine
 * compatible database read replicas 
   * MySQL and PostgreSQL
 
@@ -385,27 +390,6 @@ Fight DR MC PX!
       * application
       * health monitoring
 
-###	Possible Questions:
-* p. 13 of whitepaper
-  * Question: Use this service to deploy and scale web applications and services developed
-  with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as:
-  Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code, 
-  and the service automatically handles all the details, such as: resource provisioning, 
-  load balancing, auto scaling, and monitoring.
-   Answer: Elastic Beanstalk
-* Q: What language is not supported by Elastic Beanstalk? 
-  A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
-   Answer: Rust
-* Q: What major language / frameworks are supported by Elastic Beanstalk?
-  * Answer:
-• Java
-• .NET
-• PHP
-• Node.js
-• Python
-• Ruby
-• Go
-• Docker
 
 ### EMR
 * Web service:
@@ -431,6 +415,7 @@ Fight DR MC PX!
   * high scalability
   * high availability
   * use with no complex transactions
+  * fully-managed
 * Redshift OLAP
     for business or data warehousing
     fully-managed data warehouse in cloud
@@ -534,11 +519,6 @@ AWS Solutions Architects who are experts in that particular technology.
 Solution that helps customers more quickly set up secure, multi-account
 AWS environment based on AWS best practices.
 
-### What AWS resources are often used to create S3 applications?
-* answer: dynamo db, s3, efs, etc
-	* pg.7 white paper:
-		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
-
 ### Elastic-Transcoder
 *  Use:
   * Media transcoder in the cloud - good for smartphones, etc
@@ -564,3 +544,33 @@ AWS environment based on AWS best practices.
   * 60 day run
   * use On-Demand instance type
 
+###	Possible Questions:
+* p. 13 of whitepaper
+  * Question: Use this service to deploy and scale web applications and services developed
+  with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as:
+  Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code, 
+  and the service automatically handles all the details, such as: resource provisioning, 
+  load balancing, auto scaling, and monitoring.
+   Answer: Elastic Beanstalk
+* Q: What language is not supported by Elastic Beanstalk? 
+  A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
+   Answer: Rust
+* Q: What major language / frameworks are supported by Elastic Beanstalk?
+  * Answer:
+• Java
+• .NET
+• PHP
+• Node.js
+• Python
+• Ruby
+• Go
+• Docker
+
+### What AWS resources are often used to create S3 applications?
+* answer: dynamo db, s3, efs, etc
+	* pg.7 white paper:
+		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+
+* Q: Best AWS service to host a file in a location that's publicly
+  accessible from anywhere
+* A: S3
