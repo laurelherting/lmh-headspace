@@ -365,6 +365,9 @@ Fight DR MC PX!
 7.Batch
 8.Elastic Beanstalk
 
+### CloudSearch
+* Quickly add search capabilities to website / application
+
 ### Lightsail
 * Charged per hour at plan rate as long as an instance is started or in stopped state
 * good if you just need virtual private servers
