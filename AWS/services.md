@@ -148,7 +148,6 @@ business case to move to the cloud.
 * Spot instances:
 	* you terminate, you pay for the hour
   * AWS termiantes, you get the hour for free
-** * Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
 
 * free services:
     * Amazon VPC
@@ -217,7 +216,6 @@ Even cheaper than IA, but only in 1 availability zone
 4. Glacier
 Achieved data, where you can wait 3-5 hours before accessing
 
-
 ### Key fundamentals of S3
 Key (name of object)
 Value (data, made up of a sequence of bytes)
@@ -237,12 +235,8 @@ Subresources
 * Many enterprises will put static websites on S3 when they forsee large # requests 
   * ie. Movie preview
 
-* What does a URL look like?
-  * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
 
 ### S3 Data Consistency Model
-* popular exam q
 1. Read after write consistency for PUTS of new objects
 2. Eventual Consistency for overwrite PUTS and Deletes 
     Can take some time to propagate
@@ -301,7 +295,6 @@ Subresources
   * Able to make upfront payments to reduce costs
   * Often a 12-36 month timeframe
   * 1 or 3 year term
-
 
   * Reserved EC2 instance classes 
     * Convertible 
@@ -389,7 +382,6 @@ Fight DR MC PX!
       * scaling
       * application
       * health monitoring
-
 
 ### EMR
 * Web service:
@@ -574,3 +566,10 @@ AWS environment based on AWS best practices.
 * Q: Best AWS service to host a file in a location that's publicly
   accessible from anywhere
 * A: S3
+
+** * Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+
+* What does an s3 URL look like?
+  * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
+    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
+
