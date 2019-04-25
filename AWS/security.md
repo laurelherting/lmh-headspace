@@ -258,6 +258,10 @@ To let just one IP in X.X.X.X/32
   * Can only be assigned at EC2 instance provision
   * Permissions changes to role happen immediately 
     * affect ones assigned to EC2 Instances
+* Create policies:
+  * JSON scripting
+  * Import a managed policy*
+  * visual editor
 
 ### IAM Federation
 * AWS IAM Identify Federation 
