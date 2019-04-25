@@ -498,6 +498,9 @@ programmable
   * has Target Groups
 * Stops sending traffic to failed instance
 
+### Best practices standards
+* AWS Managed Service complies with ITIL
+
 ### Difference between S3 bucket url and S3 static hosted website address
 * What does a URL look like?
   * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
