@@ -247,7 +247,7 @@ To let just one IP in X.X.X.X/32
 
 ### Network ACLs are stateful 
 * To allow access on port 443: 
-  add rules allowing 443 for both both inbound AND add outbound traffic
+  * add rules allowing 443 for both both inbound AND add outbound traffic
 
 ### Successful upload = HTTP 200 code
 
@@ -422,14 +422,11 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 		Media Streaming
 		* objects are cached for life of TTL(Time To Live)
 		* You can clear cached objects, but you'll be charged
-      * example: Adobe flash
+  * example: Adobe flash
 
 ### EBS
 * *Virtual disk, attached to EC2 instance
     Elastic Block Store
-    Exam q: less than 2000 IOPS? GP2
-    Exam q: huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
-      Not GP2
 
 * Zones/regions:
 	* Exist in specific AZ Zones NOT across multiple zones
@@ -609,6 +606,11 @@ Answer: HIPAA
 Answer: AWS never replicates auto stored s3 data across Regions 
 4. Who retains complete control & ownership of your (data) region?
 Answer: you do
+
+* EBS Exam questions : 
+  * less than 2000 IOPS? GP2
+  * huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
+  Not GP2
 
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
