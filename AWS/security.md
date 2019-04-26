@@ -88,8 +88,6 @@
       Human resources
       finance
 
-### Use private key to connect EC2
-
 ### Resource Tags
 * group resources using assigned tags
 
