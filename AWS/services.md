@@ -17,7 +17,7 @@ Linked accounts:
     * Create bucket policy that allows cross-account access.
     * Turn on CloudTrail in other accounts and use bucket in the paying account.
 
-* Consolidated Billing allows you to get volume discounts on all your accounts.
+* Consolidated Billing - get volume discounts on all your accounts.
 
 * Unused reserved EC2 instances are applied across the group.
 
@@ -200,7 +200,6 @@ business case to move to the cloud.
 * NOT suitable to install an operating system on
 * Successful uploads generate HTTP 200 status code
 * RDS Automated backups stored here
-
 * Use bucket policies to make entire S3 buckets public
 * Can use S3 to host STATIC websites
   * ex. As html
@@ -234,7 +233,6 @@ Subresources
 ### S3 Scales automatically to meet demand
 * Many enterprises will put static websites on S3 when they forsee large # requests 
   * ie. Movie preview
-
 
 ### S3 Data Consistency Model
 1. Read after write consistency for PUTS of new objects
@@ -308,28 +306,6 @@ Subresources
 * Use EC2 to create Linux server to run app to
   * use to create Linux server
 
-### EC2 Exam Tips
-1. On Demand
-* Pay fixed rate by hour (or by sec) w/ no commitment
-2. Reserved
-* Provides capacity reservation & discounts on hourly charge 
-1 or 3 year terms 
-3. Spot
-* bid price you want for instance capacity
-* greater savings for flex start/end times
-4. Dedicated Hosts 
-* Physical EC2 server dedicated for use
-* reduce costs - use existing server-bound software licenses
-
-* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
-* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
-
-* Price / hour charge for several Spot instances
-  * Spot Price
-
-1. EC2 stands for: Elastic Compute Cloud
-2. Instance Types
-
 *Good to be aware of instance types, but details won't be on cert exam
 *FIGHTDRMCPX
 F - FPGA
@@ -355,16 +331,6 @@ Fight DR MC PX!
 * use it to: 
   * direct traffic world-wide
   * register domain name
-
-### Name all Compute Services
-1.EC2 *
-2.Lightsail
-3.ECR
-4.ECS
-5.EKS
-6.Lambda *
-7.Batch
-8.Elastic Beanstalk
 
 ### CloudSearch
 * Quickly add search capabilities to website / application
@@ -575,4 +541,36 @@ AWS environment based on AWS best practices.
 * What does an s3 URL look like?
   * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
     ex. Https://s3-eu-west1.amazonaws.com/acloudguru
+
+### EC2 Exam Tips
+1. On Demand
+* Pay fixed rate by hour (or by sec) w/ no commitment
+2. Reserved
+* Provides capacity reservation & discounts on hourly charge 
+1 or 3 year terms 
+3. Spot
+* bid price you want for instance capacity
+* greater savings for flex start/end times
+4. Dedicated Hosts 
+* Physical EC2 server dedicated for use
+* reduce costs - use existing server-bound software licenses
+
+* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
+* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
+
+* Price / hour charge for several Spot instances
+  * Spot Price
+
+1. EC2 stands for: Elastic Compute Cloud
+2. Instance Types
+
+### Name all Compute Services
+1.EC2 *
+2.Lightsail
+3.ECR
+4.ECS
+5.EKS
+6.Lambda *
+7.Batch
+8.Elastic Beanstalk
 
