@@ -283,7 +283,7 @@ Subresources
 
 ### EC2 categories
 * On Demand
-  * low-cost/flexibible. Pay by hour, no up-front payment or long-term commitment
+  * low-cost/flexible. Pay by hour, no up-front payment or long-term commitment
   * Good for Short-term/spiky workloads that cannot be interrupted
   * Good for test/dev environments
   * No downtime
