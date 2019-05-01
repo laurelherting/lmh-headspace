@@ -58,10 +58,16 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 * Costly, but easy to implement, good for short-term
 
 ### Common Ports
-Linux = SSH(Port 22)
-Microsoft = Remote Desktop Protocol(Port 3389)
-HTTP = Port 80
-HTTPS = Port 443
+* Linux 
+  * SSH
+  * Port 22
+* HTTP 
+  * Port 80
+* HTTPS 
+  * Port 443
+* Microsoft 
+  * Port 3389
+  * Remote Desktop Protocol
 
 ### Distributing Processing
 * Use when processing large amounts of data that can't be handled by single compute
