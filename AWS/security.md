@@ -420,7 +420,7 @@ test & Dev, keep costs low
   * It's not to a static IP address
 
 ### CloudTrail
-* Used for auditing
+* Used for risk auditing, governing & compliance
 * Logs delivered every 5 minutes
 * Logs can be grouped into single file / bucket from multiple regions into single bucket
 * Per account and per region basis
