@@ -164,52 +164,8 @@ To let just one IP in X.X.X.X/32
 
 * Use AWS Shield and CloudFront to protect against DDoS attacks
 
-### AWS Inspector & AWS Trusted Advisor
-    AWS Inspector:
-      Inspects EC2 instances for vulnurabilities
-    AWS Trusted Advisor:
-      Inspects your AWS Account as a whole (not just EC2)
-        example: automated service scans to improve security, reduces costs
-    Does more than security checks:
-      Cost Optimization
-      Performance
-      Fault Tolerance
-    AWS CloudTrail:
-               Increases visibility into user & resource activity
-      Records AWS Management Console actions & API calls
-      Identifies user and accounts were accessed and source IP address calls were made from
-
-    Cost Optimization
-      design:
-        Transparently attribute expenditure
-        Use managed services to reduce cost of ownership
-        Trade capital expense for operating expense
-        Benefit from economies of scale
-        Stop spending money on data center operations
-      definition:
-        Matched supply and demand: auto scaling, lambda
-      Cost-effective resources: ec2 reserved instances, AWS Trust Advisor
-        Expenditure awareness: CloudWatch Alarms, SNS
-        Optimizing over time: AWS Blog, AWS Trusted Advisor 
-      best practices:
-        optimally align supply with demand
-        Autoscaling, Lambda
-        CloudWatch helps to keep track of demand
-
-    CloudWatch Alarm states:
-      OK
-      alarm
-      Insufficient_Data
-
 ### Windows Password*
 * use key pair to decrypt pwd
-
-### Trusted Advisor five Categories
-* cost optimization
-* security
-* performance
-* fault tolerance 
-* service limits
 
 ### Access Advisor
 * IAM - identify services used by user, group, role 
@@ -287,9 +243,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Monitor activity in your AWS account
 * Video presentation about IAM best practices
 
-### A security group - S3 
-* what comes in and is allowed, automatically goes back out
-
 ### S3 - 11 9’s of durability
 * standard storage class
 * Glacier
@@ -360,7 +313,7 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
       Performance
       Fault Tolerance
     AWS CloudTrail:
-               Increases visibility into user & resource activity
+      Increases visibility into user & resource activity
       Records AWS Management Console actions & API calls
       Identifies user and accounts were accessed and source IP address calls were made from
 
@@ -566,6 +519,13 @@ test & Dev, keep costs low
 
 ### Versioning
 * Prevents accidental deletion of objects
+
+### Penetration testing
+* AWS Acceptable Use Policy
+  * Prior auth from AWS needed before pen testing
+    * infiltration testing
+    * more of an anonymous attack
+    * https://aws.amazon.com/security/penetration-testing/Penetration
 
 ### AWS Security Qs
 * Are uploads to S3 buckets public or private by default? 
