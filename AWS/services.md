@@ -352,7 +352,8 @@ Fight DR MC PX!
 ### EMR
 * Web service:
   * makes it easy to process large amounts of data efficiently
-  * specifically designed to assist in processing large data sets
+  * use to process large data sets
+
 * Principles of sound cloud design:
   * Assume *everything* will fail
   * Disposable resources, Infrastructure as code, Scalability.
