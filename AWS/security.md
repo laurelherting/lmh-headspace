@@ -155,11 +155,14 @@ To let just one IP in X.X.X.X/32
 * AWS Shield Advanced 
   * offers automated application 
   * operates @ layer 7 traffic monitoring
-* AWS Shield is a DDOS mitigation service
-  * designed to stop DDOS attacks
-  * turned on by default
   * advanced protection available
     * $3,000/ month
+* AWS Shield is a DDoS mitigation service
+  * free DDOS protection
+  * turned on by default
+  * designed to stop DDoS attacks
+
+* Use AWS Shield and CloudFront to protect against DDoS attacks
 
 ### AWS Inspector & AWS Trusted Advisor
     AWS Inspector:
@@ -346,21 +349,6 @@ http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
     4.  Platform, Applications, Identity & Access Management 
     5.  Customer Data
  
-### AWS WAF & AWS Shield
-* AWS WAF is a Web Application Firewall
-  * designed to stop hackers
-  * can go down to OSI layer 7
-  * you can use web application firewall ACL
-* AWS Shield Advanced 
-  * offers automated application 
-  * operates @ layer 7 traffic monitoring
-  * advanced protection available
-    * $3,000/ month
-* AWS Shield is a DDOS mitigation service
-  * free DDOS protection
-  * turned on by default
-  * designed to stop DDOS attacks
-
 ### AWS Inspector & AWS Trusted Advisor
     AWS Inspector:
       Inspects EC2 instances for vulnurabilities
