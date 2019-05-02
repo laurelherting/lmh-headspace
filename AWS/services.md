@@ -366,6 +366,11 @@ Fight DR MC PX!
 * retention for auto RDS backups
   * 1 - 35 days
 
+### Elasticity
+* divert traffic to instances:
+  * based on demand
+  * with least load
+
 ### AWS Database Types
 * RDS(SQL/OLTP)
     * SQL, MySQL, PostgreSQL, Oracle, Aurora, MariaDB
@@ -421,6 +426,11 @@ care of provisioning & configuring resources for you.
   * Don't need to individually create & configure AWS resources
 & figure out what's dependent on what;
     * AWS CloudFormation handles all of that.
+
+### Amazon SQS
+* Amazon Simple Queue service
+* use to store messages as they travel between apps or microservices
+* https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/Welcome.html
 
 ### Workspaces
 * Deploy virtual desktop infrastructure in cloud
@@ -574,4 +584,3 @@ AWS environment based on AWS best practices.
 6.Lambda *
 7.Batch
 8.Elastic Beanstalk
-
