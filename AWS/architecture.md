@@ -6,6 +6,10 @@
 5. Stop spending money running and maintaining data centers
 6. Go global in minutes
 
+### Entire advantage of Cloud
+* Ability to use resources on demand
+* Highly available insfrastructure
+
 ### Three types of cloud computing
 1. IAAS
 2. PAAS
