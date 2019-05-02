@@ -421,6 +421,11 @@ care of provisioning & configuring resources for you.
 & figure out what's dependent on what;
     * AWS CloudFormation handles all of that.
 
+### EC2 testing
+* AWS Acceptable Use Policy
+  * Prior auth from AWS needed before testing
+  * https://aws.amazon.com/security/penetration-testing/Penetration
+
 ### Workspaces
 * Deploy virtual desktop infrastructure in cloud
 
