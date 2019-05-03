@@ -225,8 +225,7 @@ To let just one IP in X.X.X.X/32
 * Use third-party identity providers to authenticate
 
 ### IAM Best Practices
-http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
-
+* http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 * Lock away your AWS account (root) access keys
 * Create individual IAM users
 * Use groups to assign permissions to IAM users
