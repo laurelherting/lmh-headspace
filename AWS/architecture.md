@@ -97,16 +97,6 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 ### Quorum-based replication
 *  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
 
-### EC2-AMIs
-* Acts as template for root volume
-* AMIs are Regional
-* Can only launch into region from which it is stored
-* AMIs can be copied between Regions
-* AMIs can be shared privately with specific AWS Account Numbers
-* Defaults
-	* Newly created AMIs default to Private
-* AMIs can be instance-store or EBS backed
-
 ### Time To Live (TTL)
 * DNS value: 86400 is 24 hours
 * Always in Seconds
@@ -119,6 +109,16 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
   * work can be stopped and restarted without adverse effect 
   * cost effective
 * migrate an existing database to AWS
+
+### EC2-AMIs
+* Acts as template for root volume
+* AMIs are Regional
+* Can only launch into region from which it is stored
+* AMIs can be copied between Regions
+* AMIs can be shared privately with specific AWS Account Numbers
+* Defaults
+	* Newly created AMIs default to Private
+* AMIs can be instance-store or EBS backed
 
 ### EC2-Spread Placement Group (deployment)
 * Q: How to: Deploy clustered application on a small number of EC2 instances.
@@ -156,4 +156,3 @@ and tenancy
 
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
-
