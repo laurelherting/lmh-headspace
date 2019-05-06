@@ -568,8 +568,8 @@ AWS environment based on AWS best practices.
 * Physical EC2 server dedicated for use
 * reduce costs - use existing server-bound software licenses
 
-* If spot instance is terminated by Amazon EC2, you'll be charged for partial usage
-* If you terminate it yourself, you'll be charged for any hour in which the instance ran.
+* Spot instance terminated by Amazon - charged for partial usage
+* You terminate - charged for any hour instance ran
 
 * Price / hour charge for several Spot instances
   * Spot Price
