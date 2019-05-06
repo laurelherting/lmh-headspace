@@ -3,10 +3,12 @@
 ### AWS Organizations & Consolidated Billing
 Linked accounts:
 * 20 linked accounts only
-* To add more visit https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
+* To add more: 
+  * https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
 * Billing Alerts:
   * detailed monitoring and ELBs increase EC2 costs
-  * When monitoring is enabled on paying account, billing data for linked accounts included
+  * When monitoring is enabled on paying account:
+    * billing data for linked accounts included
 * You can still create billing alerts per individual account
 * CloudTrail:
   * Use to monitor all events in account
