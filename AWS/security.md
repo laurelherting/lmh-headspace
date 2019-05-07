@@ -200,7 +200,7 @@ To let just one IP in X.X.X.X/32
 * Always enable multi-factor authentication on root account
 * Always use strong, complex password on root account
 * Paying account should be used for billing purposes only
-   * Don't deploy resources into paying account
+  * Don't deploy resources into paying account
 
 ### Network ACLs are stateful 
 * To allow access on port 443: 
