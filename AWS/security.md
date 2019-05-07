@@ -538,18 +538,16 @@ test & Dev, keep costs low
 * What are some of the delivery options for SNS?
   * HTTP and HTTPS subscription types
 
-* Q: AWS service - run code without concern about provisioning underlying resources?
+* AWS service - run code without concern about provisioning underlying resources?
     * ie. virtual machines, databases
     * Answer: Lambda
-
-### Possible exam security q's: 
-1. This Compliance certifications handles security AWS platform for credit card transactions? 
+* This Compliance certifications handles security AWS platform for credit card transactions? 
 Answer: PCI DSS Level 1 cert
-2. This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
+* This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
 Answer: HIPAA 
-3. Compliance for data resiliency: never...
+* Compliance for data resiliency: never...
 Answer: AWS never replicates auto stored s3 data across Regions 
-4. Who retains complete control & ownership of your (data) region?
+* Who retains complete control & ownership of your (data) region?
 Answer: you do
 
 * EBS Exam questions : 
@@ -559,4 +557,3 @@ Answer: you do
 
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
-
