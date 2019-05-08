@@ -154,5 +154,10 @@ and tenancy
 ### Global Insfrastructure
 * benefit: lower latency
 
+### Current AWS Regions
+* N. Virginia,Ohio, N. California, Oregon, Mumbai, Seoul, Singapore, Sydney,
+  Tokyo, Osaka-Local, Central, Beijing, Ningxia, Frankfurt, Ireland, London,
+  Paris, Stockholm, São Paulo
+
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
