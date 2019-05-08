@@ -43,6 +43,7 @@ depending on your demand.
 * scale out and in based on demand and workload
 * automatically balances EC2 instances across zones when you configure
 multiple zones in Auto Scaling group settings
+* Configure metric-based rules to add/remove instances from application
 
 ### Scaling vs elasticity
 Easy to scale in and out for cost saving (elastic) hard to scale up then back down
