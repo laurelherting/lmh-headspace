@@ -12,12 +12,14 @@ Linked accounts:
 * You can still create billing alerts per individual account
 * CloudTrail:
   * Use to monitor all events in account
-  * CloudTrail For auditing, cloudWatch is for performance.
+  * Auditing 
+    * cloudWatch for performance.
   * Per AWS account and is enabled per region.
   * Can consolidate logs using an S3 bucket:
-    * Turn on CloudTrail in paying account.
-    * Create bucket policy that allows cross-account access.
-    * Turn on CloudTrail in other accounts and use bucket in the paying account.
+    * Turn on CloudTrail in paying account
+    * Create bucket policy that allows cross-account access
+    * Turn on CloudTrail in other accounts
+    * use bucket in paying account
 
 * Consolidated Billing - get volume discounts on all your accounts.
 
@@ -408,6 +410,7 @@ Fight DR MC PX!
 	* Facts: 
 	Spread across 3 geographically distinct data centers
 	400KB item size limit
+
 * Data Warehousing
     used for business intelligence
     pulls in very large and complex data sets
@@ -573,8 +576,7 @@ AWS environment based on AWS best practices.
 * Price / hour charge for several Spot instances
   * Spot Price
 
-1. EC2 stands for: Elastic Compute Cloud
-2. Instance Types
+1. EC2 = Elastic Compute Cloud
 
 ### Name all Compute Services
 1.EC2 *
