@@ -271,11 +271,6 @@ Subresources
 ### AWS Storage Gateway
 * AWS service - acts as a file system mounted on an S3 bucket
 
-### Aurora
-* AWS's RDS SQL Database engine
-* compatible database read replicas 
-  * MySQL and PostgreSQL
-
 ### EC2
 * Virtual server in the cloud
   * Reduces time required to obtain & boot new server instances to minutes
@@ -395,9 +390,13 @@ Fight DR MC PX!
   	* amount of disk storage space reserved on disk if computer runs out of ram	
 			* Typical size is = size of total RAM
 * Aurora - relational, high performance, scales well
-    two key features:
-      1. multi-AZ-for disaster recovery
-      2. read replicas-for performance
+  * two key features:
+    1. multi-AZ-for disaster recovery
+    2. read replicas-for performance
+  * AWS's RDS SQL Database engine
+  * compatible database read replicas 
+  * MySQL and PostgreSQL
+
 * DynamoDB
     Fast & flexible NoSQL database service for all applications that need 
     consistent, single-digit millisecond latency at any scale.
