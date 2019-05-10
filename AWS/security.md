@@ -111,6 +111,8 @@
     No need to specify region, similar to users
 	  Users can explicitly switch roles to perform tasks
     MFA can be added to specific roles
+    Security optimization recommendations
+      - to secure resources
 
 ### Firewall
 *Let everything in 0.0.0.0/0
