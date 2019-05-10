@@ -281,9 +281,11 @@ Subresources
 * Compute based service, not serverless, it's a server!
 
 ### EC2 categories
-* On Demand
+* On-Demand
   * low-cost/flexible. Pay by hour, no up-front payment or long-term commitment
-  * Good for Short-term/spiky workloads that cannot be interrupted
+  * Good for Short-term / spiky workloads
+    * not interrupted
+    * No downtime
   * Good for test/dev environments
   * No downtime
 
