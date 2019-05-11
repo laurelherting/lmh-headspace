@@ -103,9 +103,9 @@ Linked accounts:
 ## Cost Calculators
 
 ### AWS Simple Monthly Calculator
-Used to calculate running costs on AWS on a per month basis.
-Not a comparison tool.
-https://calculator.s3.amazonaws.com/index.html
+* Used to calculate running costs on AWS per month
+* Not a comparison tool.
+* https://calculator.s3.amazonaws.com/index.html
 Examples:
 1. More instances = higher monthly cost
 2. Type: CPU, memory, & billing options effect cost changes
@@ -114,12 +114,12 @@ Examples:
 
 ### AWS TCO Calculator 
 * Total Cost of Ownership
-* Used to compare costs of running your infrastructure on premise vs. in AWS Cloud.
-* It will generate reports that can you can give to your C-level execs to make a 
-business case to move to the cloud.
+* Compare costs of running infrastructure on premise vs. AWS Cloud
+* Generates reports to give C-level execs to case to move to the cloud
 * https://aws.amazon.com/tco-calculator
+* Network and storage incur costs
 * These come up a lot! 
-    Play with both calculators until you are comfortable with them.
+    Play with both calculators until comfortable with them
 * Examples:
   * comparing physical servers - less savings compared to vm.
   when max out #s = 35% savings, $138,064,213.
@@ -421,7 +421,7 @@ Fight DR MC PX!
   * up to 5X faster than traditional MySQL database
   * provision to make controlled changes to infrastructure
 
-* Redshift and DyanmoDB are fully-managed
+* Redshift and DyanmoDB are fully managed
 
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
