@@ -421,6 +421,8 @@ Fight DR MC PX!
   * up to 5X faster than traditional MySQL database
   * provision to make controlled changes to infrastructure
 
+* Redshift and DyanmoDB are fully-managed
+
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
   * spend less time managing these resources, more time on Apps that run
