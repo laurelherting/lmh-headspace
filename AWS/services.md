@@ -197,8 +197,8 @@ Examples:
 * unlimited storage
 * files are stored in buckets
 * S3 is a universal namespace
-    names must be unique globally
-    https://s3-eu-west-1.amazonaws.com/acloudguru
+  * names must be unique globally
+  * https://s3-eu-west-1.amazonaws.com/acloudguru
 * Read after write consistency after PUTS of new objects
 * Eventual consistency for overwrite PUTS and DELETES
 * NOT suitable to install an operating system on
