@@ -161,7 +161,7 @@ Examples:
     * Auto Scaling
     * Opsworks
     * Consolidated Billing
-        * have to pay for resources, like EC2 related to above services
+    * Have to pay for resources, like EC2 related to above services
 
 * VPC
   * Use IPSEC VPN to connect on-premise datacenters to VPC
