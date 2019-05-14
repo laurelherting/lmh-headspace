@@ -541,8 +541,8 @@ test & Dev, keep costs low
   * HTTP and HTTPS subscription types
 
 * AWS service - run code without concern about provisioning underlying resources?
-    * ie. virtual machines, databases
-    * Answer: Lambda
+  * ie. virtual machines, databases
+Answer: Lambda
 * This Compliance certifications handles security AWS platform for credit card transactions? 
 Answer: PCI DSS Level 1 cert
 * This Compliance guarantees AWS Platform has met standard for secure storage of US medical records
@@ -553,9 +553,11 @@ Answer: AWS never replicates auto stored s3 data across Regions
 Answer: you do
 
 * EBS Exam questions : 
-  * less than 2000 IOPS? GP2
-  * huge NoSQL database, a lot of IOPS? Provisioned IOPS SSD
-  Not GP2
+  * less than 2000 IOPS?
+    * GP2
+  * huge NoSQL database, a lot of IOPS?
+    * Provisioned IOPS SSD
+    * Not GP2
 
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
