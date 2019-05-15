@@ -10,16 +10,20 @@ Linked accounts:
   * When monitoring is enabled on paying account:
     * billing data for linked accounts included
 * You can still create billing alerts per individual account
+
 * CloudTrail:
   * Use to monitor all events in account
-  * Auditing 
-    * cloudWatch for performance.
-  * Per AWS account and is enabled per region.
-  * Can consolidate logs using an S3 bucket:
-    * Turn on CloudTrail in paying account
+  * Per AWS account, enabled per region
+  * Consolidate logs using S3 bucket:
+    * Turn on in paying account
     * Create bucket policy that allows cross-account access
-    * Turn on CloudTrail in other accounts
+    * Turn on in other accounts
     * use bucket in paying account
+
+* CloudWatch
+  * for permormance
+  * Auditing 
+  * Monitors CPU utilization
 
 * Consolidated Billing - get volume discounts on all your accounts.
 
