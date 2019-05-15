@@ -160,5 +160,11 @@ and tenancy
   Tokyo, Osaka-Local, Central, Beijing, Ningxia, Frankfurt, Ireland, London,
   Paris, Stockholm, São Paulo
 
+### Performance Efficiency Pillars
+* Monitoring
+* Selection
+* Trade-offs
+* Review
+
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
