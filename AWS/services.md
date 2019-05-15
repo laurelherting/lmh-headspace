@@ -519,11 +519,6 @@ AWS environment based on AWS best practices.
 * Map one DNS name to another 
   * like CNAME
 
-### Sample Practice Questions
-* EC2 hosting: most cost effective
-  * 60 day run
-  * use On-Demand instance type
-
 ###	Possible Questions:
 * p. 13 of whitepaper
   * Question: Use this service to deploy and scale web applications and services developed
@@ -545,6 +540,9 @@ AWS environment based on AWS best practices.
 • Ruby
 • Go
 • Docker
+* Q: EC2 hosting: most cost effective?
+  * 60 day run
+  * Answer: use On-Demand instance type
 
 ### What AWS resources are often used to create S3 applications?
 * answer: dynamo db, s3, efs, etc
