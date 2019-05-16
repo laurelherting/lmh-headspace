@@ -393,6 +393,7 @@ Fight DR MC PX!
     fully-managed data warehouse in cloud
   * cluster runs 24/7 - prolonged periods - keep costs low...
     * purchase reserved-node offerings
+  * petabytes
 * Elasticache
     used to speed up performance of existing databases(frequent identical queries)
     memcached
