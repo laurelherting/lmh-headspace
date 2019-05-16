@@ -506,6 +506,10 @@ test & Dev, keep costs low
 * PCI DSS Level 1
 * SOC 3
 
+### PCI Compliance
+* Make sure correct steps taking during dev
+* Choose AWS services that are PCI compliant
+
 ### Bastion Host
 * limit access to Bastion host from corporate IP address
   * thus, protect instance from further malicious attacks from anywhere else
