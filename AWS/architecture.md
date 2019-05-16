@@ -41,10 +41,11 @@ Typically consists of: CloudFront, Amazon's CDN.
 * Allows you to provision multiple EC2 instances behind a load balancer automatically 
 depending on your demand.
 * does not update current resources unless you set UpdatePolicy
-* scale out and in based on demand and workload
+* scales out and in based on demand and workload
 * automatically balances EC2 instances across zones when you configure
 multiple zones in Auto Scaling group settings
 * Configure metric-based rules to add/remove instances from application
+* Create new resources on demand / scheduled
 
 ### Scaling vs elasticity
 Easy to scale in and out for cost saving (elastic) hard to scale up then back down
