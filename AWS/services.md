@@ -370,6 +370,9 @@ Fight DR MC PX!
     * configure read replicas to reduce excess read traffic
 * retention for auto RDS backups
   * 1 - 35 days
+ 
+### Disaster Recovery
+* Warm standby - lowest downtime
 
 ### Elasticity
 * divert traffic to instances:
