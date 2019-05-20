@@ -158,7 +158,7 @@ and tenancy
 * benefit: lower latency
 
 ### Current AWS Regions
-* N. Virginia,Ohio, N. California, Oregon, Mumbai, Seoul, Singapore, Sydney,
+* N. Virginia, Ohio, N. California, Oregon, Mumbai, Seoul, Singapore, Sydney,
   Tokyo, Osaka-Local, Central, Beijing, Ningxia, Frankfurt, Ireland, London,
   Paris, Stockholm, São Paulo
 
