@@ -16,6 +16,11 @@
 * Passwords
 	* max 128 chars
 
+### Risk & Compliance Program
+* Information Security
+* Control Environment
+* https://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Overview.pdf
+
 ### A security group - S3 
 * what comes in and is allowed, automatically goes back out
 
