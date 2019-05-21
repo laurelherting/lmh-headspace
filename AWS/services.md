@@ -199,6 +199,7 @@ Examples:
   * S3 is object-based
     ex. allows you to upload files
 * files can be 0 bytes - 5tb
+* objects can be downloaded via url
 * unlimited storage
 * files are stored in buckets
 * S3 is a universal namespace
