@@ -170,6 +170,7 @@ Examples:
 
 * VPC
   * Use IPSEC VPN to connect on-premise datacenters to VPC
+  * Use VPC Peering to route traffic / data between aws accounts
 
 * Tags:
   * Key Value Pairs attached to AWS Resources
