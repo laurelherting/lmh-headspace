@@ -537,17 +537,19 @@ AWS environment based on AWS best practices.
    Answer: Elastic Beanstalk
 * Q: What language is not supported by Elastic Beanstalk? 
   A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
-   Answer: Rust
-* Q: What major language / frameworks are supported by Elastic Beanstalk?
-  * Answer:
-• Java
-• .NET
-• PHP
-• Node.js
-• Python
-• Ruby
-• Go
-• Docker
+  * Answer: Rust
+* Q: Quickly deploy using: Java and .NET
+  Choices: EC2, Elastic Beanstalk, or SQS?
+  * Answer: Elastic Beanstalk
+  * Programming languages / frameworks list Elastic Beanstalk works with:
+  * Java
+  * .NET
+  *  PHP
+  * • Node.js
+  * • Python
+  * • Ruby
+  * • Go
+  * • Docker
 * Q: EC2 hosting: most cost effective?
   * 60 day run
   * Answer: use On-Demand instance type
