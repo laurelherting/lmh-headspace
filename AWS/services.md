@@ -348,11 +348,20 @@ Fight DR MC PX!
 ### Elastic Beanstalk 
 * Quickly deploy & manage applications in AWS Cloud
   * automatically handles:
-      * capacity provisioning
-      * load balancing 
-      * scaling
-      * application
-      * health monitoring
+    * capacity provisioning
+    * load balancing 
+    * scaling
+    * application
+    * health monitoring
+
+### Elastic Beanstalk and CloudFormation
+Both are free, but the resources they provision (ex. EC2 instances)
+are not free.
+* Difference between the two:
+1. Elastic Beanstalk is limited in what it can provision and is not 
+programmable.
+2. CloudFormation can provision almost any AWS service & is completely
+programmable
 
 ### EMR
 * Web service:
@@ -450,15 +459,6 @@ care of provisioning & configuring resources for you.
 
 ### Workspaces
 * Deploy virtual desktop infrastructure in cloud
-
-### Elastic Beanstalk and CloudFormation
-Both are free, but the resources they provision (ex. EC2 instances)
-are not free.
-* Difference between the two:
-1. Elastic Beanstalk is limited in what it can provision and is not 
-programmable.
-2. CloudFormation can provision almost any AWS service & is completely
-programmable
 
 ### Load Balancing
 * What is bootstrapping on ec2?
