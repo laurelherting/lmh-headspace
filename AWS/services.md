@@ -90,6 +90,7 @@ Linked accounts:
     Expedited, standard or bulk
     Standard retrieval time = 3-5 hours
     Max single archive size: 40TB
+    Can't import data via console
 6. S3 Glacier Deep Dive Archive
     Lowest cost storage class
     Retrieval time 12 hours
