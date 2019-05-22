@@ -570,7 +570,7 @@ AWS environment based on AWS best practices.
 
 * What does an s3 URL look like?
   * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    ex. Https://s3-eu-west1.amazonaws.com/acloudguru
+    ex. Https://s3-eu-west1.amazonaws.com/laurelherting
 
 ### EC2 Exam Tips
 1. On Demand
