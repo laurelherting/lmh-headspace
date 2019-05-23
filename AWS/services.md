@@ -475,6 +475,7 @@ care of provisioning & configuring resources for you.
 * What is an AMI?
   * Amazon Machine Image
   * provides information required to launch an instance
+  * similar to VM templates
 * What AWS services support using containers?
   * AWS Elastic Beanstalk
   * Amazon Elastic Container Service (Amazon ECS)
