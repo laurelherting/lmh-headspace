@@ -373,8 +373,12 @@ To let just one IP in X.X.X.X/32
 * *Virtual disk, attached to EC2 instance
     Elastic Block Store
 
+* You can only attach an EBS volume to 1 EC2 instance 
+* An EBS volume cannot be shared with two instances at the same time
+
 * Zones/regions:
 	* Exist in specific AZ Zones NOT across multiple zones
+  * automatically replicates within same zone to prevent data failure
   * stored in multiple physical locations at no addt'l charge
 * Consists of:
   * SSD, General Purpose - GP2 (Up to 10,000 IOPS)
@@ -468,10 +472,6 @@ test & Dev, keep costs low
 ### What is high availability?
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
-
-### EBS
-* You can only attach an EBS volume to 1 EC2 instance 
-* An EBS volume cannot be shared with two instances at the same time
 
 ### Stateless Applications
 * What is a stateless application?
