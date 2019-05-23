@@ -165,7 +165,7 @@ To let just one IP in X.X.X.X/32
   * advanced protection available
     * $3,000/ month
 * AWS Shield is a DDoS mitigation service
-  * free DDOS protection
+  * free built-in DDoS protection
   * turned on by default
   * designed to stop DDoS attacks
 
