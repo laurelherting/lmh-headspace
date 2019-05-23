@@ -537,7 +537,7 @@ AWS environment based on AWS best practices.
   Apache, Nginx, Passenger, and IIS.17Developers can simply upload their application code, 
   and the service automatically handles all the details, such as: resource provisioning, 
   load balancing, auto scaling, and monitoring.
-   Answer: Elastic Beanstalk
+  * Answer: Elastic Beanstalk
 * Q: What language is not supported by Elastic Beanstalk? 
   A. Java B. PHP C. Ruby D. Nodejs E. Go F. Rust
   * Answer: Rust
