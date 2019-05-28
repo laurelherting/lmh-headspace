@@ -498,11 +498,6 @@ care of provisioning & configuring resources for you.
 ### Best practices standards
 * AWS Managed Service complies with ITIL
 
-### Difference between S3 bucket url and S3 static hosted website address
-* What does a URL look like?
-  * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
-  
 ### AWS Quick Start
 Way of deploying evironments quickly, using CloudFormation templates built by
 AWS Solutions Architects who are experts in that particular technology.
@@ -558,6 +553,11 @@ AWS environment based on AWS best practices.
   * 60 day run
   * Answer: use On-Demand instance type
 
+### Difference between S3 bucket url and S3 static hosted website address
+* What does a URL look like?
+  * It's always S3, then the region, then .amazon.aws.com, then / and the bucket name
+    * ex. Https://s3-eu-west1.amazonaws.com/acloudguru *
+  
 ### What AWS resources are often used to create S3 applications?
 * answer: dynamo db, s3, efs, etc
 	* pg.7 white paper:
