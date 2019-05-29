@@ -284,6 +284,7 @@ Subresources
 * Virtual server in the cloud
   * Reduces time required to obtain & boot new server instances to minutes
     * quickly scale capacity, both up and down, to meet computing requirements
+* Full admin privileges
 
 * Compute based service, not serverless, it's a server!
 
