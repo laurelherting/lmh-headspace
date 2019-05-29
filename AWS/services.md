@@ -25,6 +25,9 @@ Linked accounts:
   * Auditing 
   * Monitors CPU utilization
 
+* CloudWatch Logs
+  * use to combine EC2 logs
+
 * Consolidated Billing - get volume discounts on all your accounts.
 
 * Unused reserved EC2 instances are applied across the group.
