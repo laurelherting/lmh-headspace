@@ -369,11 +369,11 @@ programmable
 ### EMR
 * Web service:
   * makes it easy to process large amounts of data efficiently
-  * use to process large data sets
+    * Big data sets
 
-* Principles of sound cloud design:
+### Cloud Design Principles 
   * Assume *everything* will fail
-  * Disposable resources, Infrastructure as code, Scalability.
+  * Disposable resources, Infrastructure as code, Scalability
 
 ### RDS
 * key features:
