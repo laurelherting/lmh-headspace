@@ -268,9 +268,9 @@ Subresources
 ### AWS Snowball
 * Secure device
 * Transfers large amounts of data in and out of cloud
-* offers petabyte-scale data transport solution 
-- uses devices designed secure to transfer large # data into and out of Cloud
-- workaround for internet
+* Offers petabyte-scale data transport solution 
+* Uses devices designed secure to transfer large # data into and out of Cloud
+* Workaround for internet
 
 ### AWS Lambda
 * Serverless
