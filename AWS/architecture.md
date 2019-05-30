@@ -19,7 +19,7 @@
 1. Public Cloud - AWS, Azure, GCP
 2. Hybrid - Mixture of public & private
 3. Private Cloud(Or On Premise) - You manage it, in your datacenter.
-    Openstack or Vmware
+  * Openstack or Vmware
 
 ### Region, Availability Zone(AZ) & Edge Location
 1. Region-physical location in world, consists of 2 or more zones
@@ -28,8 +28,8 @@ networking and connectivity, housed in seperate facilities
   * Use multi-AZs(2AZs): increases availablity compared to just one zone
 3. Edge locations are endpoints for AWS which are used for caching content.
 
-Typically consists of: CloudFront, Amazon's CDN.
-    ie. #Edge locations > # AZ zones > # regions
+* Typically consists of: CloudFront, Amazon's CDN.
+  * ie. #Edge locations > # AZ zones > # regions
 
 ### Access AWS platform in three ways
 1. Via console
@@ -131,14 +131,6 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
   and minimize the chance of underlying hardware failure
 * A: deploy the EC2 servers in a Spread Placement Group
 
-### EBS
-* Q: EC2 instances are types that can be optimized with EBS?
-* A: Schedule snapshots of HDD based volumes for periods of low use
-
-### RAID 0 
-* Q: EBS volume type for specific task & increase performance of volume?
-* A: Stripe volumes together in RAID 0 configuration
-
 ### Lifecycle Management
 * automatically move objects from one storage to another
   * helps reduce cost
@@ -172,6 +164,14 @@ and tenancy
 * good to know:
   * serverless architecture
   * advanced technologies
+
+### EBS
+* Q: EC2 instances are types that can be optimized with EBS?
+* A: Schedule snapshots of HDD based volumes for periods of low use
+
+### RAID 0 
+* Q: EBS volume type for specific task & increase performance of volume?
+* A: Stripe volumes together in RAID 0 configuration
 
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
