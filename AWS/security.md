@@ -21,9 +21,6 @@
 * Control Environment
 * https://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Overview.pdf
 
-### A security group - S3 
-* what comes in and is allowed, automatically goes back out
-
 ### Network ACLs are stateful 
 * To allow access on port 443: 
   add rules allowing 443 for both both inbound AND add outbound traffic
@@ -102,6 +99,7 @@
 * By default block all inbound traffic
 * Default NACL in VPC allows all inbound traffic
 * Needed bc they protect instances w/ Subnet
+* What comes in and is allowed, automatically goes back out
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
