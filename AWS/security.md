@@ -345,6 +345,19 @@ To let just one IP in X.X.X.X/32
       alarm
       Insufficient_Data
 
+### CloudWatch
+* What are CloudWatch Events?
+* answer: near real-time stream of system events describing changes in AWS resources
+* Standard Monitoring = 5 Minutes (Free)
+* Detailed Monitoring = 1 Minute (Pay Extra)
+* Comes with Basic and Detailed Monitoring options
+
+* Use Cases
+  * create Dashboards
+  * create Alarms - like for auto scaling
+  * Events - respond to state changes in AWS resources
+  * Logs - aggregate, monitor, store logs
+
 ### CDN 
 **Content Delivery Network 
 1. Edge location
@@ -452,23 +465,6 @@ test & Dev, keep costs low
 * Edge locations can write / PUT an object
 * Cache can be cleared but you are charged for the action
 
-### CloudWatch
-* What are CloudWatch Events?
-* answer: near real-time stream of system events describing changes in AWS resources
-* Standard Monitoring = 5 Minutes (Free)
-* Detailed Monitoring = 1 Minute (Pay Extra)
-* Comes with Basic and Detailed Monitoring options
-
-* Use Cases
-  * create Dashboards
-  * create Alarms - like for auto scaling
-              * Events - respond to state changes in AWS resources
-  * Logs - aggregate, monitor, store logs
-
-* Q: AWS services to use if you'd like to be notified when
-  you have crossed a billing threshold?
-* A: budgets and cloudwatch
-
 ### What is high availability?
 * Amazon RDS
 * creates synchronously replicated standby instance in a different AZ
@@ -567,6 +563,10 @@ Answer: you do
   * huge NoSQL database, a lot of IOPS?
     * Provisioned IOPS SSD
     * Not GP2
+
+* Q: AWS services to use if you'd like to be notified when
+  you have crossed a billing threshold?
+* A: budgets and cloudWatch
 
 * read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
