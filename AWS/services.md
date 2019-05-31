@@ -589,10 +589,8 @@ AWS environment based on AWS best practices.
 4. Dedicated Hosts 
 * Physical EC2 server dedicated for use
 * reduce costs - use existing server-bound software licenses
-
 * Spot instance terminated by Amazon - charged for partial usage
 * You terminate - charged for any hour instance ran
-
 * Price / hour charge for several Spot instances
   * Spot Price
 
