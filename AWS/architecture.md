@@ -90,8 +90,7 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 * one component generates events and another consumes them
 
 ### Synchronous replication 
-* only acknowledges transaction after its been stored in both primary location
-  and its replicas
+* only acknowledges transaction after stored in primary location and replicas
 
 ### Asynchronous replication
 * decouples primary node from its replicas at the expense of introducing replication lag 
