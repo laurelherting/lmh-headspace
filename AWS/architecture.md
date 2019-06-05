@@ -35,6 +35,7 @@ networking and connectivity, housed in seperate facilities
 1. Via console
 2. Programmatically - Using command line
 3. Using Software Developers Kit (SDK)
+  * Use to call services from programming languages
 
 ### Successful upload = HTTP 200 code
 
