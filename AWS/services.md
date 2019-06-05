@@ -571,11 +571,11 @@ AWS environment based on AWS best practices.
   accessible from anywhere
 * A: S3
 
-** * Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+* Read before exam: https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
 
 * What does an s3 URL look like?
   * It’s always S3, then the region, then .amazon.aws.com, then / and the bucket name
-    ex. Https://s3-eu-west1.amazonaws.com/laurelherting
+  ex. Https://s3-eu-west1.amazonaws.com/laurelherting
 
 ### EC2 Exam Tips
 1. On Demand
