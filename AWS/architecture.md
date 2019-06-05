@@ -171,6 +171,8 @@ and tenancy
 * Q: EC2 instances are types that can be optimized with EBS?
 * A: Schedule snapshots of HDD based volumes for periods of low use
 
+* Use EBS snapshots to secure data on EBS volumes
+
 ### RAID 0 
 * Q: EBS volume type for specific task & increase performance of volume?
 * A: Stripe volumes together in RAID 0 configuration
