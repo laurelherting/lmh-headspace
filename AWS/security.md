@@ -100,6 +100,7 @@
 * Default NACL in VPC allows all inbound traffic
 * Needed bc they protect instances w/ Subnet
 * What comes in and is allowed, automatically goes back out
+* When creating, give name & description
 
 ### Always design for failure - have one EC2 instance in each availability zone.
 
