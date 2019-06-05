@@ -83,23 +83,23 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
   resource in timely manner
 
 ### Loose Coupling
-* designed to reduce interdependencies
-  * change/failure in one component shouldn't affect other components
+* Designed to reduce interdependencies
+  * Change/failure in one component shouldn't affect other components
 
 ### Asynchronous Integration
-* form of loose coupling between services
-* one component generates events and another consumes them
+* Form of loose coupling between services
+* One component generates events and another consumes them
 
 ### Synchronous replication 
-* only acknowledges transaction after stored in primary location and replicas
+* Only acknowledges transaction after stored in primary location and replicas
 
 ### Asynchronous replication
-* decouples primary node from its replicas at the expense of introducing replication lag 
-  * changes on primary node are not immediately reflected on its replicas
-* used horizontally
+* Decouples primary node from its replicas at the expense of introducing replication lag 
+  * Changes on primary node are not immediately reflected on its replicas
+* Used horizontally
 
 ### Quorum-based replication
-*  combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
+*  Combines synchronous & asynchronous replication to overcome challenges of large-scale distributed database systems 
 
 ### Time To Live (TTL)
 * DNS value: 86400 is 24 hours
@@ -107,12 +107,12 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 * keep low: 30 secs to 5 mins (good range)
 
 ### DMS
-* spot instance:
+* Spot instance:
   * project requires 90 hours of computing time
   * no deadline
   * work can be stopped and restarted without adverse effect 
   * cost effective
-* migrate an existing database to AWS
+* Migrate an existing database to AWS
 
 ### EC2-AMIs
 * Acts as template for root volume
@@ -124,31 +124,24 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 	* Newly created AMIs default to Private
 * AMIs can be instance-store or EBS backed
 
-### EC2-Spread Placement Group (deployment)
-* Q: How to: Deploy clustered application on a small number of EC2 instances.
-  The application must be placed across multiple Availability Zones,
-  have high speed, low latency communication between each of the nodes,
-  and minimize the chance of underlying hardware failure
-* A: deploy the EC2 servers in a Spread Placement Group
-
 ### Lifecycle Management
-* automatically move objects from one storage to another
-  * helps reduce cost
+* Automatically move objects from one storage to another
+  * Helps reduce cost
 
 ### Geolocation Routing
-* directs traffic based on user's location
+* Directs traffic based on user's location
 
 ### Convertible Reserved Instance (RI)
 * Change reserved instance with different configuration, Operating System,
 and tenancy 
   * target must be of equal / higher value
-* no limits on # exchanges 
+* No limits on # exchanges 
 
 ### SNS
 * SMS / Email notifications
 
 ### Global Insfrastructure
-* benefit: lower latency
+* Benefit: lower latency
 
 ### Current AWS Regions
 * N. Virginia, Ohio, N. California, Oregon
@@ -163,9 +156,11 @@ and tenancy
 * Trade-offs
 * Review
 
-* good to know:
-  * serverless architecture
-  * advanced technologies
+* Good to know:
+  * Serverless architecture
+  * Advanced technologies
+
+## Possible Questions:
 
 ### EBS
 * Q: EC2 instances are types that can be optimized with EBS?
@@ -177,5 +172,12 @@ and tenancy
 * Q: EBS volume type for specific task & increase performance of volume?
 * A: Stripe volumes together in RAID 0 configuration
 
-### Day before exam read:
+### EC2-Spread Placement Group (deployment)
+* Q: How to: Deploy clustered application on a small number of EC2 instances.
+  The application must be placed across multiple Availability Zones,
+  have high speed, low latency communication between each of the nodes,
+  and minimize the chance of underlying hardware failure
+* A: deploy the EC2 servers in a Spread Placement Group
+
+## Day before exam read:
 https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
