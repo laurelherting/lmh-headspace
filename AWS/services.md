@@ -530,6 +530,8 @@ AWS environment based on AWS best practices.
 * Map one DNS name to another 
   * like CNAME
 
+## Possible Exam Questions
+
 ###	Possible Questions:
 * p. 13 of whitepaper
   * Question: Use this service to deploy and scale web applications and services developed
