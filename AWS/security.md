@@ -556,7 +556,7 @@ Answer: AWS never replicates auto stored s3 data across Regions
 * Who retains complete control & ownership of your (data) region?
 Answer: you do
 
-* EBS Exam questions : 
+* EBS Exam questions: 
   * less than 2000 IOPS?
     * GP2
   * huge NoSQL database, a lot of IOPS?
@@ -567,5 +567,5 @@ Answer: you do
   you have crossed a billing threshold?
 * A: budgets and cloudWatch
 
-* read Shared Responsibility Model before exam:
+* Read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
