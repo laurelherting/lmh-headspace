@@ -532,6 +532,8 @@ test & Dev, keep costs low
     * more of an anonymous attack
     * https://aws.amazon.com/security/penetration-testing/Penetration
 
+## Possible Exam Questions
+
 ### AWS Security Qs
 * Are uploads to S3 buckets public or private by default? 
   * private
