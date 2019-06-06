@@ -160,7 +160,7 @@ and tenancy
   * Serverless architecture
   * Advanced technologies
 
-## Possible Questions:
+## Possible Exam Questions
 
 ### EBS
 * Q: EC2 instances are types that can be optimized with EBS?
