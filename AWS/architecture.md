@@ -108,10 +108,10 @@ Easy to scale in and out for cost saving (elastic) hard to scale up then back do
 
 ### DMS
 * Spot instance:
-  * project requires 90 hours of computing time
-  * no deadline
-  * work can be stopped and restarted without adverse effect 
-  * cost effective
+  * Project requires 90 hours of computing time
+  * No deadline
+  * Work can be stopped and restarted without adverse effect 
+  * Cost effective
 * Migrate an existing database to AWS
 
 ### EC2-AMIs
