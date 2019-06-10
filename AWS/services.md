@@ -35,10 +35,15 @@ Linked accounts:
 * Service Control Polcies are created in AWS Organizations
 
 ### Support Packages
-    basic-free
-    developer-$29/month (scales based on usage)
-    business-$100/month("")
-    enterprise-$15,000/month("")-TAM(technical account manager)
+* basic-free
+* developer-$29/month 
+  * Scales based on usage
+  * Only one contact can open a case
+* business-$100/month
+  * Scales based on usage
+* enterprise-$15,000/month
+  * Includes: TAM (technical account manager)
+  * Scales based on usage
 
 ### Billing Alerts/ Billing Alarms 
   * Alerts automatically when level has been reached
