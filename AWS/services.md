@@ -1,9 +1,9 @@
 ## Billing and Pricing
 
 ### AWS Organizations & Consolidated Billing
-Linked accounts:
-* 20 linked accounts only
-* To add more: 
+* Linked accounts:
+  * 20 linked accounts only
+  * To add more: 
   * https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
 * Billing Alerts:
   * detailed monitoring and ELBs increase EC2 costs
