@@ -156,9 +156,10 @@ and tenancy
 * Trade-offs
 * Review
 
-* Good to know:
+* When considering performance, use these design principles:
   * Serverless architecture
   * Advanced technologies
+    * democratize advanced technologies
 
 ## Possible Exam Questions
 
