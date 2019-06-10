@@ -343,6 +343,9 @@ Fight DR MC PX!
 * use it to: 
   * direct traffic world-wide
   * register domain name
+* high availability characteristics:
+  * geolocation routing
+  * latency-based routing
 
 ### CloudSearch
 * Quickly add search capabilities to website / application
