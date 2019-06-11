@@ -40,23 +40,23 @@ networking and connectivity, housed in seperate facilities
 ### Successful upload = HTTP 200 code
 
 ### Auto Scaling
-* Allows you to provision multiple EC2 instances behind a load balancer automatically 
-depending on your demand.
-* does not update current resources unless you set UpdatePolicy
-* scales out and in based on demand and workload
-* automatically balances EC2 instances across zones when you configure
+* Provision multiple EC2 instances behind a load balancer automatically 
+depending on demand
+* Does not update current resources unless you set UpdatePolicy
+* Scales out and in - based on demand and workload
+* Automatically balances EC2 instances across zones when you configure
 multiple zones in Auto Scaling group settings
 * Configure metric-based rules to add/remove instances from application
 * Create new resources on demand / scheduled
 
 ### Scaling vs elasticity
-Easy to scale in and out for cost saving (elastic) hard to scale up then back down
+* Easy to scale in and out for cost saving (elastic) hard to scale up then back down
 
 ### Horizontal Scaling
-* scale by adding more machines
+* Scale by adding more machines
   * increase in number of resources
   * ie. add more hard drives to storage or servers
-* great for building internet-scale apps
+* Great for building internet-scale apps
 
 ### Vertical Scaling
 * Scale by adding more power to existing machine
