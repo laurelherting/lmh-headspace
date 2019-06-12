@@ -343,14 +343,14 @@ Fight DR MC PX!
 ### Route53 
 * Domain Name Service 
     * phonebook
-* resolve domain names to IP Addresses.
+* Resolve domain names to IP Addresses.
 * Amazon DNS Service = Route53
-* global
+* Global
   * like: IAM & S3
-* use it to: 
+* Use to: 
   * direct traffic world-wide
   * register domain name
-* high availability characteristics:
+* High availability characteristics:
   * geolocation routing
   * latency-based routing
 
@@ -359,7 +359,7 @@ Fight DR MC PX!
 
 ### Lightsail
 * Charged per hour at plan rate as long as an instance is started or in stopped state
-* good if you just need virtual private servers
+* Good if you just need virtual private servers
   * includes everything to launch quickly
 
 ### Elastic Beanstalk 
@@ -372,13 +372,14 @@ Fight DR MC PX!
     * health monitoring
 
 ### Elastic Beanstalk and CloudFormation
-Both are free, but the resources they provision (ex. EC2 instances)
-are not free.
+* Both are free
+* Resources they provision are not free
+  * ie. ec2 instances
 * Difference between the two:
-1. Elastic Beanstalk is limited in what it can provision and is not 
-programmable.
-2. CloudFormation can provision almost any AWS service & is completely
-programmable
+  * Elastic Beanstalk is limited in what it can provision 
+    * not programmable
+  * CloudFormation can provision almost any AWS service 
+    * completely programmable
 
 ### EMR
 * Web service:
@@ -471,8 +472,10 @@ care of provisioning & configuring resources for you.
 
 ### Amazon SQS
 * Amazon Simple Queue service
-* use to store messages as they travel between apps or microservices
-* https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/Welcome.html
+* Use to: 
+  * Store messages as they travel between apps or microservices
+  * Decouple resources
+* Https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/Welcome.html
 
 ### Workspaces
 * Deploy virtual desktop infrastructure in cloud
