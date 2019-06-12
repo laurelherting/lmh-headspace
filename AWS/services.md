@@ -207,7 +207,7 @@ Examples:
 ### S3 general
 * uploaded file called: Object
   * S3 is object-based
-    ex. allows you to upload files
+  * ie. allows you to upload files
 * files can be 0 bytes - 5tb
 * objects can be downloaded via url
 * unlimited storage
@@ -222,18 +222,19 @@ Examples:
 * RDS Automated backups stored here
 * Use bucket policies to make entire S3 buckets public
 * Can use S3 to host STATIC websites
-  * ex. As html
+  * ie. As html
   * Websites that require database connections such as Wordpress etc can’t be hosted on S3
 
 ### S3 Tiers
-1. S3
-Durable, immediately available, frequently accessed
-2. S3 - IA
-Durable, immediately available, infrequently accessed
-3. S3 One Zone - IA 
-Even cheaper than IA, but only in 1 availability zone
-4. Glacier
-Achieved data, where you can wait 3-5 hours before accessing
+* S3
+  * Durable, immediately available, frequently accessed
+* S3 - IA
+  * Durable, immediately available, infrequently accessed
+  * Lowest object availability rating
+* S3 One Zone - IA 
+  * Even cheaper than IA, but only in 1 availability zone
+* Glacier
+  * Achieved data, where you can wait 3-5 hours before accessing
 
 ### Key fundamentals of S3
 Key (name of object)
