@@ -44,6 +44,7 @@
 * enterprise-$15,000/month
   * Includes: TAM (technical account manager)
   * Scales based on usage
+  * Response time-15 minutes
 
 ### Billing Alerts/ Billing Alarms 
   * Alerts automatically when level has been reached
