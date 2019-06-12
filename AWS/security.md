@@ -463,6 +463,8 @@ test & Dev, keep costs low
 * Supports non-AWS origin server as well
 * Edge locations can write / PUT an object
 * Cache can be cleared but you are charged for the action
+* Application:
+  * Use to stream content efficiently world-wide
 
 ### What is high availability?
 * Amazon RDS
