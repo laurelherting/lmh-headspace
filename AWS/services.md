@@ -591,23 +591,22 @@ AWS environment based on AWS best practices.
   ex. Https://s3-eu-west1.amazonaws.com/laurelherting
 
 ### EC2 Exam Tips
-1. On Demand
-* Pay fixed rate by hour (or by sec) w/ no commitment
-2. Reserved
-* Provides capacity reservation & discounts on hourly charge 
-1 or 3 year terms 
-3. Spot
-* bid price you want for instance capacity
-* greater savings for flex start/end times
-4. Dedicated Hosts 
-* Physical EC2 server dedicated for use
-* reduce costs - use existing server-bound software licenses
-* Spot instance terminated by Amazon - charged for partial usage
-* You terminate - charged for any hour instance ran
-* Price / hour charge for several Spot instances
-  * Spot Price
+* On Demand
+  * Pay fixed rate by hour (or by sec) w/ no commitment
+* Reserved
+  * Provides capacity reservation & discounts on hourly charge 
+  * 1 or 3 year terms 
+* Spot
+  * bid price you want for instance capacity
+  * greater savings for flex start/end times
+  * price / hour charge
+  * if you terminate - charged for any hour instance ran
+  * if terminated by Amazon - charged for partial usage
+* Dedicated Hosts 
+  * Physical EC2 server dedicated for use
+  * reduce costs - use existing server-bound software licenses
 
-1. EC2 = Elastic Compute Cloud
+* EC2 = Elastic Compute Cloud
 
 ### Name all Compute Services
 1.EC2 *
