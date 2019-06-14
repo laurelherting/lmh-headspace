@@ -65,7 +65,7 @@ multiple zones in Auto Scaling group settings
 ### Vertical Scaling
 * Scale by adding more power to existing machine
   * ex. CPU, RAM
-  * increase of individual resource
+  * increases resource
 * Stop an instance, resize it to a different type (ie. more RAM)
 * Can reach a limit
 * Costly, but easy to implement, good for short-term
