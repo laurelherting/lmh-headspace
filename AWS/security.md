@@ -541,5 +541,5 @@ Answer: you do
 * A: budgets and cloudWatch
 
 * Read Shared Responsibility Model before exam:
-http://aws.amazon.com/compliance/shared-responsibility-model/
-https://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Overview.pdf
+1. http://aws.amazon.com/compliance/shared-responsibility-model/
+2. https://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Overview.pdf
