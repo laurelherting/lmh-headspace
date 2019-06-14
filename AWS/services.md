@@ -416,18 +416,20 @@ Fight DR MC PX!
   * use with no complex transactions
   * fully-managed
 * Redshift OLAP
-    for business or data warehousing
-    fully-managed data warehouse in cloud
-  * cluster runs 24/7 - prolonged periods - keep costs low...
-    * purchase reserved-node offerings
+  * for business or data warehousing
+  * fully-managed data warehouse in cloud
+  * cluster runs 24/7 - prolonged periods - keep costs low
+  * purchase reserved-node offerings
   * petabytes
 * Elasticache
-    used to speed up performance of existing databases(frequent identical queries)
-    memcached
-    redis
-	* SWAP file
-  	* amount of disk storage space reserved on disk if computer runs out of ram	
-			* Typical size is = size of total RAM
+  * used to speed up performance of existing databases
+  * frequent identical queries
+  * memcached
+  * redis
+* SWAP file
+  * amount of disk storage space reserved on disk if computer runs out of ram	
+  * Typical size is = size of total RAM
+
 * Aurora - relational, high performance, scales well
   * two key features:
     1. multi-AZ-for disaster recovery
@@ -435,9 +437,10 @@ Fight DR MC PX!
   * AWS's RDS SQL Database engine
   * compatible database read replicas 
   * MySQL and PostgreSQL
+  * 5X faster!
 
 * DynamoDB
-    Fast & flexible NoSQL database service for all applications that need 
+  * Fast & flexible NoSQL database service for all applications that need 
     consistent, single-digit millisecond latency at any scale.
     (non-realtional), auto-scaling
 	Read / Write Capacity
