@@ -6,9 +6,9 @@
   * To add more: 
   * https://aws-portal.amazon.com/gp/aws/html-forms-controller/contactus/aws-account-and-billing
 * Billing Alerts:
-  * detailed monitoring and ELBs increase EC2 costs
+  * Detailed monitoring and ELBs increase EC2 costs
   * When monitoring is enabled on paying account:
-    * billing data for linked accounts included
+    * Billing data for linked accounts included
 * You can still create billing alerts per individual account
 
 * CloudTrail:
@@ -18,15 +18,15 @@
     * Turn on in paying account
     * Create bucket policy that allows cross-account access
     * Turn on in other accounts
-    * use bucket in paying account
+    * Use bucket in paying account
 
 * CloudWatch
-  * for permormance
+  * For permormance
   * Auditing 
   * Monitors CPU utilization
 
 * CloudWatch Logs
-  * use to combine EC2 logs
+  * Use to combine EC2 logs
 
 * Consolidated Billing - get volume discounts on all your accounts.
 
@@ -35,13 +35,13 @@
 * Service Control Polcies are created in AWS Organizations
 
 ### Support Packages
-* basic-free
-* developer-$29/month 
+* Basic-free
+* Developer-$29/month 
   * Scales based on usage
   * Only one contact can open a case
-* business-$100/month
+* Business-$100/month
   * Scales based on usage
-* enterprise-$15,000/month
+* Enterprise-$15,000/month
   * Includes: TAM (technical account manager)
   * Scales based on usage
   * Response time-15 minutes
@@ -69,8 +69,8 @@
   * use resources only when you need them & shut them down after peak traffic subsides
     * Never pay for capacity when you don’t need it
     * Have lower total upfront cost ($6,200) 
-    * than AWS option 1 ($15,500) 
-    * on-premises option ($24,920)
+    * Than AWS option 1 ($15,500) 
+    * On-premises option ($24,920)
 * AWS Option 3: All Amazon EC2 On-Demand Instances
   * Choose all On-Demand Instances to run spiky web application
   * No upfront commitment & get significant savings (43%) over the on-premises alternative
@@ -80,29 +80,29 @@
 
 ### S3 Storage Tiers/ Classes
 1. S3 Standard
-    99.99% availability
-    Stored across multiple devices in multiple facilities
-    Designed to sustain loss of 2 facilities concurrently
+  * 99.99% availability
+  * Stored across multiple devices in multiple facilities
+  * Designed to sustain loss of 2 facilities concurrently
 2. S3-IA
-    For data that’s accessed less frequently, but requires rapid access when needed
-    Lower fee than S3, but charged retrieval fee
+  * For data that’s accessed less frequently, but requires rapid access when needed
+  * Lower fee than S3, but charged retrieval fee
 3. S3 One zone-IA
-    Lower cost option for infrequently accessed data
-    quickly accessible
-    can be re-created
-    Doesn't require multiple availability data resilience 
+  * Lower cost option for infrequently accessed data
+  * Quickly accessible
+  * Can be re-created
+  * Doesn't require multiple availability data resilience 
 4. S3-Intelligent Tiering
-    Optimize costs by auto moving data to most cost-effective tier
+  * Optimize costs by auto moving data to most cost-effective tier
 5. S3 Glacier
-    Very cheap
-    Used for archival only
-    Expedited, standard or bulk
-    Standard retrieval time = 3-5 hours
-    Max single archive size: 40TB
-    Can't import data via console
+  * Very cheap
+  * Used for archival only
+  * Expedited, standard or bulk
+  * Standard retrieval time = 3-5 hours
+  * Max single archive size: 40TB
+  * Can't import data via console
 6. S3 Glacier Deep Dive Archive
-    Lowest cost storage class
-    Retrieval time 12 hours
+  * Lowest cost storage class
+  * Retrieval time 12 hours
 
 ### S3 Charges
 1. storage
@@ -120,7 +120,7 @@
 * Used to calculate running costs on AWS per month
 * Not a comparison tool.
 * https://calculator.s3.amazonaws.com/index.html
-Examples:
+* Examples:
 1. More instances = higher monthly cost
 2. Type: CPU, memory, & billing options effect cost changes
   - z1d.12xxlarge, 48CPU, 384GiB, billing:onDemand = $362,709.15/month.
@@ -133,7 +133,7 @@ Examples:
 * https://aws.amazon.com/tco-calculator
 * Network and storage incur costs
 * These come up a lot! 
-    Play with both calculators until comfortable with them
+  * Play with both calculators until comfortable with them
 * Examples:
   * comparing physical servers - less savings compared to vm.
   when max out #s = 35% savings, $138,064,213.
@@ -205,13 +205,13 @@ Examples:
 ## Services
 
 ### S3 general
-* uploaded file called: Object
+* Uploaded file called: Object
   * S3 is object-based
   * ie. allows you to upload files
-* files can be 0 bytes - 5tb
-* objects can be downloaded via url
-* unlimited storage
-* files are stored in buckets
+* Files can be 0 bytes - 5tb
+* Objects can be downloaded via url
+* Unlimited storage
+* Files are stored in buckets
 * S3 is a universal namespace
   * names must be unique globally
   * https://s3-eu-west-1.amazonaws.com/acloudguru
@@ -244,12 +244,12 @@ Metadata
 Subresources
 
 ### Buckets
-    Names share a common name space
-      Can’t have the same bucket name as someone else
-    View buckets, you view them globally
-    Can have buckets in individual regions
-    Replicate contents to another bucket automatically via cross-region replication
-    Change storage classes and encryption of objects at anytime
+* Names share a common name space
+  * Can’t have the same bucket name as someone else
+* View buckets globally
+* Can have buckets in individual regions
+* Replicate contents to another bucket automatically via cross-region replication
+* Change storage classes and encryption of objects at anytime
 
 ### S3 Scales automatically to meet demand
 * Many enterprises will put static websites on S3 when they forsee large # requests 
@@ -258,7 +258,7 @@ Subresources
 ### S3 Data Consistency Model
 1. Read after write consistency for PUTS of new objects
 2. Eventual Consistency for overwrite PUTS and Deletes 
-    Can take some time to propagate
+  * Can take some time to propagate
 
 ### AWS Rekognition
 * video and image
@@ -402,7 +402,7 @@ Fight DR MC PX!
 * Warm standby - lowest downtime
 
 ### Elasticity
-* divert traffic to instances:
+* Divert traffic to instances:
   * based on demand
   * with least load
 
@@ -441,25 +441,25 @@ Fight DR MC PX!
 
 * DynamoDB
   * Fast & flexible NoSQL database service for all applications that need 
-    consistent, single-digit millisecond latency at any scale.
-    (non-realtional), auto-scaling
-	Read / Write Capacity
-	Set per Table
-	Can be changed at any time - it's an ASYNC operation
-	Allocated on a per second basis
-	* Facts: 
-	Spread across 3 geographically distinct data centers
-	400KB item size limit
+  consistent, single-digit millisecond latency at any scale.
+  * (non-realtional), auto-scaling
+	* Read / Write Capacity
+	* Set per Table
+	* Can be changed at any time - it's an ASYNC operation
+	* Allocated on a per second basis
+	* Spread across 3 geographically distinct data centers
+	* 400KB item size limit
 
 * Data Warehousing
-    used for business intelligence
-    pulls in very large and complex data sets
+  * Used for business intelligence
+  * Pulls in very large and complex data sets
 
 * AWS Managed Service
   * up to 5X faster than traditional MySQL database
+    * Aurora
   * provision to make controlled changes to infrastructure
 
-* Redshift and DyanmoDB are fully managed
+* Redshift and DynamoDB are fully managed
 
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
@@ -583,7 +583,7 @@ AWS environment based on AWS best practices.
 ### What AWS resources are often used to create S3 applications?
 * answer: dynamo db, s3, efs, etc
 	* pg.7 white paper:
-		*https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+		https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
 
 * Q: Best AWS service to host a file in a location that's publicly
   accessible from anywhere
@@ -623,3 +623,6 @@ AWS environment based on AWS best practices.
 
 ### Day before exam read:
 https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
+practice both calculators:
+* https://calculator.s3.amazonaws.com/index.html
+* https://aws.amazon.com/tco-calculator
