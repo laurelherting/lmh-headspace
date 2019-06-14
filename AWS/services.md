@@ -461,6 +461,15 @@ Fight DR MC PX!
 
 * Redshift and DynamoDB are fully managed
 
+* Neptune
+  * Graph DB
+  * high-performance
+  * fully-managed
+  * processes graph queries
+  * has read replicas
+  * s3 backup
+  * replication across AZs
+
 ### AWS CloudFormation
 Service that helps model and set up AWS recources
   * spend less time managing these resources, more time on Apps that run
