@@ -442,7 +442,7 @@ Fight DR MC PX!
 * DynamoDB
   * Fast & flexible NoSQL database service for all applications that need 
   consistent, single-digit millisecond latency at any scale.
-  * (non-realtional), auto-scaling
+  * (non-realtional), auto scaling
 	* Read / Write Capacity
 	* Set per Table
 	* Can be changed at any time - it's an ASYNC operation
