@@ -26,28 +26,28 @@
   add rules allowing 443 for both both inbound AND add outbound traffic
 
 ### AWS Organizations 
-* help consolidate multiple AWS accounts to centrally manage them
+* Help consolidate multiple AWS accounts to centrally manage them
 
 ### Policies
-* configure Policies in AWS Organizations 
-* only certain actions can be performed for certain AWS accounts in OUs
-* use to restrict actions
+* Configure Policies in AWS Organizations 
+* Only certain actions can be performed for certain AWS accounts in OUs
+* Use to restrict actions
 
 ### Trusted Advisor five Categories
-* cost optimization
-* security
-* performance
-* fault tolerance 
-* service limits
+* Cost optimization
+* Security
+* Performance
+* Fault tolerance 
+* Service limits
 
 ### AWS Config
-* generates historical configuration change records
+* Generates historical configuration change records
   * used for auditing
 
 ### Server-Side Encryption 
-* with auditing features:
+* With auditing features:
 	* uses AWS Key Management Service
-    * Managed Keys - SSE-KMS
+  * Managed Keys - SSE-KMS
 
 ### IAM is global
 * Identity Access Management 
@@ -83,15 +83,15 @@
 
 ### Group 
 * A place to store users
-    Users inherit all permissions group has
-    Examples of groups:
-      developers
-      System administrators
-      Human resources
-      finance
+  * Users inherit all permissions group has
+  * Examples of groups:
+    * developers
+    * System administrators
+    * Human resources
+    * finance
 
 ### Resource Tags
-* group resources using assigned tags
+* Group resources using assigned tags
 
 ### Security Groups 
 * Virtual firewalls in cloud
@@ -107,52 +107,21 @@
 ### NACLs traffic rules & restrictions - apply to Subnets
 
 ### Using IAM Roles
-    Roles more secure than access key ids
-    Secret access keys - easier to manage
-    Apply roles to EC2 instances 
-    Changes take place immediately
-    Universal-use across any region
-    No need to specify region, similar to users
-	  Users can explicitly switch roles to perform tasks
-    MFA can be added to specific roles
-    Security optimization recommendations
-      - to secure resources
+  * Roles more secure than access key ids
+  * Secret access keys - easier to manage
+  * Apply roles to EC2 instances 
+  * Changes take place immediately
+  * Universal-use across any region
+  * No need to specify region, similar to users
+	* Users can explicitly switch roles to perform tasks
+  * MFA can be added to specific roles
+  * Security optimization recommendations
+  - use to secure resources
 
 ### Firewall
-*Let everything in 0.0.0.0/0
-To let just one IP in X.X.X.X/32
+* *Let everything in 0.0.0.0/0
+* To let just one IP in X.X.X.X/32
 
-### AWS Shared Responsibility Model
-* Know inside & out going into exam to pass
-  * Who's responsible for what with the cloud?
-  * Remember this summary:
-    * AWS Responsibility (OF the cloud):
-    1.  Hardware/AWS Global Instrastructure
-    Regions
-    Availability Zones
-    Edge Locations
-    2.  Software
-    Compute
-    Storage
-    Database
-    Networking
-
-  * Customer Responsibility (IN the cloud):
-  * Client-side Data, Encryption & data integrity, authentication
-    1. Server-side encryption 
-    file system and/ or data
-    2.  Networking traffic, Protection
-    encryption
-    integrity
-    identity
-    3.  Operating System, Network, & Firewall Configuration
-    4.  Platform, Applications, Identity & Access Management 
-    5.  Customer Data
-
-* examples of security in cloud
-  * AWS services used with content
-  * country stored
- 
 ### AWS WAF & AWS Shield
 * AWS WAF is a Web Application Firewall
   * designed to stop hackers
@@ -178,8 +147,8 @@ To let just one IP in X.X.X.X/32
 * use to locate unncessary permissions
 
 ### AWS Config
-* generates historical configuration change records
-  * used for auditing
+* Generates historical configuration change records
+  * Used for auditing
 
 ### Server-Side Encryption 
 * with auditing features:
@@ -195,12 +164,12 @@ To let just one IP in X.X.X.X/32
 
 ### AWS CloudHSM
 * Deals with sensitive information
-* helps generate and use encryption keys
-* protects keys with single access to HSMs in VPC
+* Helps generate and use encryption keys
+* Protects keys with single access to HSMs in VPC
 
 ### AWS Service Catalog
-* create project portfolio
-* choose how and who deploys
+* Create project portfolio
+* Choose how and who deploys
 
 ### Best Practices with AWS Organizations
 * Always enable multi-factor authentication on root account
@@ -261,12 +230,12 @@ To let just one IP in X.X.X.X/32
 * Qs about billing and overall account
 
 ### AWS Organizations 
-* help consolidate multiple AWS accounts to centrally manage them
+* Help consolidate multiple AWS accounts to centrally manage them
 
 ### Policies
-* configure Policies in AWS Organizations 
-* only certain actions can be performed for certain AWS accounts in OUs
-* use to restrict actions
+* Configure Policies in AWS Organizations 
+* Only certain actions can be performed for certain AWS accounts in OUs
+* Use to restrict actions
 
 ### IAM is global
 * Identity Access Management 
@@ -390,8 +359,8 @@ To let just one IP in X.X.X.X/32
 
 * Zones/regions:
 	* Exist in specific AZ Zones NOT across multiple zones
-  * automatically replicates within same zone to prevent data failure
-  * stored in multiple physical locations at no addt'l charge
+  * Automatically replicates within same zone to prevent data failure
+  * Stored in multiple physical locations at no addt'l charge
 * Consists of:
   * SSD, General Purpose - GP2 (Up to 10,000 IOPS)
   * SSD, Provisioned IOPS - IO1 (More than 10,000 IOPS)
@@ -481,7 +450,7 @@ test & Dev, keep costs low
   * any available compute resource can service any request
 
 ### Distribute Load to Multiple Nodes
-* use push or pull method
+* Use push or pull method
   * push: use ELB to distribute workloads
     * ELB routes incoming application requests across multiple EC2 instances
   * configure Network ELB with Static Elastic IP address
@@ -495,10 +464,10 @@ test & Dev, keep costs low
 * Use AWS Step Functions to centrally store execution history & make workloads stateless
 
 ### Stateful Components
-* layers that won't turn into stateless components
+* Layers that won't turn into stateless components
 
 ### Implement Session Affinity
-* aka sticky session
+* Aka sticky session
 * For HTTP & HTTPS traffic:
   * use Load Balancer to bind 
   user's session to specific instance
@@ -521,8 +490,8 @@ test & Dev, keep costs low
   * if they become unhealthy, create a secondary policy to failover to another region
 
 ### AWS Customer responsibility
-* patch Windows OS
-* implement password policies
+* Patch Windows OS
+* Implement password policies
 
 ### Versioning
 * Prevents accidental deletion of objects
@@ -573,3 +542,4 @@ Answer: you do
 
 * Read Shared Responsibility Model before exam:
 http://aws.amazon.com/compliance/shared-responsibility-model/
+https://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Overview.pdf
