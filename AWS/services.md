@@ -630,9 +630,9 @@ AWS environment based on AWS best practices.
 7.Batch
 8.Elastic Beanstalk
 
-### Day before exam read:
+## Day before exam read:
 1. https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf
 2. practice both calculators:
-  * see lines 123 for examples
-  * https://calculator.s3.amazonaws.com/index.html
-  * https://aws.amazon.com/tco-calculator
+  * see line 123-examples
+  *** https://calculator.s3.amazonaws.com/index.html
+  *** https://aws.amazon.com/tco-calculator
