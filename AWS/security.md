@@ -516,7 +516,6 @@ test & Dev, keep costs low
   * yes
 * What are some of the delivery options for SNS?
   * HTTP and HTTPS subscription types
-
 * AWS service - run code without concern about provisioning underlying resources?
   * ie. virtual machines, databases
 Answer: Lambda
