@@ -555,6 +555,9 @@ AWS environment based on AWS best practices.
 * Map one DNS name to another 
   * like CNAME
 
+### Amazon Polly
+* Turns text to speech
+
 ## Possible Exam Questions
 
 ###	Possible Questions:
