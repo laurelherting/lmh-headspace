@@ -540,6 +540,8 @@ Answer: you do
   you have crossed a billing threshold?
 * A: budgets and cloudWatch
 
+## Day before exam read:
+
 * Read Shared Responsibility Model before exam:
 1. http://aws.amazon.com/compliance/shared-responsibility-model/
 2. https://d1.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Overview.pdf
