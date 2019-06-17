@@ -558,6 +558,9 @@ AWS environment based on AWS best practices.
 ### Amazon Polly
 * Turns text to speech
 
+### Amazon Macie
+* Uses machine learning to discover, classify, & protect sensitive data
+
 ## Possible Exam Questions
 
 ###	Possible Questions:
