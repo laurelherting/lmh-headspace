@@ -185,4 +185,5 @@ and tenancy
 * A: deploy the EC2 servers in a Spread Placement Group
 
 ## Day before exam read:
-https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
+
+*** https://d0.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf
