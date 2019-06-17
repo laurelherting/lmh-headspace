@@ -118,13 +118,13 @@
 
 ### AWS Simple Monthly Calculator
 * Used to calculate running costs on AWS per month
-* Not a comparison tool.
+* Not a comparison tool
 * https://calculator.s3.amazonaws.com/index.html
 * Examples:
-1. More instances = higher monthly cost
-2. Type: CPU, memory, & billing options effect cost changes
-  - z1d.12xxlarge, 48CPU, 384GiB, billing:onDemand = $362,709.15/month.
-  - c5d.large, 2CPU, 4GiB, billing:3yr up front = $1,539.57.
+  1. More instances = higher monthly cost
+  2. Type: CPU, memory, & billing options effect cost changes
+  - z1d.12xxlarge, 48CPU, 384GiB, billing:onDemand = $362,709.15/month
+  - c5d.large, 2CPU, 4GiB, billing:3yr up front = $1,539.57
 
 ### AWS TCO Calculator 
 * Total Cost of Ownership
@@ -135,7 +135,7 @@
 * These come up a lot! 
   * Play with both calculators until comfortable with them
 * Examples:
-  * comparing physical servers - less savings compared to vm.
+  * comparing physical servers - less savings compared to vm
   when max out #s = 35% savings, $138,064,213.
   using lowest possible #s = 77%, $139,476.
   * comparing vm - greater savings with large outputs
