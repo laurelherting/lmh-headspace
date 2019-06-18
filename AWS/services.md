@@ -295,6 +295,7 @@ Subresources
   * Reduces time required to obtain & boot new server instances to minutes
     * quickly scale capacity, both up and down, to meet computing requirements
 * Full admin privileges
+* Launch using script or via console
 
 * Compute based service, not serverless, it's a server!
 
