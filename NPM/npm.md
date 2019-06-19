@@ -1,10 +1,6 @@
 # Clone  repo (no specific pkg)
 npm install
 
-# Run latest version
-sudo npm install -g
-(enter your pwd)
-
 # Npm install local
 npm install lodash
 
@@ -16,10 +12,6 @@ npm outdated
 (it’ll give ‘wanted’)
 Get wanted npm version
 npm update
-
-# Install global package:      
-npm install <package_name> -g
-ex npm install http-server -g
 
 # Install npm Package as a dependency
 npm install colors --save
@@ -76,3 +68,6 @@ npm run SCRIPT_NAME
 # install specific version of package
 ##npm install <package>@<version>
 Ex. npm install express@3.0.0  
+
+# Update version
+npm update <package name>
