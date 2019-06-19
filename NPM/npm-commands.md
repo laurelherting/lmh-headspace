@@ -35,7 +35,7 @@ You can usually change just 3 directories. Those are:
 3. sudo chown -R /usr/local/share/
 
 # list of npm packages
-npm ls
+`npm ls`
 
 npm Command Line Usage
 # Clear screen: clear
@@ -53,11 +53,11 @@ node_modules/
 .DS_Store
 config/database.yml
 
-**  use ‘la' in zsh or 'ls -la’ to see file added
+**use ‘la' in zsh or 'ls -la’ to see file added
 
 # Set up Node.js modules
 automated process to create it
-npm init
+`npm init`
 start with this default, Best Practice
 
 # Check to see if package installed correctly
@@ -67,4 +67,8 @@ cat package.json|less
 stage changes
 git hard reset
 
-**JUST Remember:`npm install --save` is for dependencies, and `npm install --save-dev` is for dev dependencies. Almost all yolur packages will be `npm install --save
+**JUST Remember:
+`npm install --save` is for dependencies
+`npm install --save-dev` is for dev dependencies
+
+Almost all yolur packages will be `npm install --save`
