@@ -1,7 +1,4 @@
-JS package manager: lets you install/uninstall, keep track, bundle up and distribute software: images, css, etc. salt-random string, makes it a junk string, so hackers can’t access info
-Modules: express, passport.
-
-# check aslant errors
+# check eslint errors
 `npm install -g eslint`
 
 #Check for JS Errors
