@@ -1,23 +1,23 @@
 # Clone  repo (no specific pkg)
-npm install
+`npm install`
 
 # Npm install local
-npm install lodash
+`npm install lodash`
 
 # Npm install to list of dependencies 
-npm install - -save
+`npm install - -save`
 
 # Npm check version (same as colleagues, most recent)
 npm outdated
 (it’ll give ‘wanted’)
 Get wanted npm version
-npm update
+`npm update`
 
 # Install npm Package as a dependency
-npm install colors --save
+`npm install (package name) --save`
 
 # Install npm Package as a development dependency
-npm install mocha --save-dev
+`npm install mocha --save-dev`
 
 # Install all packages specified in your package.json
 npm install <flags>
@@ -26,7 +26,6 @@ e.g. npm install --python=python2
 
 # Run npm in production environment
 NODE_ENV=production npm install
-
 
 # Install patch ~
 # Update minor version (^)
@@ -42,7 +41,7 @@ list all of code that is depended on in app
 npm list and npm prune
 
 # list of packages installed globally
-npm ls -g
+`npm ls -g`
 
 # npm uninstall packages globally npm uninstall -g *package name
 
@@ -50,24 +49,26 @@ npm ls -g
 npm install -s underscore
 
 # npm install shortcut
-npm i 
+`npm i` 
 
 # npm dependencies will get installed to the dev dependencies part of your package.json
 npm install i -D Mocha
 
 # Configuring npm package.json scripts.
-Preconfigure common tasks like running unit tests: So someone using your module, update test field w/ that exact cmd so they don’t have to search for this info. Now, someone can run ‘npm test’ and not worry what kind of testing library you’re using
-npm t
+* Preconfigure common tasks like running unit tests: 
+* So someone using your module, update test field w/ that exact cmd
+* so they don’t have to search for this info. 
+* Now, someone can run ‘npm test’ and not worry what kind of testing library you’re using
 
 ex: edit inside package.json file:
 “scripts”: {  “test”: “mocha test.js” },
 
 ## npm $SCRIPT_NAME: it will look for that name w/in your scripts field (ex. to check version)
-npm run SCRIPT_NAME
+`npm run SCRIPT_NAME`
 
 # install specific version of package
 ##npm install <package>@<version>
 Ex. npm install express@3.0.0  
 
 # Update version
-npm update <package name>
+`npm update <package name>`
