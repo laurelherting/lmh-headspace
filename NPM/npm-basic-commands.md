@@ -2,31 +2,37 @@
 `npm install -g eslint`
 
 #Check for JS Errors
-npm install jshint -g
+`npm install jshint -g`
 
 # Fix npm permissions-install nom globally w/out using sudo
-npm install jshint -g
+`npm install jshint -g`
 
-option 1: change directory owner
-# see permissions
-ls -l
-# first 3 show what owner can do in file
+# option 1: change directory owner
+
+## see permissions
+`ls -l`
+
+## first 3 show what owner can do in file
 ex. rw-read and write
 ex. r-read
-# Name of user running program
-whoami
-# change ownership so you can write to program
-sudo chown your_user `file`
+
+## Name of user running program
+`whoami`
+
+## change ownership so you can write to program
+`sudo chown your_user `file-name``
+
 # run program again to see new permissions (owner)
-ls -l
+`ls -l`
+
 # output you’ll see = your_user
 
 # Show all permissions on children and parent directories
-ls -la 
+`ls -la`
 
 # Run recursively-run all directories inside 
-sudo chown -R your_user /usr/local/    
-ls -la
+`sudo chown -R your_user /usr/local/`
+`ls -la`
 
 # Afraid of changing every directory of user/local
 You can usually change just 3 directories. Those are:
