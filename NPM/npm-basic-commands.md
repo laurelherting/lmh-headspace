@@ -77,4 +77,4 @@ git hard reset
 `npm install --save` is for dependencies
 `npm install --save-dev` is for dev dependencies
 
-Almost all yolur packages will be `npm install --save`
+Almost all your packages will be `npm install --save`
