@@ -31,13 +31,13 @@ NODE_ENV=production npm install
 (If you get ‘unmet dependency’, that means you still have lodash in the package.json file)
 # Npm uninstall
 fix it:
-npm uninstall *version eg. lodash - - save
+`npm uninstall *version eg. lodash - - save`
 removes lodash from package.json file
 if you get msg ‘extraneous’=its extra and not needed
 
 Good Practice: 
 list all of code that is depended on in app
-npm list and npm prune
+`npm list` and `npm prune`
 
 # list of packages installed globally
 `npm ls -g`
