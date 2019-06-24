@@ -51,6 +51,29 @@ npm install -s underscore
 # npm install shortcut
 `npm i` 
 
+# Fix npm permissions-install nom globally w/out using sudo
+`npm install jshint -g`
+
+# check eslint errors
+`npm install -g eslint`
+
+#Check for JS Errors
+`npm install jshint -g`
+
+# option 1: change directory owner
+
+# Check to see if package installed correctly
+cat package.json|less
+
+# package didn’t install correctly
+stage changes
+git hard reset
+
+**JUST Remember:
+`npm install --save` is for dependencies
+`npm install --save-dev` is for dev dependencies
+
+Almost all your packages will be `npm install --save`
 # npm dependencies will get installed to the dev dependencies part of your package.json
 npm install i -D Mocha
 
