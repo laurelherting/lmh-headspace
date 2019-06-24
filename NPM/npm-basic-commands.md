@@ -1,14 +1,3 @@
-# check eslint errors
-`npm install -g eslint`
-
-#Check for JS Errors
-`npm install jshint -g`
-
-# Fix npm permissions-install nom globally w/out using sudo
-`npm install jshint -g`
-
-# option 1: change directory owner
-
 ## see permissions
 `ls -l`
 
@@ -65,16 +54,3 @@ config/database.yml
 automated process to create it
 `npm init`
 start with this default, Best Practice
-
-# Check to see if package installed correctly
-cat package.json|less
-
-# package didn’t install correctly
-stage changes
-git hard reset
-
-**JUST Remember:
-`npm install --save` is for dependencies
-`npm install --save-dev` is for dev dependencies
-
-Almost all your packages will be `npm install --save`
