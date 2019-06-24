@@ -22,7 +22,6 @@ Get wanted npm version
 # Install all packages specified in your package.json
 npm install <flags>
 e.g. npm install
-e.g. npm install --python=python2
 
 # Run npm in production environment
 NODE_ENV=production npm install
@@ -43,7 +42,8 @@ npm list and npm prune
 # list of packages installed globally
 `npm ls -g`
 
-# npm uninstall packages globally npm uninstall -g *package name
+# npm uninstall packages globally
+`npm uninstall -g <*package name>`
 
 # when others download my project, they can simply run 'npm install' w/out any arguments and using the package.json dependencies listed, npm will know exactly what to install 
 npm install -s underscore
@@ -63,11 +63,11 @@ npm install -s underscore
 # option 1: change directory owner
 
 # Check to see if package installed correctly
-cat package.json|less
+`cat package.json|less`
 
 # package didn’t install correctly
 stage changes
-git hard reset
+`git hard reset`
 
 **JUST Remember:
 `npm install --save` is for dependencies
@@ -75,12 +75,12 @@ git hard reset
 
 Almost all your packages will be `npm install --save`
 # npm dependencies will get installed to the dev dependencies part of your package.json
-npm install i -D Mocha
+`npm install i -D Mocha`
 
 # Configuring npm package.json scripts.
 * Preconfigure common tasks like running unit tests: 
 * So someone using your module, update test field w/ that exact cmd
-* so they don’t have to search for this info. 
+* so they don’t have to search for this info
 * Now, someone can run ‘npm test’ and not worry what kind of testing library you’re using
 
 ex: edit inside package.json file:
