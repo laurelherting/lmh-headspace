@@ -84,14 +84,14 @@ Almost all your packages will be `npm install --save`
 * Now, someone can run ‘npm test’ and not worry what kind of testing library you’re using
 
 ex: edit inside package.json file:
-“scripts”: {  “test”: “mocha test.js” },
+“scripts”: { “test”: “mocha test.js” }
 
 ## npm $SCRIPT_NAME: it will look for that name w/in your scripts field (ex. to check version)
-`npm run SCRIPT_NAME`
+`npm run <SCRIPT_NAME>`
 
 # install specific version of package
-##npm install <package>@<version>
-Ex. npm install express@3.0.0  
+`npm install <package>@<version>`
+Ex. `npm install express@3.0.0` 
 
 # Update version
 `npm update <package name>`
