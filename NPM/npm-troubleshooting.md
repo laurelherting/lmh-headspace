@@ -20,7 +20,7 @@ Get wanted npm version
 `npm install mocha --save-dev`
 
 # Install all packages specified in your package.json
-npm install <flags>
+`npm install <flags>`
 e.g. npm install
 
 # Run npm in production environment
@@ -31,7 +31,7 @@ NODE_ENV=production npm install
 (If you get ‘unmet dependency’, that means you still have lodash in the package.json file)
 # Npm uninstall
 fix it:
-`npm uninstall *version eg. lodash - - save`
+`npm uninstall *version eg. lodash --save`
 removes lodash from package.json file
 if you get msg ‘extraneous’=its extra and not needed
 
@@ -43,10 +43,10 @@ list all of code that is depended on in app
 `npm ls -g`
 
 # npm uninstall packages globally
-`npm uninstall -g <*package name>`
+`npm uninstall -g <package name>`
 
 # when others download my project, they can simply run 'npm install' w/out any arguments and using the package.json dependencies listed, npm will know exactly what to install 
-npm install -s underscore
+`npm install -s underscore`
 
 # npm install shortcut
 `npm i` 
