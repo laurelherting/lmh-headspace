@@ -60,8 +60,6 @@ list all of code that is depended on in app
 #Check for JS Errors
 `npm install jshint -g`
 
-# option 1: change directory owner
-
 # Check to see if package installed correctly
 `cat package.json|less`
 
