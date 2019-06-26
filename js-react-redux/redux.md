@@ -1,23 +1,25 @@
 3 components contained in state/state tree:
 1. simple or complex app? 
-    1. simple: to do app
-    2. complex: lots of UIs
+  simple: to do app
+  complex: lots of UIs
 2. State tree is redundant: you can’t change/alter
-    1. structure defined type, property string
-    2. actions ex. increment and decrement
+  structure defined type, property string
+  actions ex. increment and decrement
 3. Pure and impure functions
-    1. pure: don’t overwrite, returns an array
-    2. impure: may have side effects, can overwrite values that you pass to them
-        1. sometimes the functions you write have to be pure
-            1. this function is called 'the Reducer'
+  pure: don’t overwrite, returns an array
+  impure: may have side effects, can overwrite values that you pass to them
+    sometimes the functions you write have to be pure
+    this function is called 'the Reducer'
 4. Pure function
-    1. Takes another approach, Angular now picking up- takes 'previous state' & the action being dispatched ‘dispatching action’ & returns the ‘next state’ of your action
+  Takes another approach
+  Angular now picking up- takes 'previous state' & the action being dispatched 
+  ‘dispatching action’ & returns the ‘next state’ of your action
 
 Redux Store, dispatch dummy action
 dispatch({}); // 5
 
 # Increment/decrement es6, when function defined in an object:
-# `onClick()`
+`onClick()`
 
 Basics of Redux-thunk
 Action creators, w/ Diagram
