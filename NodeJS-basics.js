@@ -74,4 +74,5 @@ Patch = update one or two properties of something
 # HTTP is stateless
 
 # Update Node
-### If doesn’t automatically begin using updated version do: `nvm use (version)`
+If doesn’t automatically begin using updated version do:
+`nvm use (version)`
