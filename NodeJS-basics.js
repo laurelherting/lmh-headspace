@@ -76,3 +76,10 @@ Patch = update one or two properties of something
 # Update Node
 If doesn’t automatically begin using updated version do:
 `nvm use (version)`
+
+# Inside repo
+package.json file:
+  have .nvmrc file
+    one line: node version
+    ex. v11.2.0
+
