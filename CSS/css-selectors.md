@@ -1,4 +1,4 @@
-ATTRIBUTE SELECTORS
+#ATTRIBUTE SELECTORS
 Target element w/ class selector
 Ex #1, 
 [class] {border: solid 1px #ccc;}
@@ -7,7 +7,7 @@ input[type=“submit”] {background-color: green;}
 Ex #3, target element w/ value of _blank:
 a[target=“_blank”] {color: tomato;}
 
-STYLING FORM BUTTONS & LINKS W/ ATTRIBUTE SELECTORS
+#STYLING FORM BUTTONS & LINKS W/ ATTRIBUTE SELECTORS
 ways to select form buttons & links
 Example #1, target input element w/ type value of email
 input[type=“email”] { background: yellow; }
@@ -21,7 +21,7 @@ Example #3/3, Finally, write a new attribute selector that targets input element
 input[type="submit"] {
   background-color: #52bab3;  }
 
-DRY CSS
+#DRY CSS
 DRY (don’t repeat yourself), works best w/ classes
 Ex #1, CSS
 .btn { cursor: pointer; font-size: .875em; color: #fff; padding-left: 20px;
