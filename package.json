@@ -1,8 +1,19 @@
 {
-  "name": "lmh-headspace",
+  "name": "amplify-notetaker",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/laurelherting/lmh-headspace.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurelherting/lmh-headspace.git"
+  },
   "author": "Laurel Herting <laurel.herting@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "Swap file for my brain",
+  "bugs": {
+    "url": "https://github.com/laurelherting/lmh-headspace/issues"
+  },
+  "homepage": "https://github.com/laurelherting/lmh-headspace#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
