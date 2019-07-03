@@ -30,9 +30,7 @@ Ev: When thinking about branches, remember that the base branch is where changes
 
 # Deployment description of React, Express App (full-stack)-do this on every app you deploy:
 
-
 # Heroku (hobby account) - deployment steps
-
 
 # Working Steps to Deploy (log into Heroku): 
 ## ordered list
