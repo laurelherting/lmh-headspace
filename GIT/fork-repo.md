@@ -1,3 +1,5 @@
+source: https://github.com/evanharmon/eph-headspace/commit/a0ff8e43c269ae44247dc6abc6396ecf071e1acf#diff-93dbf51e0fa07f989cd72afb18a62516
+
 # Step 1
 https://facebook.github.io/create-react-app/docs/getting-started
 `npx create-react-app lh-baby-steps`
@@ -30,3 +32,6 @@ Add Origin Of Existing Repo:
 
   * commit to lock in changes
 
+* note: can't find file within these steps? Do a hard reset:
+`git reset --hard feature/cra-scaffold`
+  * should show a public folder, src folder, etc
