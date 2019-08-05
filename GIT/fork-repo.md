@@ -18,3 +18,15 @@ Add Origin Of Existing Repo:
 
 # Step 4
 `git rebase -Xtheirs backup/non-cra-master`
+
+# Step 5
+`git checkout backup/non-cra-master -- app/`
+`git mv public/ src/`
+  * for example now you could import babyJSON from './baby-steps.json' within src/index.js
+  and display it in a div or something
+  * `ls` should show app folder
+    * move `assets` into src folder, if can't find it
+    * should be able to use that baby.json file
+
+  * commit to lock in changes
+
