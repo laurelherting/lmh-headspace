@@ -93,3 +93,7 @@ Ex. `npm install express@3.0.0`
 
 # Update version
 `npm update <package name>`
+
+# Error Message - eslint not working in app
+`Neomake: [1.-:1:1] Exe (eslint) of maker eslint is not executable.`
+* fix: 
