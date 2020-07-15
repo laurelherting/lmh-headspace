@@ -12,13 +12,13 @@ git init [project_name] - initializes new repository
 git add - adds files to repository
 git commit - commits all added files to repository as a change -a flag, commits all changes to all tracked files.
 -m flag, specify commit message on command line instead of default editor.
-git config - make configuration changes to Git. 
+git config - make configuration changes to Git.
 --global flag, makes changes available across entire system.
 git status - show the current status of the git repository
 git log - Show chronological log of all commits to current repository.
 git checkout - check out diff version of code from current one
 git diff - create a "diff" view to demonstrate what has changed between two diff versions of repository.
-Challenge 11 parts 
+Challenge 11 parts
 Create a new repository in the current folder
 git init
 I just created a new file named index.html; can you add it to the repository?
@@ -43,20 +43,22 @@ git log
 Now let's check out the most recent commit (remember git calls this HEAD) so that we're ready to continue working.
 git checkout HEAD
 
-
 Pull Request
 ask for reviewer to check changes to github push
 #Merge PR
 ##in term switch to master, then git pull and create new branch
 
- critiquing pr's and adding requested changes
+critiquing pr's and adding requested changes
 
-# Remove file already committed 
-## `git rm -r —cached <folder_name>` 
+# Remove file already committed
+
+## `git rm -r —cached <folder_name>`
+
 ex. Accidentally committed node_modules, need to undo:
 `Git rm -r —cached node_modules`
 
-#rename repository 
+#rename repository
+
 ## `mv old_name new_name`
 
 #add ‘node_modules’ to .gitignore file
@@ -68,3 +70,12 @@ Git push origin master
 If it exports a class:
 Use uppercase for filename
 If it doesn’t export anything, use lowercase
+
+## List Files Changed in Commit
+
+```console
+git show --pretty="format:" --name-only {insert the last git commit hash without these braces }
+```
+
+## Bring file back to unmodified
+`git checkout -- <file>`

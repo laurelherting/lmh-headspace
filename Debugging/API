@@ -1,0 +1,15 @@
+This is how to inspect network calls.
+* pay attention to the paths
+
+Notes on inspecting the API
+1. get to location right before where I want to target
+2. then I open dev tools - network tab, clear it
+3. then click the component I want to target
+4. Next, in network tab, inspect the network calls to check for API calls (GET)
+5. Open API call on right, under response
+6. double click on API call to inspect it
+7. The, look to see what type of request it is: GET, PUT, POST
+8. Then, look at the request tab to see if there were any requests body
+(if this is GET, it will always be empty)
+9. Click on the response
+this response is the shape

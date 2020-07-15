@@ -33,3 +33,27 @@ it'll fix all the indentation issues automatically
 2. Use React Dev Tools to locate where that component is being used throughout app
 
 - look through Tools to see where props, parent is located to get it to pull correct information
+
+#### Debug props
+
+- disables all fields for easy testing
+- `props.disabled = true;
+- example:
+  function FormGroup({
+  fieldName,
+  label,
+  description,
+  ariaLabel,
+  ariaLabelledBy,
+  readOnly,
+  parse,
+  className: additionalClassNames,
+  ...props
+  }) {
+  props.disabled = true;
+  const [dirty, setDirty] = useState(false);
+
+#### Disable in browser
+
+- add `disabled` to className
+  -i.e. <button class="primary" disabled="">New</button>
