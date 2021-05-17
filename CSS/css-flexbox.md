@@ -2,7 +2,7 @@ layout methods: floats, inline-block, absolute positioning. Stack & layout
 elements. build flex box w/ less steps
 
 BASICS AND TERMS
-first step: create a flex container.  flex items -direction (div, ul)
+first step: create a flex container. flex items -direction (div, ul)
 main axis (primary) & cross axis
 
 CREATE CONTAINER
@@ -121,3 +121,9 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 Example #2,
 body { display: flex; flex-direction: column; min-height: 100vh; }
 .main-footer { margin-top: auto; }
+
+SIMPLE NOTE ON FLEXBOX
+display: flex; // turn on flex
+flex-direction: row-reverse; // aim west
+flex-direction: column; // aim south
+flex-direction: column-reverse; // aim north
