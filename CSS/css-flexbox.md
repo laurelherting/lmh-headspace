@@ -131,3 +131,15 @@ flex-direction: column-reverse; // aim north
 
 align-items: flex-start;
 // aligned to the top aiming east or west
+
+// stretch setting
+align-items: stretch;
+
+// centering
+align-items: center;
+
+align-items: flex-start; // align blue up and down
+align-items: stretch;
+
+justify-content: flex-end;
+justify-content: space-between; // line up
