@@ -127,3 +127,7 @@ display: flex; // turn on flex
 flex-direction: row-reverse; // aim west
 flex-direction: column; // aim south
 flex-direction: column-reverse; // aim north
+// east, west left, right
+
+align-items: flex-start;
+// aligned to the top aiming east or west
