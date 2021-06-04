@@ -123,7 +123,10 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 .main-footer { margin-top: auto; }
 
 SIMPLE NOTE ON FLEXBOX
+TURN ON FLEX
 display: flex; // turn on flex
+
+AIM IT
 flex-direction: row-reverse; // aim west
 flex-direction: column; // aim south
 flex-direction: column-reverse; // aim north
