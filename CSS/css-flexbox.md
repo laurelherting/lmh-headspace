@@ -144,6 +144,9 @@ align-items: center;
 align-items: flex-start; // align blue up and down
 align-items: stretch;
 
-justify-content: flex-end;
-justify-content: space-between; // line up
-justify-content: center; // line up to "red laser" in front of you
+justify-content: flex-end; // line up at end
+justify-content: flex-start; // line up at beginning
+justify-content: space-between; // line up equal space between
+justify-content: center; // line up to center
+justify-content: space-around; // align different amounts, ex. half, equal, equal, half
+justify-content: space-evenly; // equal spacing
