@@ -143,3 +143,4 @@ align-items: stretch;
 
 justify-content: flex-end;
 justify-content: space-between; // line up
+justify-content: center; // line up to "red laser" in front of you
