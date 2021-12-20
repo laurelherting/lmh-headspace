@@ -33,7 +33,7 @@ Add the changes I made to index.html to the staging area.
 git add index.html
 Commit all of the changes in the staging area to the repository.
 
-git commit -m”message"
+git commit -m "message"
 Take a look at the history log for this repository.
 git log
 HEAD~1 is a special commit identifier in git; it stands for the previous commit (not the one we just made, but the one before that). Can you use that identifier to check out the previous commit in this repository?
@@ -78,4 +78,5 @@ git show --pretty="format:" --name-only {insert the last git commit hash without
 ```
 
 ## Bring file back to unmodified
+
 `git checkout -- <file>`
