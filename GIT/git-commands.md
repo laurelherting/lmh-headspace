@@ -52,12 +52,12 @@ critiquing pr's and adding requested changes
 
 # Remove file already committed
 
-## `git rm -r —cached <folder_name>`
+`git rm -r —cached <folder_name>`
 
 ex. Accidentally committed node_modules, need to undo:
 `Git rm -r —cached node_modules`
 
-#rename repository
+## rename repository
 
 ## `mv old_name new_name`
 
