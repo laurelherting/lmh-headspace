@@ -4,4 +4,20 @@
 
 - can't be nested
 
-# { usesState }
+# state hook
+
+{ useState }
+
+# Documentation
+
+intro:
+
+- https://reactjs.org/docs/hooks-overview.html
+
+general information:
+
+- https://reactjs.org/docs/hooks-intro.html
+
+API reference:
+
+- https://reactjs.org/docs/hooks-reference.html
