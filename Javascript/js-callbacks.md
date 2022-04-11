@@ -43,4 +43,4 @@ myCalculator(5, 5, myDisplayer);
 
 # Documentation:
 
-    - https://www.w3schools.com/js/js_callback.asp
+- https://www.w3schools.com/js/js_callback.asp
