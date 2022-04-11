@@ -74,3 +74,13 @@ Uppercase and Lowercase Filename
   - Returns a function
     - Traditionally labeled w/ Lowercase leading chars
       - ex. `src/utils/validateEmails.js`
+
+# Redux Thunk
+
+- doc = https://redux.js.org/usage/writing-logic-thunks
+- writing logic with thunks
+- thunk = piece of code that does some display work
+- write a func or code that can be used to perform the work later
+- pattern of writing functions with logic inside that can interact
+  with Redux store's dispatch and getState methods
+- Thunks are the standard approach for writing async logic in Redux apps, commonly used for data fetching
