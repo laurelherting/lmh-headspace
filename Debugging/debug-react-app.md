@@ -57,3 +57,13 @@ it'll fix all the indentation issues automatically
 
 - add `disabled` to className
   -i.e. <button class="primary" disabled="">New</button>
+
+## Error: Objects are not valid as a React child (found: object with keys)
+
+- can't output plain vanilla javascript objects in jsx
+- solution: map array of plan js objects to an array of jsx elements (renderable)
+  map every object into a jsx equivalent, into a renderable element
+  - default vanilla js method that exists on any array
+    ex. map every obj into a list item
+    (use map method)
+    `props.goals.map((goal) => { return <li key={goal.id}>{goal.text}</li> })`
