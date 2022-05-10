@@ -12,5 +12,6 @@
 
 ## `mongod --dbpath $HOME/data/db`
 
--ref doc = https://www.mongodb.com/docs/realm/schemas/
+## ref doc = https://www.mongodb.com/docs/realm/schemas/
+
 -JSON object that defines the the structure and contents of data
