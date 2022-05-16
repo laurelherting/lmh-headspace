@@ -7,6 +7,7 @@ ls - think 'list:' shows list of all files/folders in current directory. With th
 mkdir - think 'make directory:' creates new directory with specified name.
 touch - updates the "last modified" timestamp on a file to now. Also creates empty file if the filename specified doesn't exist.
 mv - 'move:' moves a file or directory to new location.convenient way to rename files & folders.
+i.e. = `git branch -m <old> <new>`
 rm - 'remove:' deletes file(s)/folder(s).
 git init [project_name] - initializes new repository
 git add - adds files to repository
