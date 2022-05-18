@@ -21,3 +21,7 @@ general information:
 API reference:
 
 - https://reactjs.org/docs/hooks-reference.html
+
+# concat
+
+- Gives brand new array, doesn't touch the old one
