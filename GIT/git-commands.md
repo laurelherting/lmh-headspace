@@ -81,3 +81,38 @@ git show --pretty="format:" --name-only {insert the last git commit hash without
 ## Bring file back to unmodified
 
 `git checkout -- <file>`
+
+## List and Exit running processes (debug app)
+
+error: `ENV=development nodemon server/app.js exited with code 130`
+problem with NPM
+
+- LIST of running processes
+  `lsof -i :<port here>`
+- lists the running ports, if none, empty return
+
+- Exit running processes listed from command above
+  `kill <process # listed from above>`
+
+## Replace local master branch entirely
+
+- out of sync
+- errors
+
+1. `git branch -m master old-master`
+
+- renames current master branch to old-master
+
+2. `git checkout master`
+
+- outputs: "branch master set up to track remote branch master from origin"
+
+## Cherry pick
+
+- choose specific previous commits to add to your branch
+
+1. `git log`
+
+- view commits to choose from
+
+2. `git cherry-pick <commit number>`
