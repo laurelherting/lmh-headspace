@@ -67,3 +67,7 @@ it'll fix all the indentation issues automatically
     ex. map every obj into a list item
     (use map method)
     `props.goals.map((goal) => { return <li key={goal.id}>{goal.text}</li> })`
+
+## Multiple root level jsx elements next to each other
+
+- wrap them inside: `<React.Fragment></React.Fragment`
