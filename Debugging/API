@@ -12,4 +12,4 @@ Notes on inspecting the API
 8. Then, look at the request tab to see if there were any requests body
 (if this is GET, it will always be empty)
 9. Click on the response
-this response is the shape
+(this response is the shape)
